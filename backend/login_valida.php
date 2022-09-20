@@ -25,7 +25,7 @@ try{
 
         header('Location: ../principal.php');
     }else{
-        // header('Location: ../login_v18/index.html');
+        header('Location: ../login_v18/index.php');
     }
 }catch(PDOException $error){
     echo $error->getmessage();
