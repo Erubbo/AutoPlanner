@@ -6,6 +6,6 @@ session_unset();
 
 session_destroy();
 
-header('Location: ../login_v18/index.php')
+header('Location: ../index.php')
 
 ?>
