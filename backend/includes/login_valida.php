@@ -1,5 +1,5 @@
 <?php
-include ('includes/conexao.php');
+include ('conexao.php');
 
 try{
     $email = $_POST['email'];
@@ -23,9 +23,9 @@ try{
 
         $_SESSION['email'] = $email;
 
-        header('Location: ../principal.php');
+        header('Location: ../../tela_prin.php');
     }else{
-        // header('Location: ../login_v18/index.html');
+        header('Location: ../login_v18/index.php');
     }
 }catch(PDOException $error){
     echo $error->getmessage();
