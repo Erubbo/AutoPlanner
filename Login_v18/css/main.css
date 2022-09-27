@@ -236,6 +236,8 @@ iframe {
   background-position: center;
   position: relative;
   z-index: 1;
+  
+  
 }
 
 .login100-more::before {
@@ -248,6 +250,9 @@ iframe {
   top: 0;
   left: 0;
   background: rgba(0,0,0,0.1);
+
+  
+  background: linear-gradient(90deg, rgba(222,217,167,0.31976540616246496) 0%, rgba(238,217,93,0.21612394957983194) 100%, rgba(255,81,0,1) 100%);
 }
 
 
@@ -343,7 +348,7 @@ input.input100 {
   top: -1px;
   left: -1px;
   pointer-events: none;
-  border: 1px solid #6675df;
+  border: 1px solid rgb(92, 91, 91);
   border-radius: 10px;
 
   visibility: hidden;
@@ -438,7 +443,7 @@ input.input100 {
   height: 18px;
   border-radius: 2px;
   background: #fff;
-  border: 1px solid #6675df;
+  border: 1px solid #888a8b ;
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -449,7 +454,7 @@ input.input100 {
 }
 
 .input-checkbox100:checked + .label-checkbox100::before {
-  color: #6675df;
+  color: #202022;
 }
 
 
@@ -478,7 +483,7 @@ input.input100 {
   width: 100%;
   height: 50px;
   border-radius: 10px;
-  background: #6675df;
+  background: #f4623a;
 
   font-family: Montserrat-Bold;
   font-size: 12px;
@@ -491,10 +496,12 @@ input.input100 {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+
 }
 
 .login100-form-btn:hover {
-  background: #333333;
+  background: #f53804;
 }
 
 
