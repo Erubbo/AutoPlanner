@@ -46,7 +46,7 @@ if(isset($_SESSION['email'])){
 			<div class="wrap-login100">
 				<form action="backend/includes/login_valida.php"  method="post" class="login100-form validate-form">
 					<span class="login100-form-title p-b-43">
-						<img src="images/logo_tipo.jpg" alt="" width="250px">
+						<img src="images/logo_tipo.jpg" alt="" width="300px" class="logo_tipo">
 					</span>
 					
 					
