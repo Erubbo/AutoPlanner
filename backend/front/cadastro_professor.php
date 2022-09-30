@@ -20,16 +20,17 @@ include '../includes/conexao.php';
 
     <div class="container">
         <h5 class="text-center">Cadastro Professores</h5>
-
+        <div class="card text-bg-dark p-3">
+        <h6 class="m-4">DADOS PROFESSOR:</h6>
         <div class="form-group">
             <form action="_valida_cadastro_aluno" method="post">
 
-                <div class="form-group ">
-                    <label for="inputEmail4">Nome</label>
-                    <input type="text" class="form-control" id="" placeholder="Nome">
+                <div class="form-group mt-4 ">
+                    <label for="inputEmail4">Nome do Professor</label>
+                    <input type="text" class="form-control" id="" placeholder="Nome Completo">
                 </div>
 
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-4 mt-4">
                         <label for="Pagamento">Estado</label>
                         <select class="form-select" aria-label="Default select example">
 
@@ -65,10 +66,8 @@ include '../includes/conexao.php';
 
                 </div>
 
-<hr>
 
-
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-4 mt-4">
                         <label for="Pagamento">UF</label>
                         <select class="form-select" aria-label="Default select example">
 
@@ -105,50 +104,40 @@ include '../includes/conexao.php';
 
 
 
-                </div>
+                
 
 <hr>
 
-                
-
-            
-
-
-
-          
-
-
-                <hr>
-
                 <div class="row">
-                    <div class="form-group col-md-6">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email">
+                <h6 class="m-4">CONTATO:</h6>
+                    <div class="form-group col-md-6 mt-4">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="E-mail" >
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Confirmar Email</label>
-                        <input type="email" class="form-control" id="email">
+                    <div class="form-group col-md-6 mt-4">
+                        <label for="email">Confirmar E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Confirmar E-mail">
                     </div>
                 </div>
                 <div class="row">
-                <div class="form-group col-md-6">
-                        <label for="email">Telefone</label>
-                        <input type="number" class="form-control" id="email">
+                <div class="form-group col-md-6 mt-4">
+                        <label for="email">DDD | Telefone (19) 99999-9999</label>
+                        <input type="number" class="form-control" id="email" placeholder="Telefone ">
                     </div>
 
-                <div class="form-group col-md-6">
-                        <label for="email">Telefone 2</label>
-                        <input type="number" class="form-control" id="email">
+                <div class="form-group col-md-6 mt-4">
+                        <label for="email">DDD | Telefone 2 (19) 99999-9999</label>
+                        <input type="number" class="form-control" id="email" placeholder="Telefone 2">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 mt-4">
                         <label for="email">Senha</label>
-                        <input type="password" class="form-control" id="senha">
+                        <input type="password" class="form-control" id="senha" placeholder="Senha">
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 mt-4">
                         <label for="email">Confirmar Senha</label>
-                        <input type="password" class="form-control" id="senha2">
+                        <input type="password" class="form-control" id="senha2" placeholder="Confirmar Senha">
                     </div>
                 </div>
 
@@ -156,6 +145,7 @@ include '../includes/conexao.php';
             </form>
         </div>
     </div>
+</div>
 
 
     <a href="backend/logout.php">Sair</a>

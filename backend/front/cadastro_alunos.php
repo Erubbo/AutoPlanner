@@ -20,15 +20,17 @@ include '../includes/conexao.php';
     ?>
 
     <div class="container">
+    
         <h5 class="text-center">Cadastro Básico</h5>
-
-        <div class="card ">
-            <div class="form-group m-4">
+        <div class="card text-bg-dark p-3">
+        <h6 class="m-4">DADOS PESSOAIS:</h6>
+        
+            <div class="form-group m-4 mt-2">
                 <form action="_valida_cadastro_aluno" method="post">
 
                     <div class="form-group ">
                         <label for="inputEmail4">Nome</label>
-                        <input type="text" class="form-control" id="" placeholder="Nome">
+                        <input type="text" class="form-control" id="" placeholder="Nome Completo">
                     </div>
 
 
@@ -66,7 +68,7 @@ include '../includes/conexao.php';
                     <div class="row mt-4">
                         <div class="form-group col-md-6">
                             <label for="inputPassword4">Data de Nascimento</label>
-                            <input type="date" class="form-control" id="">
+                            <input type="date" class="form-control" id="" >
                         </div>
                         <div class="form-group col-md-2">
                             <label for="Pagamento">Genero</label>
@@ -81,7 +83,7 @@ include '../includes/conexao.php';
 
                     <div class="row">
 
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-4 mt-4">
                             <label for="Pagamento">Nacionalidade</label>
                             <select class="form-select" aria-label="Default select example">
 
@@ -92,7 +94,7 @@ include '../includes/conexao.php';
                             </select>
                         </div>
 
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-4 mt-4">
                             <label for="Pagamento">Estado</label>
                             <select class="form-select" aria-label="Default select example">
 
@@ -125,36 +127,31 @@ include '../includes/conexao.php';
                                 <option value="TO">Tocantins</option>
                             </select>
                         </div>
-
                     </div>
-
             </div>
-        </div>
-        <br>
-        <br>
+       <hr class="m-2">
 
-
-        <div class="card ">
+       <h6 class="m-4">DOCUMENTOS:</h6>
 
             <div class="group m-4 mt-2">
-                <div class="form-group  col-md-6 mt-5">
+                <div class="form-group col-md-5 mt-2">
                     <label for="inputPassword4">CPF</label>
                     <input type="number" class="form-control" id="" placeholder="CPF">
                 </div>
 
                 <div class="row ">
 
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-4 mt-4">
                         <label for="inputPassword4">RG</label>
                         <input type="number" class="form-control" id="" placeholder="RG">
                     </div>
 
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-4 mt-4">
                         <label for="inputPassword4">Orgão Emissor</label>
                         <input type="number" class="form-control" id="" placeholder="RG">
                     </div>
 
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-4 mt-4">
                         <label for="Pagamento">UF</label>
                         <select class="form-select" aria-label="Default select example">
 
@@ -193,57 +190,50 @@ include '../includes/conexao.php';
 
                 </div>
             </div>
-        </div>
-        <br>
-        <br>
-
-        <div class="card">
+            <hr class="m-2">
+    <h6 class="m-4">ENDEREÇO:</h6>
             <div class="group m-4">
-
-                <div class="row mt-5 ">
-                    <div class="form-group col-md-6">
+                <div class="row mt-2 ">
+                    <div class="form-group col-md-6 mt-4">
                         <label for="inputAddress">CEP</label>
-                        <input type="number" class="form-control" id="">
+                        <input type="number" class="form-control" id="" placeholder="CEP">
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 mt-4">
                         <label for="inputAddress">Logradouro</label>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" id="" placeholder="Lagradouro">
                     </div>
 
                 </div>
 
 
                 <div class="row">
-                    <div class="form-group col-md-6 ">
+                    <div class="form-group col-md-6 mt-4 ">
                         <label for="inputCity">Numero</label>
-                        <input type="number" class="form-control" id="">
+                        <input type="number" class="form-control" id="" placeholder="Nº">
                     </div>
 
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 mt-4">
                         <label for="inputCEP">Complemento</label>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" id="" placeholder="Complemento">
                     </div>
                 </div>
 
 
                 <div class="row">
-                    <div class="form-group col-md-6 ">
+                    <div class="form-group col-md-6 mt-4 ">
                         <label for="inputCity">Bairro</label>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" id="" placeholder="Bairro">
                     </div>
 
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 mt-4">
                         <label for="inputCEP">Municipio</label>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" id="" placeholder="Municipio">
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <br>
+            <hr class="m-2">
 
-
-        <div class="card">
+       <h6 class="m-4">PAGAMENTO:</h6>
             <div class="group m-4">
 
                 <div class="row">
@@ -261,53 +251,51 @@ include '../includes/conexao.php';
                         <label for="Pagamento">Disponibilidade</label>
                         <select class="form-select" aria-label="Default select example">
 
-                            <option value="1">Manhã (07:00-11:00)</option>
-                            <option value="2">Tarde (12:00-19:00)</option>
+                            <option value="1">Manhã (07:00h-11:00h)</option>
+                            <option value="2">Tarde (12:00h-19:00h)</option>
                             <option value="3">Integral</option>
                         </select>
                     </div>
 
                 </div>
             </div>
-        </div>
-        <br>
-        <br>
+            <hr class="m-2">
 
-        <div class="card">
+        <h6 class="m-4">CONTATO:</h6>
             <div class="group m-4">
                 <div class="row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 mt-4">
                         <label for="email">E-mail</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control" id="email" placeholder="exemplo@hotmail.com">
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 mt-4">
                         <label for="email">Confirmar E-mail</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control" id="email" placeholder="exemplo@hotmail.com">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6">
-                        <label for="email">DDD | Telefone (19)99999-9999</label>
-                        <input type="number" class="form-control" id="email">
+                    <div class="form-group col-md-6 mt-4">
+                        <label for="email">DDD | Telefone (19) 99999-9999</label>
+                        <input type="number" class="form-control" id="email" placeholder="Telefone" >
                     </div>
 
-                    <div class="form-group col-md-6">
-                        <label for="email">DDD | Telefone 2 (19)99999-9999</label>
-                        <input type="number" class="form-control" id="email">
+                    <div class="form-group col-md-6 mt-4">
+                        <label for="email">DDD | Telefone 2 (19) 99999-9999</label>
+                        <input type="number" class="form-control" id="email" placeholder="Telefone 2" >
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 mt-4">
                         <label for="email">Senha</label>
-                        <input type="password" class="form-control" id="senha">
+                        <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 mt-4">
                         <label for="email">Confirmar Senha</label>
-                        <input type="password" class="form-control" id="senha2">
+                        <input type="password" class="form-control" id="senha2" placeholder="Confirme sua senha">
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary mt-3 ">Cadastrar</button>
+                <button type="submit" class="btn btn-primary mt-3">Cadastrar</button>
                 </form>
             </div>
         </div>
