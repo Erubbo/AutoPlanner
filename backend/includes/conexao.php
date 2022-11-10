@@ -1,9 +1,9 @@
 <?php
 
 try{
-    define('SERVERNAME',"localhost");
-    define('USERNAME',"root");
-    define('PASSWORD',"");
+    define('SERVERNAME',"autoplanner");
+    define('USERNAME',"autoplanner");
+    define('PASSWORD',"12345");
     define('DADABASE',"auto_planner");
 
     $conn = new PDO("mysql:host=".SERVERNAME.";dbname=".DADABASE, USERNAME, PASSWORD);
