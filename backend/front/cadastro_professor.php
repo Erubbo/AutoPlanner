@@ -20,7 +20,7 @@ include '../includes/conexao.php';
 
     <div class="container">
         <h5 class="text-center">Cadastro Professores</h5>
-        <div class="card text-bg-dark p-3">
+        <div class="text-bg-secondary p-3">
         <h6 class="m-4">DADOS PROFESSOR:</h6>
         <div class="form-group">
             <form action="_valida_cadastro_aluno" method="post">
