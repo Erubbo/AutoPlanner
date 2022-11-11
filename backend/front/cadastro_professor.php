@@ -23,7 +23,7 @@ include '../includes/conexao.php';
         <div class="card text-bg-dark p-3">
         <h6 class="m-4">DADOS PROFESSOR:</h6>
         <div class="form-group">
-            <form action="_valida_cadastro_aluno" method="post">
+            <form id="form-prof" action="_valida_cadastro_aluno" method="post">
 
                 <div class="form-group mt-4 ">
                     <label for="inputEmail4">Nome do Professor</label>
@@ -141,7 +141,7 @@ include '../includes/conexao.php';
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary mt-3">Cadastrar</button>
+                <button type="submit" class="btn btn-primary mt-3" onclick="addprof()">Cadastrar</button>
             </form>
         </div>
     </div>
@@ -149,7 +149,12 @@ include '../includes/conexao.php';
 
 
     <a href="backend/logout.php">Sair</a>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script src="../../js/addcadastros.js"></script>
 </body>
 
 </html>
