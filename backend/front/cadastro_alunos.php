@@ -273,18 +273,18 @@ include '../includes/conexao.php';
                     </div>
                     <div class="form-group col-md-6 mt-2">
                         <label for="email">Confirmar E-mail</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@hotmail.com">
+                        <input type="email" class="form-control" id="confirma_email" name="confirma_email" placeholder="exemplo@hotmail.com">
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md-6 mt-2">
                         <label for="email">DDD | Telefone (19) 99999-9999</label>
-                        <input type="number" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
+                        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
                     </div>
 
                     <div class="form-group col-md-6 mt-2">
                         <label for="email">DDD | Telefone 2 (19) 99999-9999</label>
-                        <input type="number" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
+                        <input type="text" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
                     </div>
                 </div>
                 <div class="row">
@@ -294,11 +294,11 @@ include '../includes/conexao.php';
                     </div>
                     <div class="form-group col-md-6 mt-2">
                         <label for="email">Confirmar Senha</label>
-                        <input type="password" class="form-control" placeholder="Confirme sua senha">
+                        <input type="password" class="form-control" id="confirmar" name="confirmar" placeholder="Confirme sua senha">
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary mt-3" onclick="addaluno()">Cadastrar</button>
+                <button type="button" class="btn btn-primary mt-3" onclick="addaluno()">Cadastrar</button>
                 </form>
             </div>
         </div>
@@ -307,6 +307,16 @@ include '../includes/conexao.php';
 
     <a href="backend/logout.php">Sair</a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- INPUT MASK -->
+    <script src="assets/js/jquery.inputmask.min.js"></script>
+
 
     <script src="../../js/addcadastros.js"></script>
 </body>

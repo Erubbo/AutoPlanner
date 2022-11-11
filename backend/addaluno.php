@@ -7,7 +7,7 @@ include 'includes/functions.php';
 try {
 
     // define os caracteres que iremos remover dos campos preenchidos no form (replace)
-    $carac = array('(', ')', '-', ' ', '.');
+    $limpa = array('(', ')', '-', ' ', '.');
 
     // aluno 
     $nome            = $_POST['nome'];
@@ -18,12 +18,13 @@ try {
     $mae_af          = $_POST['mae_af'];
     $data_nascimento = $_POST['data_nascimento'];
     $genero          = $_POST['genero'];
-    $nacionalidade   = $_POST['nacionalidade '];
+    $nacionalidade   = $_POST['nacionalidade'];
     $cpf             = $_POST['cpf'];
     $rg              = $_POST['rg'];
-    $orgao_emissor   = $_POST['orgao_emissor '];
+    $orgao_emissor   = $_POST['orgao_emissor'];
     $uf              = $_POST['uf'];
     $email           = $_POST['email'];
+    $confirma_email  = $_POST['confirma_email'];
     $telefone        = $_POST['telefone'];
     $telefone2       = $_POST['telefone2'];
     $senha           = $_POST['senha'];
