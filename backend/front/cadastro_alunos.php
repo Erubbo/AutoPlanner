@@ -26,7 +26,7 @@ include '../includes/conexao.php';
         <h6 class="m-4">DADOS PESSOAIS:</h6>
         
             <div class="form-group m-4 mt-2">
-                <form action="_valida_cadastro_aluno" method="post">
+                <form id="form-aluno">
 
                     <div class="form-group ">
                         <label for="inputEmail4">Nome</label>
@@ -295,7 +295,7 @@ include '../includes/conexao.php';
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary mt-3">Cadastrar</button>
+                <button type="submit" class="btn btn-primary mt-3" onclick="addaluno()">Cadastrar</button>
                 </form>
             </div>
         </div>
@@ -304,6 +304,8 @@ include '../includes/conexao.php';
 
     <a href="backend/logout.php">Sair</a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script src="../../js/addcadastros.js"></script>
 </body>
 
 </html>
