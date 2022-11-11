@@ -22,7 +22,7 @@ include '../includes/conexao.php';
 
     <div class="container">
 
-        <h5 class="text-center">Cadastro Básico</h5>
+        <h5 class="text-center m-4"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Básico</h5>
         <div class="text-bg-secondary p-3 border border-5 rounded-3">
             <h6 class="m-4"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>DADOS PESSOAIS :</h6>
 
@@ -194,7 +194,7 @@ include '../includes/conexao.php';
                 </div>
             </div>
             <hr class="m-2">
-            <h6 class="m-4"><i class="bi bi-geo-alt" style="font-size: 1.5rem"></i> ENDEREÇO:</h6>
+            <h6 class="m-4"><i class="bi bi-geo-alt" style="font-size: 1.5rem"></i> ENDEREÇO :</h6>
             <div class="group m-4">
                 <div class="row mt-2 ">
                     <div class="form-group col-md-6 mt-2">
@@ -203,7 +203,7 @@ include '../includes/conexao.php';
                     </div>
                     <div class="form-group col-md-6 mt-2">
                         <label for="inputAddress">Logradouro</label>
-                        <input type="text" class="form-control" id="logradouro" name="logradouro" placeholder="Lagradouro">
+                        <input type="text" class="form-control" id="logradouro" name="logradouro" placeholder="Logradouro">
                     </div>
 
                 </div>
@@ -236,7 +236,7 @@ include '../includes/conexao.php';
             </div>
             <hr class="m-2">
 
-            <h6 class="m-4"><i class="bi bi-cash-stack" style="font-size: 1.5rem"></i> PAGAMENTO:</h6>
+            <h6 class="m-4"><i class="bi bi-cash-stack" style="font-size: 1.5rem"></i> PAGAMENTO :</h6>
             <div class="group m-4">
 
                 <div class="row">
@@ -264,7 +264,7 @@ include '../includes/conexao.php';
             </div>
             <hr class="m-2">
 
-            <h6 class="m-4">CONTATO:</h6>
+            <h6 class="m-4"><i class="bi bi-file-earmark-person" style="font-size: 1.5rem"></i> CONTATO :</h6>
             <div class="group m-4">
                 <div class="row">
                     <div class="form-group col-md-6 mt-2">
@@ -305,7 +305,7 @@ include '../includes/conexao.php';
     </div>
 
 
-    <a href="backend/logout.php">Sair</a>
+    <a href="backend/logout.php"><i class="bi bi-x-circle" style="font-size: 1rem"></i>Sair</a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
     <script src="../../js/addcadastros.js"></script>
