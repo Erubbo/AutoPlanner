@@ -84,9 +84,23 @@ try {
 
     $sql = "INSERT INTO tb_aluno (nome, pai, mae, nome_social, pai_af, mae_af, data_nascimento, genero, nacionalidade, cpf, rg, orgao_emissor, uf, email, telefone, telefone2, senha) VALUES ('$nome','$pai','$mae','$nome_social','$pai_af','$mae_af','$data_nascimento','$genero','$nacionalidade','$cpf','$rg','$orgao_emissor','$uf','$email','$telefone','$telefone2','$senha')";
 
+  $command = $conn->prepare($sql);
+
+  $command-> execute();
+
+
+
+    // captura o id da tabela do comandoi executado acima 
+    // necessario id para insert na tabela de endereços 
+    $id_usuario = $conn-> lastInsertId();
+
+    // add endereço 
+    $sql = "INSERT INTO Tb_endereco (cep, logradouro, numero, complemento, bairro, municipio, estado, id_usuario) VALUES ('$cep','$logradouro','$numero ','$complemento','$bairro','$municipio','$estado','$id_usuario')";
+
     $msg = "Usuário adicionado com sucesso!";
 
     insertUpdateDelete($sql, $msg);
+
 
 } catch (PDOException $erro) {
     pdocatch($erro);

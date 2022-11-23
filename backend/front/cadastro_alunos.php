@@ -199,7 +199,8 @@ include '../includes/conexao.php';
                 <div class="row mt-2 ">
                     <div class="form-group col-md-6 mt-2">
                         <label for="inputAddress">CEP</label>
-                        <input type="number" class="form-control" id="cep" name="cep" placeholder="CEP">
+                        <input type="text" class="form-control" id="cep" name="cep" placeholder="CEP">
+                        <button class="btn-cep" type="button" onclick="consultaCEP()"></button>
                     </div>
                     <div class="form-group col-md-6 mt-2">
                         <label for="inputAddress">Logradouro</label>
