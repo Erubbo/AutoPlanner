@@ -20,6 +20,11 @@ include '../includes/conexao.php';
     ?>
 
     <div class="container">
+        <h5 class="text-center">Cadastro Professores</h5>
+        <div class="card text-bg-dark p-3">
+        <h6 class="m-4">DADOS PROFESSOR:</h6>
+        <div class="form-group">
+            <form id="form-prof">
 
         <h5 class="text-center m-4"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Professores</h5>
         <div class="text-bg-secondary p-3 border border-5 rounded-3">
@@ -224,7 +229,7 @@ include '../includes/conexao.php';
                     </div>
                     <div class="form-group col-md-6 mt-2">
                         <label for="email">Confirmar E-mail</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@hotmail.com">
+                        <input type="email" class="form-control" id="confirma_email" name="confirma_email" placeholder="exemplo@hotmail.com">
                     </div>
                 </div>
                 <div class="row">
@@ -249,14 +254,18 @@ include '../includes/conexao.php';
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary mt-3" onclick="addaluno()">Cadastrar</button>
-
-                <a href="backend/logout.php"><i class="bi bi-x-circle" style="font-size: 1rem"></i><button type="submit" class="btn btn-danger mt-3" onclick="addaluno()">Sair</button></a>
-                </form>
-            </div>
+                <button type="submit" class="btn btn-primary mt-3" onclick="addprof()">Cadastrar</button>
+            </form>
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <a href="backend/logout.php">Sair</a>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script src="../../js/addcadastros.js"></script>
 </body>
 
 </html>
