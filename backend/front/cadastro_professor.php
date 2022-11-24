@@ -24,7 +24,7 @@ include '../includes/conexao.php';
         <div class="card text-bg-dark p-3">
         <h6 class="m-4">DADOS PROFESSOR:</h6>
         <div class="form-group">
-            <form id="form-prof" action="_valida_cadastro_aluno" method="post">
+            <form id="form-prof">
 
         <h5 class="text-center m-4"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Professores</h5>
         <div class="text-bg-secondary p-3 border border-5 rounded-3">
@@ -229,7 +229,7 @@ include '../includes/conexao.php';
                     </div>
                     <div class="form-group col-md-6 mt-2">
                         <label for="email">Confirmar E-mail</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@hotmail.com">
+                        <input type="email" class="form-control" id="confirma_email" name="confirma_email" placeholder="exemplo@hotmail.com">
                     </div>
                 </div>
                 <div class="row">

@@ -84,9 +84,9 @@ try {
 
     $sql = "INSERT INTO tb_aluno (nome, pai, mae, nome_social, pai_af, mae_af, data_nascimento, genero, nacionalidade, cpf, rg, orgao_emissor, uf, email, telefone, telefone2, senha) VALUES ('$nome','$pai','$mae','$nome_social','$pai_af','$mae_af','$data_nascimento','$genero','$nacionalidade','$cpf','$rg','$orgao_emissor','$uf','$email','$telefone','$telefone2','$senha')";
 
-  $command = $conn->prepare($sql);
+    $command = $conn->prepare($sql);
 
-  $command-> execute();
+    $command-> execute();
 
 
 
