@@ -3,10 +3,14 @@
 }
 
 .input-cep{
-    width: 100%;
+    width: 80% !important;
 }
 
 .btn-cep{
     padding: 6px 10px;
-    
+
+}
+
+h6{
+    color: brown !important;
 }

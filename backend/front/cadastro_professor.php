@@ -10,9 +10,10 @@ include '../includes/conexao.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/estilo-aluno-professor.css">
+    
 </head>
 
 <body>
@@ -144,16 +145,11 @@ include '../includes/conexao.php';
 
                                 <label for="inputAddress">CEP</label>
                                 <div class="div-cep">
-                                    <input type="number" class="form-control input-cep" id="cep" name="cep" placeholder="CEP">
-                                    <button type="button" class="btn btn-primary btn-cep" onclick="consultaCep()">Consulta CEP</button>
+                                    <input type="text" class="form-control input-cep" id="cep" name="cep" placeholder="CEP">
+                                    <button type="button" class="btn-cep" onclick="consultaCep()">Consulta CEP</button>
                                 </div>
 
                             </div>
-
-                            <div class="form-group col-md-6 mt-2">
-
-                            </div>
-
 
                             <div class="form-group col-md-6 mt-2">
                                 <label for="inputAddress">Municipio</label>
