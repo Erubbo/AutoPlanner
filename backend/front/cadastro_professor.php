@@ -22,6 +22,11 @@ include '../includes/conexao.php';
     ?>
 
     <div class="container">
+        <h5 class="text-center">Cadastro Professores</h5>
+        <div class="card text-bg-dark p-3">
+        <h6 class="m-4">DADOS PROFESSOR:</h6>
+        <div class="form-group">
+            <form id="form-prof">
 
         <h5 class="text-center m-4"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Professores</h5>
         <div class="text-bg-secondary p-3 border border-5 rounded-3">
@@ -262,13 +267,89 @@ include '../includes/conexao.php';
 
                         <button type="submit" class="btn btn-primary mt-3" onclick="addaluno()">Cadastrar</button>
 
-                        <a href="backend/logout.php"><i class="bi bi-x-circle" style="font-size: 1rem"></i><button type="submit" class="btn btn-danger mt-3" onclick="addaluno()">Sair</button></a>
-                </form>
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputAddress">Logradouro</label>
+                        <input type="text" class="form-control" id="logradouro" name="logradouro" placeholder="Logradouro">
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputCity">Numero</label>
+                        <input type="number" class="form-control" id="numero" name="numero" placeholder="Nº">
+                    </div>
+
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputCEP">Complemento</label>
+                        <input type="text" class="form-control" id="complemento" name="complemento" placeholder="Complemento">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputCity">Bairro</label>
+                        <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro">
+                    </div>
+
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputCEP">Municipio</label>
+                        <input type="text" class="form-control" id="municipio" name="municipio" placeholder="Municipio">
+                    </div>
+                </div>
             </div>
+
+            <hr class="m-2">
+
+            <h6 class="m-4"><i class="bi bi-file-earmark-person" style="font-size: 1.5rem"></i> CONTATO :</h6>
+            <div class="group m-4">
+                <div class="row">
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@hotmail.com">
+                    </div>
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="email">Confirmar E-mail</label>
+                        <input type="email" class="form-control" id="confirma_email" name="confirma_email" placeholder="exemplo@hotmail.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="email">DDD | Telefone (19) 99999-9999</label>
+                        <input type="number" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
+                    </div>
+
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="email">DDD | Telefone 2 (19) 99999-9999</label>
+                        <input type="number" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="email">Senha</label>
+                        <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
+                    </div>
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="email">Confirmar Senha</label>
+                        <input type="password" class="form-control" placeholder="Confirme sua senha">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3" onclick="addprof()">Cadastrar</button>
+            </form>
         </div>
     </div>
 
+
+    <a href="backend/logout.php">Sair</a>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script src="../../js/addcadastros.js"></script>
 </body>
 
 </html>

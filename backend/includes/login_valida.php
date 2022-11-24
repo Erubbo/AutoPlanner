@@ -25,7 +25,7 @@ try{
 
         header('Location: ../../tela_prin.php');
     }else{
-        header('Location: ../login_v18/index.php');
+        header('Location: ../index.php');
     }
 }catch(PDOException $error){
     echo $error->getmessage();

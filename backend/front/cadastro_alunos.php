@@ -200,7 +200,8 @@ include '../includes/conexao.php';
                 <div class="row mt-2 ">
                     <div class="form-group col-md-6 mt-2">
                         <label for="inputAddress">CEP</label>
-                        <input type="number" class="form-control" id="cep" name="cep" placeholder="CEP">
+                        <input type="text" class="form-control" id="cep" name="cep" placeholder="CEP">
+                        <button class="btn-cep" type="button" onclick="consultaCEP()"></button>
                     </div>
                     <div class="form-group col-md-6 mt-2">
                         <label for="inputAddress">Logradouro</label>
@@ -274,7 +275,7 @@ include '../includes/conexao.php';
                     </div>
                     <div class="form-group col-md-6 mt-2">
                         <label for="email">Confirmar E-mail</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@hotmail.com">
+                        <input type="email" class="form-control" id="confirma_email" name="confirma_email" placeholder="exemplo@hotmail.com">
                     </div>
                 </div>
                 <div class="row">
@@ -311,7 +312,18 @@ include '../includes/conexao.php';
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
-        <script src="../../js/addcadastros.js"></script>
+   
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- INPUT MASK -->
+    <script src="assets/js/jquery.inputmask.min.js"></script>
+
+
+    <script src="../../js/addcadastros.js"></script>
 </body>
 
 </html>
