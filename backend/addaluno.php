@@ -7,7 +7,7 @@ include 'includes/functions.php';
 try {
 
     // define os caracteres que iremos remover dos campos preenchidos no form (replace)
-    $carac = array('(', ')', '-', ' ', '.');
+    $limpa = array('(', ')', '-', ' ', '.');
 
     // aluno 
     $nome            = $_POST['nome'];
@@ -18,12 +18,13 @@ try {
     $mae_af          = $_POST['mae_af'];
     $data_nascimento = $_POST['data_nascimento'];
     $genero          = $_POST['genero'];
-    $nacionalidade   = $_POST['nacionalidade '];
+    $nacionalidade   = $_POST['nacionalidade'];
     $cpf             = $_POST['cpf'];
     $rg              = $_POST['rg'];
-    $orgao_emissor   = $_POST['orgao_emissor '];
+    $orgao_emissor   = $_POST['orgao_emissor'];
     $uf              = $_POST['uf'];
     $email           = $_POST['email'];
+    $confirma_email  = $_POST['confirma_email'];
     $telefone        = $_POST['telefone'];
     $telefone2       = $_POST['telefone2'];
     $senha           = $_POST['senha'];
@@ -83,9 +84,23 @@ try {
 
     $sql = "INSERT INTO tb_aluno (nome, pai, mae, nome_social, pai_af, mae_af, data_nascimento, genero, nacionalidade, cpf, rg, orgao_emissor, uf, email, telefone, telefone2, senha) VALUES ('$nome','$pai','$mae','$nome_social','$pai_af','$mae_af','$data_nascimento','$genero','$nacionalidade','$cpf','$rg','$orgao_emissor','$uf','$email','$telefone','$telefone2','$senha')";
 
+  $command = $conn->prepare($sql);
+
+  $command-> execute();
+
+
+
+    // captura o id da tabela do comandoi executado acima 
+    // necessario id para insert na tabela de endereços 
+    $id_usuario = $conn-> lastInsertId();
+
+    // add endereço 
+    $sql = "INSERT INTO Tb_endereco (cep, logradouro, numero, complemento, bairro, municipio, estado, id_usuario) VALUES ('$cep','$logradouro','$numero ','$complemento','$bairro','$municipio','$estado','$id_usuario')";
+
     $msg = "Usuário adicionado com sucesso!";
 
     insertUpdateDelete($sql, $msg);
+
 
 } catch (PDOException $erro) {
     pdocatch($erro);
