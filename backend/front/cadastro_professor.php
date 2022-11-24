@@ -11,6 +11,7 @@ include '../includes/conexao.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -25,51 +26,80 @@ include '../includes/conexao.php';
         <div class="form-group">
             <form id="form-prof" action="_valida_cadastro_aluno" method="post">
 
-                <div class="form-group mt-4 ">
-                    <label for="inputEmail4">Nome do Professor</label>
-                    <input type="text" class="form-control" id="" placeholder="Nome Completo">
-                </div>
+        <h5 class="text-center m-4"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Professores</h5>
+        <div class="text-bg-secondary p-3 border border-5 rounded-3">
+            <h6 class="m-4"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>DADOS PROFESSORES :</h6>
 
-                    <div class="form-group col-md-4 mt-4">
-                        <label for="Pagamento">Estado</label>
-                        <select class="form-select" aria-label="Default select example">
+            <div class="form-group m-4 mt-2">
+                <form id="form-aluno">
 
-                            <option value="AC">Acre</option>
-                            <option value="AL">Alagoas</option>
-                            <option value="AP">Amapá</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="BA">Bahia</option>
-                            <option value="CE">Ceará</option>
-                            <option value="DF">Distrito Federal</option>
-                            <option value="ES">Espírito Santo</option>
-                            <option value="GO">Goiás</option>
-                            <option value="MA">Maranhão</option>
-                            <option value="MT">Mato Grosso</option>
-                            <option value="MS">Mato Grosso do Sul</option>
-                            <option value="MG">Minas Gerais</option>
-                            <option value="PA">Pará</option>
-                            <option value="PB">Paraíba</option>
-                            <option value="PR">Paraná</option>
-                            <option value="PE">Pernambuco</option>
-                            <option value="PI">Piauí</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="RN">Rio Grande do Norte</option>
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="RO">Rondônia</option>
-                            <option value="RR">Roraima</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="SE">Sergipe</option>
-                            <option value="TO">Tocantins</option>
-                        </select>
+                    <div class="row mt-2">
+                        <div class="form-group col-md-6 mt-2">
+                            <label for="inputEmail4">Nome Completo</label>
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
+                        </div>
                     </div>
 
-                </div>
+                    <div class="row mt-4">
+                        <div class="form-group col-md-6 mt-2">
+                            <label for="inputPassword4">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="data_nascimento" name="data_nascimento">
+                        </div>
+                        <div class="form-group col-md-6 mt-2">
+                            <label for="Pagamento">Genero</label>
+                            <select class="form-select" aria-label="Default select example" id="genero" name="genero">
+
+                                <option value="1">Masculino</option>
+                                <option value="2">Feminino</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="form-group col-md-6 mt-2">
+                            <label for="">Nacionalidade</label>
+                            <select class="form-select" aria-label="Default select example" id="nacionalidade" name="nacionalidade">
+
+                                <option value="1">Brasileiro</option>
+                                <option value="2">Brasileiro Naturalizado</option>
+                                <option value="1">Estrangeiro</option>
+                                <option value="1">Brasileiro Nascido no Exterior</option>
+                            </select>
+                        </div>
+
+                       
+                    </div>
+            </div>
 
 
-                    <div class="form-group col-md-4 mt-4">
+            <hr class="m-2">
+
+            <h6 class="m-4"><i class="bi bi-card-heading" style="font-size: 1.5rem"></i> DOCUMENTOS :</h6>
+
+            <div class="group m-4 mt-2">
+                <div class="row ">
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputPassword4">CPF</label>
+                        <input type="number" class="form-control" id="cpf" name="cpf" placeholder="CPF">
+                    </div>
+
+
+
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputPassword4">RG</label>
+                        <input type="number" class="form-control" id="rg" name="rg" placeholder="RG">
+                    </div>
+
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputPassword4">Orgão Emissor</label>
+                        <input type="text" class="form-control" id="orgao_emissor" name="orgao_emissor" placeholder="RG">
+                    </div>
+
+                    <div class="form-group col-md-6 mt-2">
                         <label for="Pagamento">UF</label>
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example" id="uf" name="uf">
 
                             <option value="AC">AC</option>
                             <option value="AL">AL</option>
@@ -104,48 +134,129 @@ include '../includes/conexao.php';
 
 
 
-                
+                </div>
+            </div>
+            <hr class="m-2">
+            <h6 class="m-4"><i class="bi bi-geo-alt" style="font-size: 1.5rem"></i> ENDEREÇO :</h6>
+            <div class="group m-4">
+                <div class="row mt-2 ">
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputAddress">CEP</label>
+                        <input type="number" class="form-control" id="cep" name="cep" placeholder="CEP">
+                    </div>
 
-<hr>
+                    <div class="form-group col-md-6 mt-2">
+                            <label for="Pagamento">Estado</label>
+                            <select class="form-select" aria-label="Default select example" id="estado" name="estado">
+
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputAddress">Cidade</label>
+                        <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade">
+                    </div>
+
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputAddress">Logradouro</label>
+                        <input type="text" class="form-control" id="logradouro" name="logradouro" placeholder="Logradouro">
+                    </div>
+
+                </div>
+
 
                 <div class="row">
-                <h6 class="m-4">CONTATO:</h6>
-                    <div class="form-group col-md-6 mt-4">
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputCity">Numero</label>
+                        <input type="number" class="form-control" id="numero" name="numero" placeholder="Nº">
+                    </div>
+
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputCEP">Complemento</label>
+                        <input type="text" class="form-control" id="complemento" name="complemento" placeholder="Complemento">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputCity">Bairro</label>
+                        <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro">
+                    </div>
+
+                    <div class="form-group col-md-6 mt-2">
+                        <label for="inputCEP">Municipio</label>
+                        <input type="text" class="form-control" id="municipio" name="municipio" placeholder="Municipio">
+                    </div>
+                </div>
+            </div>
+
+            <hr class="m-2">
+
+            <h6 class="m-4"><i class="bi bi-file-earmark-person" style="font-size: 1.5rem"></i> CONTATO :</h6>
+            <div class="group m-4">
+                <div class="row">
+                    <div class="form-group col-md-6 mt-2">
                         <label for="email">E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="E-mail" >
+                        <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@hotmail.com">
                     </div>
-                    <div class="form-group col-md-6 mt-4">
+                    <div class="form-group col-md-6 mt-2">
                         <label for="email">Confirmar E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="Confirmar E-mail">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@hotmail.com">
                     </div>
                 </div>
                 <div class="row">
-                <div class="form-group col-md-6 mt-4">
+                    <div class="form-group col-md-6 mt-2">
                         <label for="email">DDD | Telefone (19) 99999-9999</label>
-                        <input type="number" class="form-control" id="email" placeholder="Telefone ">
+                        <input type="number" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
                     </div>
 
-                <div class="form-group col-md-6 mt-4">
+                    <div class="form-group col-md-6 mt-2">
                         <label for="email">DDD | Telefone 2 (19) 99999-9999</label>
-                        <input type="number" class="form-control" id="email" placeholder="Telefone 2">
+                        <input type="number" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6 mt-4">
+                    <div class="form-group col-md-6 mt-2">
                         <label for="email">Senha</label>
-                        <input type="password" class="form-control" id="senha" placeholder="Senha">
+                        <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
                     </div>
-                    <div class="form-group col-md-6 mt-4">
+                    <div class="form-group col-md-6 mt-2">
                         <label for="email">Confirmar Senha</label>
-                        <input type="password" class="form-control" id="senha2" placeholder="Confirmar Senha">
+                        <input type="password" class="form-control" placeholder="Confirme sua senha">
                     </div>
                 </div>
 
                 <button type="submit" class="btn btn-primary mt-3" onclick="addprof()">Cadastrar</button>
             </form>
         </div>
-    </div>
-</div>
 
 
     <a href="backend/logout.php">Sair</a>

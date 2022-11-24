@@ -1,6 +1,9 @@
 
-<?php
-// função que valida o preenchimento de uma variavel
+<?php 
+
+include 'includes/conexao.php';
+
+// funcao que valida o preenchimento de uma variavel
 function validaCampoVazio($campo,$nomedocampo){
     // Exemplo simples de validação de preenchimento de variável
         
@@ -24,7 +27,7 @@ function validaCampoVazio($campo,$nomedocampo){
 function insertUpdateDelete($sql,$mensagemretorno){
 
    
-    $comando= $GLOBALS['con']->prepare($sql);
+    $comando= $GLOBALS['conn']->prepare($sql);
 
     $comando->execute();
 

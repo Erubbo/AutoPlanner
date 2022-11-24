@@ -27,111 +27,111 @@ include '../includes/conexao.php';
             <h6 class="m-4"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>DADOS PESSOAIS :</h6>
 
             <div class="form-group m-4 mt-2">
-                <form id="form-aluno">
+                <div class="row mt-4">
+                    <form action="_valida_cadastro_aluno" method="post">
 
-                    <div class="row mt-2">
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="inputEmail4">Nome Completo</label>
-                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
+                        <div class="row mt-2">
+                            <div class="form-group col-md-6 mt-2">
+                                <label for="inputEmail4">Nome Completo</label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
+                            </div>
+
+                            <div class="form-group col-md-6 mt-2">
+                                <label for="inputPassword4">Nome Social</label>
+                                <input type="text" class="form-control" id="nome_social" name="nome_social" placeholder="Nome Social">
+                            </div>
                         </div>
 
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="inputPassword4">Nome Social</label>
-                            <input type="text" class="form-control" id="nome_social" name="nome_social" placeholder="Nome Social">
-                        </div>
-                    </div>
+                        <div class="row mt-4">
+                            <div class="form-group col-md-6 mt-2">
+                                <label for="inputEmail4">Nome do Pai</label>
+                                <input type="text" class="form-control" id="pai" name="pai" placeholder="Nome do Pai">
+                            </div>
 
-                    <div class="row mt-4">
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="inputEmail4">Nome do Pai</label>
-                            <input type="text" class="form-control" id="pai" name="pai" placeholder="Nome do Pai">
-                        </div>
-
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="inputPassword4">Nome da Mãe</label>
-                            <input type="text" class="form-control" id="mae" name="mae" placeholder="Nome da Mãe">
-                        </div>
-                    </div>
-
-                    <div class="row mt-4">
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="inputEmail4">Pais Afetivos 1</label>
-                            <input type="text" class="form-control" id="pai_af" name="pai_af" placeholder="Nome do Pai">
+                            <div class="form-group col-md-6 mt-2">
+                                <label for="inputPassword4">Nome da Mãe</label>
+                                <input type="text" class="form-control" id="mae" name="mae" placeholder="Nome da Mãe">
+                            </div>
                         </div>
 
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="inputPassword4">Pais Afetivos 2</label>
-                            <input type="text" class="form-control" id="mae_af" name="mae_af" placeholder="Nome da Mãe">
-                        </div>
-                    </div>
+                        <div class="row mt-4">
+                            <div class="form-group col-md-6 mt-2">
+                                <label for="inputEmail4">Pais Afetivos 1</label>
+                                <input type="text" class="form-control" id="pai_af" name="pai_af" placeholder="Nome do Pai">
+                            </div>
 
-
-                    <div class="row mt-4">
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="inputPassword4">Data de Nascimento</label>
-                            <input type="date" class="form-control" id="data_nascimento" name="data_nascimento">
-                        </div>
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="Pagamento">Genero</label>
-                            <select class="form-select" aria-label="Default select example" id="genero" name="genero">
-
-                                <option value="1">Masculino</option>
-                                <option value="2">Feminino</option>
-                            </select>
+                            <div class="form-group col-md-6 mt-2">
+                                <label for="inputPassword4">Pais Afetivos 2</label>
+                                <input type="text" class="form-control" id="mae_af" name="mae_af" placeholder="Nome da Mãe">
+                            </div>
                         </div>
 
-                    </div>
 
-                    <div class="row">
+                        <div class="row mt-4">
+                            <div class="form-group col-md-6 mt-2">
+                                <label for="inputPassword4">Data de Nascimento</label>
+                                <input type="date" class="form-control" id="data_nascimento" name="data_nascimento">
+                            </div>
+                            <div class="form-group col-md-6 mt-2">
+                                <label for="Pagamento">Genero</label>
+                                <select class="form-select" aria-label="Default select example" id="genero" name="genero">
 
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="Pagamento">Nacionalidade</label>
-                            <select class="form-select" aria-label="Default select example" id="nacionalidade" name="nacionalidade">
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Feminino</option>
+                                </select>
+                            </div>
 
-                                <option value="1">Brasileiro</option>
-                                <option value="2">Brasileiro Naturalizado</option>
-                                <option value="1">Estrangeiro</option>
-                                <option value="1">Brasileiro Nascido no Exterior</option>
-                            </select>
                         </div>
 
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="Pagamento">Estado</label>
-                            <select class="form-select" aria-label="Default select example" id="estado" name="estado">
+                        <div class="row">
 
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espírito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-                            </select>
+                            <div class="form-group col-md-6 mt-2">
+                                <label for="Pagamento">Nacionalidade</label>
+                                <select class="form-select" aria-label="Default select example" id="nacionalidade" name="nacionalidade">
+
+                                    <option value="1">Brasileiro</option>
+                                    <option value="2">Brasileiro Naturalizado</option>
+                                    <option value="1">Estrangeiro</option>
+                                    <option value="1">Brasileiro Nascido no Exterior</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6 mt-2">
+                                <label for="Pagamento">Estado</label>
+                                <select class="form-select" aria-label="Default select example" id="estado" name="estado">
+
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
+                </div>
             </div>
-
-
             <hr class="m-2">
 
             <h6 class="m-4"><i class="bi bi-card-heading" style="font-size: 1.5rem"></i> DOCUMENTOS :</h6>
@@ -200,8 +200,7 @@ include '../includes/conexao.php';
                 <div class="row mt-2 ">
                     <div class="form-group col-md-6 mt-2">
                         <label for="inputAddress">CEP</label>
-                        <input type="text" class="form-control" id="cep" name="cep" placeholder="CEP">
-                        <button class="btn-cep" type="button" onclick="consultaCEP()"></button>
+                        <input type="number" class="form-control" id="cep" name="cep" placeholder="CEP">
                     </div>
                     <div class="form-group col-md-6 mt-2">
                         <label for="inputAddress">Logradouro</label>
@@ -275,55 +274,40 @@ include '../includes/conexao.php';
                     </div>
                     <div class="form-group col-md-6 mt-2">
                         <label for="email">Confirmar E-mail</label>
-                        <input type="email" class="form-control" id="confirma_email" name="confirma_email" placeholder="exemplo@hotmail.com">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@hotmail.com">
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md-6 mt-2">
-                        <label for="telefone">DDD | Telefone (19) 99999-9999</label>
+                        <label for="email">DDD | Telefone (19) 99999-9999</label>
                         <input type="number" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
                     </div>
 
                     <div class="form-group col-md-6 mt-2">
-                        <label for="telefone2">DDD | Telefone 2 (19) 99999-9999</label>
+                        <label for="email">DDD | Telefone 2 (19) 99999-9999</label>
                         <input type="number" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md-6 mt-2">
-                        <label for="senha">Senha</label>
+                        <label for="email">Senha</label>
                         <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
                     </div>
                     <div class="form-group col-md-6 mt-2">
-                        <label for="senha2">Confirmar Senha</label>
+                        <label for="email">Confirmar Senha</label>
                         <input type="password" class="form-control" placeholder="Confirme sua senha">
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary mt-3" onclick="addaluno()">Cadastrar</button>
-
-                <a href="backend/logout.php"><i class="bi bi-x-circle" style="font-size: 1rem"></i><button type="submit" class="btn btn-danger mt-3" onclick="addaluno()">Sair</button></a>
+                <button type="submit" class="btn btn-primary mt-3">Cadastrar</button>
                 </form>
             </div>
         </div>
+    </div>
 
 
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
-   
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-
-    <!-- SWEET ALERT -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <!-- INPUT MASK -->
-    <script src="assets/js/jquery.inputmask.min.js"></script>
-
-
-    <script src="../../js/addcadastros.js"></script>
+    <a href="backend/logout.php"><i class="bi bi-x-circle" style="font-size: 1rem"></i>Sair</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>
