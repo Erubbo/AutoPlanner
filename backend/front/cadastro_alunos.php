@@ -296,7 +296,7 @@ include '../includes/conexao.php';
                     </div>
                     <div class="form-group col-md-6 mt-2">
                         <label for="senha2">Confirmar Senha</label>
-                        <input type="password" class="form-control" placeholder="Confirme sua senha">
+                        <input type="password" class="form-control" id="confirmar" name="confirmar" placeholder="Confirme sua senha">
                     </div>
                 </div>
 
@@ -320,8 +320,8 @@ include '../includes/conexao.php';
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- INPUT MASK -->
-    <script src="assets/js/jquery.inputmask.min.js"></script>
-
+    <script src="../assets/js/jquery.inputmask.min.js"></script>
+    
 
     <script src="../../js/addcadastros.js"></script>
 </body>
