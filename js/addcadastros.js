@@ -70,3 +70,23 @@ const addaluno = () => {
             // result.retorno == 'ok' ? $('#form-aluno')[0].reset() : ''
         })
 };
+
+const addprof = () => {
+  let dados = new FormData($('#form-prof')[0]);
+
+  const result = fetch('../addprof.php', {
+      method: 'POST',
+      body: dados
+  })
+      .then((response) => response.json())
+      .then((result) => {
+          // Aqui é tratado o retorno ao front
+
+          Swal.fire({
+              title: 'Atenção',
+              text: result.mensagem,
+              icon: result.retorno == 'ok' ? 'success' : 'error'
+          })
+          // result.retorno == 'ok' ? $('#form-prof')[0].reset() : ''
+      })
+};

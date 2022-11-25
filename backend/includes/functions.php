@@ -22,8 +22,6 @@ function validaCampoVazio($campo,$nomedocampo){
         // encerra o script
         
     }
-        
-
 }
 
 function insertUpdateDelete($sql,$mensagemretorno){
@@ -43,8 +41,6 @@ function insertUpdateDelete($sql,$mensagemretorno){
 
     // retorno em formato JSON
     echo $json;
-
-
 }
 
 function pdocatch($erro){
@@ -58,4 +54,7 @@ function pdocatch($erro){
 
    echo $json;
 }
+
+
+
 ?>
