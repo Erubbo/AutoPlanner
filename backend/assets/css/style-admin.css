@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding:0;
+}
+
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 2fr 10fr;
+}
+
+.admin-menu{
+    background-color: #4e73df;
+    padding: 15px;
+    height: 100vh;
+}
+
+.admin-corpo{
+    background-color: #cccccc;
+    overflow-y: scroll;
+    padding: 15px;
+}
+
+nav ul{
+    padding: 5px;    
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 6px 10px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#FFF;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover{
+    /* color: rgb(202, 198, 198); */
+    font-weight: bold;
+    /* color: #3a3939b9 */
+}
+
+.admin-logo{
+    font-size: 1.3rem;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.admin-logout{
+    color: #FFF;
+    font-size: 1.2rem; 
+}
+
+.admin-logout i{
+    cursor: pointer;
+}
+
+.admin-logout i:hover{
+
+}
+
+.menu-ativo{
+    font-weight: bold;
+}
+
+.grid-professores{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.grid-professores input{
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #3a3939b9;
+    /* border:none; */
+}
+
+.grid-professores select{
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #3a3939b9;
+    border-radius: 4px;
+    /* border:none; */
+}
+
+
+.btn-cadastrar{
+    padding: 6px 10px;
+    background-color: rgb(101, 168, 101);
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.btn-cadastrar:hover{
+    filter: brightness(1.20);
+    transition: 2s;
+}
+
+.div-cep{
+    display: flex;
+}
+
+.input-cep{
+    width: 100% !important;
+    border-radius: 4px 0px 0px 4px !important;
+    border-right: 0 !important;
+}
+
+
+.btn-cep{
+    padding: 6px 10px;
+    background-color: #4ea5df;
+    cursor: pointer;
+    border:1px solid #000;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.div-professores{
+    background-color: #FFF;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+
+
+.titulo-principal:hover{
+   
+}
+
+
+/* tabs */
+.tabs{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    /* border-bottom: 1px solid #3a3939b9; */
+}
+
+.titulo-principal{
+    /* border-bottom: 1px solid #3a3939b9; */
+    
+    border:1px solid #000;
+    border-bottom: 1px solid #3a3939b9;
+    padding: 3px 10px;
+    padding-bottom: 0;
+    border-radius: 4px 4px 0px 0px;
+    cursor: pointer;
+}
+
+
+.tab-ativo{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; */
+    /* background-color: #4ea5dfaf; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    font-weight: bold;
+    border-bottom: none;
+}
+
+
+.titulo-texto{
+    margin: 7px;
+}
+
+#div-listagem{
+    /* oculta a div */
+    display: none;
+}
+
+figure{
+    border: 1px solid #3a3939b9;
+    border-radius: 4px;
+    padding: 10px;
+    display: grid;
+    width: 100%;
+}
+
+figure>img{
+    display: grid;
+    justify-self: center;
+}
+
+#grid-restultado-listagem{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.resultado-destaque{
+    font-weight: bold;
+}
+
+
+/* tabela css */
+#tabela-listagem table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top:15px;
+  }
+  
+  #tabela-listagem table td, #tabela-listagem table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #tabela-listagem table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #tabela-listagem table tr:hover {background-color: #ddd;}
+  
+  #tabela-listagem table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4e73df;
+    color: white;
+  }
+
+
+  .btn-visualizar{
+      cursor: pointer;
+      padding: 6px 12px;
+      background-color: #4ea5df;
+      border: none;
+      border-radius: 4px;
+      color: #FFF;
+      font-weight: bold;
+  }
