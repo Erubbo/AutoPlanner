@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   calendar1();
   calendar2();
+  calendar3();
 });
 
 const calendar1 = () => {
@@ -24,7 +25,7 @@ const calendar1 = () => {
     events: [
       {
         title: "All Day Event",
-        start: "2022-09-01",
+        start: "2022-11-24",
       },
 
       {
@@ -40,13 +41,13 @@ const calendar1 = () => {
       },
       {
         title: "Conference",
-        start: "2022-09-11",
-        end: "2022-09-13",
+        start: "2022-11-24",
+        end: "2022-11-24",
       },
       {
         title: "Meeting",
-        start: "2022-09-12T10:30:00",
-        end: "2022-09-12T12:30:00",
+        start: "2022-11-24T10:30:00",
+        end: "2022-11-24T12:30:00",
       },
       {
         title: "Lunch",
@@ -63,6 +64,7 @@ const calendar2 = () => {
   var calendarEl = document.getElementById("calendar2");
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
+    height: 450,
     headerToolbar: {
       left: "",
       center: "title",
@@ -75,60 +77,7 @@ const calendar2 = () => {
     editable: true,
     dayMaxEvents: true, // allow "more" link when too many events
     events: [
-      {
-        title: "All Day Event",
-        start: "2020-09-01",
-      },
-      {
-        title: "Long Event",
-        start: "2020-09-07",
-        end: "2020-09-10",
-      },
-      {
-        groupId: 999,
-        title: "Repeating Event",
-        start: "2020-09-09T16:00:00",
-      },
-      {
-        groupId: 999,
-        title: "Repeating Event",
-        start: "2020-09-16T16:00:00",
-      },
-      {
-        title: "Conference",
-        start: "2020-09-11",
-        end: "2020-09-13",
-      },
-      {
-        title: "Meeting",
-        start: "2020-09-12T10:30:00",
-        end: "2020-09-12T12:30:00",
-      },
-      {
-        title: "Lunch",
-        start: "2020-09-12T12:00:00",
-      },
-      {
-        title: "Meeting",
-        start: "2020-09-12T14:30:00",
-      },
-      {
-        title: "Happy Hour",
-        start: "2020-09-12T17:30:00",
-      },
-      {
-        title: "Dinner",
-        start: "2020-09-12T20:00:00",
-      },
-      {
-        title: "Birthday Party",
-        start: "2020-09-13T07:00:00",
-      },
-      {
-        title: "Click for Google",
-        url: "http://google.com/",
-        start: "2020-09-28",
-      },
+     
     ],
   });
 
@@ -151,3 +100,30 @@ const calendar2 = () => {
   });
 };
 
+const calendar3 = () => {
+  var calendarEl = document.getElementById('calendar3');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    height: 450,
+    // stickyHeaderDates: false, // for disabling
+
+    headerToolbar: {
+      left: '',
+      center: 'title',
+      right: ''
+    },
+
+    // customize the button names,
+    // otherwise they'd all just say "list"
+ 
+
+    initialView: 'listYear',
+    navLinks: true, // can click day/week names to navigate views
+    editable: true,
+    events: [
+     
+    ]
+  });
+
+  calendar.render();
+};

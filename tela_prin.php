@@ -19,8 +19,12 @@
 
         <div id='calendar1' class="col-9"></div>
 
-        <div id='calendar2' class="col h-30"></div>
-    
+        <div class="coluna col">
+            <div id='calendar2'></div>
+
+            <div id='calendar3'></div>
+
+        </div>
     </div>
     <a href="backend/logout.php">Sair</a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
