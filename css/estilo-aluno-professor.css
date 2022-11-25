@@ -1,0 +1,16 @@
+.div-cep{
+    display: flex;
+}
+
+.input-cep{
+    width: 80% !important;
+}
+
+.btn-cep{
+    padding: 6px 10px;
+
+}
+
+h6{
+    color: brown !important;
+}
