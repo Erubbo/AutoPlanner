@@ -4223,7 +4223,7 @@ var FullCalendar = (function (exports) {
                     : "This " + buttonText;
             },
         }, viewHint: '$0 view', navLinkHint: 'Go to $0', moreLinkHint: function (eventCnt) {
-            return "Show " + eventCnt + " more event" + (eventCnt === 1 ? '' : 's');
+            return "Show " + eventCnt + " mais" + (eventCnt === 1 ? '' : 's');
         } });
     function organizeRawLocales(explicitRawLocales) {
         var defaultCode = explicitRawLocales.length > 0 ? explicitRawLocales[0].code : 'en';
