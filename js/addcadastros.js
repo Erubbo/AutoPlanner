@@ -68,7 +68,7 @@ const addaluno = () => {
                 text: result.mensagem,
                 icon: result.retorno == 'ok' ? 'success' : 'error'
             })
-            // result.retorno == 'ok' ? $('#form-aluno')[0].reset() : ''
+            result.retorno == 'ok' ? $('#form-aluno')[0].reset() : ''
         })
 };
 
