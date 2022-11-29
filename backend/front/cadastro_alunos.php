@@ -286,12 +286,12 @@ include '../includes/conexao.php';
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="telefone">DDD | Telefone (19) 99999-9999</label>
-                        <input type="number" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
+                        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
                     </div>
 
                     <div class="form-group col-md-6">
                         <label for="telefone2">DDD | Telefone 2 (19) 99999-9999</label>
-                        <input type="number" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
+                        <input type="text" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
                     </div>
                 </div>
                 <div class="row">
@@ -301,7 +301,7 @@ include '../includes/conexao.php';
                     </div>
                     <div class="form-group col-md-6">
                         <label for="senha2">Confirmar Senha</label>
-                        <input type="password" class="form-control" placeholder="Confirme sua senha">
+                        <input type="password" class="form-control" id="confirmar" name="confirmar" placeholder="Confirme sua senha">
                     </div>
                 </div>
 
@@ -328,7 +328,17 @@ include '../includes/conexao.php';
         <script src="assets/js/jquery.inputmask.min.js"></script>
 
 
-        <script src="../../js/addcadastros.js"></script>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- INPUT MASK -->
+    <script src="../assets/js/jquery.inputmask.min.js"></script>
+    
+
+    <script src="../../js/addcadastros.js"></script>
 </body>
 
 </html>
