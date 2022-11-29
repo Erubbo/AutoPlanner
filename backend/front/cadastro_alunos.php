@@ -29,50 +29,50 @@ include '../includes/conexao.php';
             <div class="form-group m-4 mt-2">
                 <form id="form-aluno">
 
-                    <div class="row mt-2">
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="inputEmail4">Nome Completo</label>
+                    <div class="row ">
+                        <div class="form-group col-md-6">
+                            <label for="nome">Nome Completo</label>
                             <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
                         </div>
 
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="inputPassword4">Nome Social</label>
+                        <div class="form-group col-md-6">
+                            <label for="nome_social">Nome Social</label>
                             <input type="text" class="form-control" id="nome_social" name="nome_social" placeholder="Nome Social">
                         </div>
                     </div>
 
-                    <div class="row mt-4">
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="inputEmail4">Nome do Pai</label>
+                    <div class="row mt-2">
+                        <div class="form-group col-md-6">
+                            <label for="pai">Nome do Pai</label>
                             <input type="text" class="form-control" id="pai" name="pai" placeholder="Nome do Pai">
                         </div>
 
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="inputPassword4">Nome da Mãe</label>
+                        <div class="form-group col-md-6 ">
+                            <label for="mae">Nome da Mãe</label>
                             <input type="text" class="form-control" id="mae" name="mae" placeholder="Nome da Mãe">
                         </div>
                     </div>
 
-                    <div class="row mt-4">
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="inputEmail4">Pais Afetivos 1</label>
+                    <div class="row mt-2">
+                        <div class="form-group col-md-6">
+                            <label for="pai_af">Pais Afetivos 1</label>
                             <input type="text" class="form-control" id="pai_af" name="pai_af" placeholder="Nome do Pai">
                         </div>
 
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="inputPassword4">Pais Afetivos 2</label>
+                        <div class="form-group col-md-6">
+                            <label for="mae_af">Pais Afetivos 2</label>
                             <input type="text" class="form-control" id="mae_af" name="mae_af" placeholder="Nome da Mãe">
                         </div>
                     </div>
 
 
-                    <div class="row mt-4">
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="inputPassword4">Data de Nascimento</label>
+                    <div class="row mt-2">
+                        <div class="form-group col-md-6">
+                            <label for="data_nascimento">Data de Nascimento</label>
                             <input type="date" class="form-control" id="data_nascimento" name="data_nascimento">
                         </div>
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="Pagamento">Genero</label>
+                        <div class="form-group col-md-6">
+                            <label for="genero">Genero</label>
                             <select class="form-select" aria-label="Default select example" id="genero" name="genero">
 
                                 <option value="1">Masculino</option>
@@ -84,8 +84,8 @@ include '../includes/conexao.php';
 
                     <div class="row">
 
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="Pagamento">Nacionalidade</label>
+                        <div class="form-group col-md-6">
+                            <label for="nacionalidade">Nacionalidade</label>
                             <select class="form-select" aria-label="Default select example" id="nacionalidade" name="nacionalidade">
 
                                 <option value="1">Brasileiro</option>
@@ -95,8 +95,8 @@ include '../includes/conexao.php';
                             </select>
                         </div>
 
-                        <div class="form-group col-md-6 mt-2">
-                            <label for="Pagamento">Estado</label>
+                        <div class="form-group col-md-6">
+                            <label for="estado">Estado</label>
                             <select class="form-select" aria-label="Default select example" id="estado" name="estado">
 
                                 <option value="AC">Acre</option>
@@ -138,25 +138,25 @@ include '../includes/conexao.php';
 
             <div class="group m-4 mt-2">
                 <div class="row ">
-                    <div class="form-group col-md-6 mt-2">
-                        <label for="inputPassword4">CPF</label>
+                    <div class="form-group col-md-6">
+                        <label for="cpf">CPF</label>
                         <input type="number" class="form-control" id="cpf" name="cpf" placeholder="CPF">
                     </div>
 
 
 
-                    <div class="form-group col-md-6 mt-2">
-                        <label for="inputPassword4">RG</label>
+                    <div class="form-group col-md-6">
+                        <label for="rg">RG</label>
                         <input type="number" class="form-control" id="rg" name="rg" placeholder="RG">
                     </div>
 
-                    <div class="form-group col-md-6 mt-2">
-                        <label for="inputPassword4">Orgão Emissor</label>
+                    <div class="form-group col-md-6">
+                        <label for="orgao_emissor">Orgão Emissor</label>
                         <input type="text" class="form-control" id="orgao_emissor" name="orgao_emissor" placeholder="RG">
                     </div>
 
-                    <div class="form-group col-md-6 mt-2">
-                        <label for="Pagamento">UF</label>
+                    <div class="form-group col-md-6">
+                        <label for="uf">UF</label>
                         <select class="form-select" aria-label="Default select example" id="uf" name="uf">
 
                             <option value="AC">AC</option>
@@ -198,13 +198,18 @@ include '../includes/conexao.php';
             <h6 class="m-4"><i class="bi bi-geo-alt" style="font-size: 1.5rem"></i> ENDEREÇO :</h6>
             <div class="group m-4">
                 <div class="row mt-2 ">
-                    <div class="form-group col-md-6 mt-2">
-                        <label for="inputAddress">CEP</label>
-                        <input type="text" class="form-control" id="cep" name="cep" placeholder="CEP">
-                        <button class="btn-cep" type="button" onclick="consultaCEP()"></button>
+
+                    <div class="form-group col-md-6">
+                        <label for="cep">CEP</label>
+                        <div class="input-group mb-3">
+
+                            <input id="cep" name="cep" type="text" class="form-control" placeholder="CEP">
+                            <span class="input-group-text" id="basic-addon1"><a href="" onclick="consultaCep()"><i class="bi bi-search "></i></a></span>
+                        </div>
                     </div>
-                    <div class="form-group col-md-6 mt-2">
-                        <label for="inputAddress">Logradouro</label>
+
+                    <div class="form-group col-md-6">
+                        <label for="logradouro">Logradouro</label>
                         <input type="text" class="form-control" id="logradouro" name="logradouro" placeholder="Logradouro">
                     </div>
 
@@ -212,26 +217,26 @@ include '../includes/conexao.php';
 
 
                 <div class="row">
-                    <div class="form-group col-md-6 mt-2">
-                        <label for="inputCity">Numero</label>
+                    <div class="form-group col-md-6">
+                        <label for="numero">Numero</label>
                         <input type="number" class="form-control" id="numero" name="numero" placeholder="Nº">
                     </div>
 
-                    <div class="form-group col-md-6 mt-2">
-                        <label for="inputCEP">Complemento</label>
+                    <div class="form-group col-md-6">
+                        <label for="complemento">Complemento</label>
                         <input type="text" class="form-control" id="complemento" name="complemento" placeholder="Complemento">
                     </div>
                 </div>
 
 
                 <div class="row">
-                    <div class="form-group col-md-6 mt-2">
-                        <label for="inputCity">Bairro</label>
+                    <div class="form-group col-md-6">
+                        <label for="bairro">Bairro</label>
                         <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro">
                     </div>
 
-                    <div class="form-group col-md-6 mt-2">
-                        <label for="inputCEP">Municipio</label>
+                    <div class="form-group col-md-6">
+                        <label for="municipio">Municipio</label>
                         <input type="text" class="form-control" id="municipio" name="municipio" placeholder="Municipio">
                     </div>
                 </div>
@@ -242,8 +247,8 @@ include '../includes/conexao.php';
             <div class="group m-4">
 
                 <div class="row">
-                    <div class="form-group col-md-6 mt-2">
-                        <label for="Pagamento">Pagamento</label>
+                    <div class="form-group col-md-6">
+                        <label for="pagamento">Pagamento</label>
                         <select class="form-select" aria-label="Default select example" id="pagamento" name="pagamento">
 
                             <option value="1">Dinheiro</option>
@@ -252,8 +257,8 @@ include '../includes/conexao.php';
                         </select>
                     </div>
 
-                    <div class="form-group col-md-6 mt-2">
-                        <label for="Pagamento">Disponibilidade</label>
+                    <div class="form-group col-md-6">
+                        <label for="disponibilidade">Disponibilidade</label>
                         <select class="form-select" aria-label="Default select example" id="disponibilidade" name="disponibilidade">
 
                             <option value="1">Manhã (07:00h-11:00h)</option>
@@ -269,40 +274,40 @@ include '../includes/conexao.php';
             <h6 class="m-4"><i class="bi bi-file-earmark-person" style="font-size: 1.5rem"></i> CONTATO :</h6>
             <div class="group m-4">
                 <div class="row">
-                    <div class="form-group col-md-6 mt-2">
+                    <div class="form-group col-md-6">
                         <label for="email">E-mail</label>
                         <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@hotmail.com">
                     </div>
-                    <div class="form-group col-md-6 mt-2">
-                        <label for="email">Confirmar E-mail</label>
+                    <div class="form-group col-md-6">
+                        <label for="confirma_email">Confirmar E-mail</label>
                         <input type="email" class="form-control" id="confirma_email" name="confirma_email" placeholder="exemplo@hotmail.com">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6 mt-2">
+                    <div class="form-group col-md-6">
                         <label for="telefone">DDD | Telefone (19) 99999-9999</label>
-                        <input type="number" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
+                        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
                     </div>
 
-                    <div class="form-group col-md-6 mt-2">
+                    <div class="form-group col-md-6">
                         <label for="telefone2">DDD | Telefone 2 (19) 99999-9999</label>
-                        <input type="number" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
+                        <input type="text" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6 mt-2">
+                    <div class="form-group col-md-6">
                         <label for="senha">Senha</label>
                         <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
                     </div>
-                    <div class="form-group col-md-6 mt-2">
+                    <div class="form-group col-md-6">
                         <label for="senha2">Confirmar Senha</label>
-                        <input type="password" class="form-control" placeholder="Confirme sua senha">
+                        <input type="password" class="form-control" id="confirmar" name="confirmar" placeholder="Confirme sua senha">
                     </div>
                 </div>
 
                 <button type="submit" class="btn btn-primary mt-3" onclick="addaluno()">Cadastrar</button>
 
-                <a href="backend/logout.php"><i class="bi bi-x-circle" style="font-size: 1rem"></i><button type="submit" class="btn btn-danger mt-3" onclick="addaluno()">Sair</button></a>
+                <a href="backend/logout.php"><button type="submit" class="btn btn-danger mt-3" onclick="addaluno()">Sair</button></a>
                 </form>
             </div>
         </div>
@@ -312,7 +317,17 @@ include '../includes/conexao.php';
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
-   
+
+        <!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+        <!-- SWEET ALERT -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <!-- INPUT MASK -->
+        <script src="assets/js/jquery.inputmask.min.js"></script>
+
+
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
@@ -320,8 +335,8 @@ include '../includes/conexao.php';
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- INPUT MASK -->
-    <script src="assets/js/jquery.inputmask.min.js"></script>
-
+    <script src="../assets/js/jquery.inputmask.min.js"></script>
+    
 
     <script src="../../js/addcadastros.js"></script>
 </body>
