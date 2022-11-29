@@ -335,8 +335,8 @@ include '../includes/conexao.php';
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- INPUT MASK -->
-    <script src="assets/js/jquery.inputmask.min.js"></script>
-
+    <script src="../assets/js/jquery.inputmask.min.js"></script>
+    
 
     <script src="../../js/addcadastros.js"></script>
 </body>

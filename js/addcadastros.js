@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
     $("#cpf").inputmask("999.999.999-99");
     $("#rg").inputmask("99.999.999-9");
     $("#telefone").inputmask("(99) 99999-9999");

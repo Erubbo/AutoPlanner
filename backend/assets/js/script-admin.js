@@ -69,29 +69,29 @@ const listaTipo = () => {
     });
 };
 
-const addUsuarios = () => {
-  let dados = new FormData($("#form-professores")[0]);
+// const addUsuarios = () => {
+//   let dados = new FormData($("#form-professores")[0]);
 
-  const result = fetch("../backend/addUsuarios.php", {
-    method: "POST",
-    body: dados,
-  })
-    .then((response) => response.json())
-    .then((result) => {
-      // aqui tratamos o retorno do backend
+//   const result = fetch("../backend/addUsuarios.php", {
+//     method: "POST",
+//     body: dados,
+//   })
+//     .then((response) => response.json())
+//     .then((result) => {
+//       // aqui tratamos o retorno do backend
 
-      Swal.fire({
-        icon: result.retorno == 'ok' ? 'success' : 'error',
-        title: result.retorno == 'ok' ? 'Sucesso!' : 'Atenção!',
-        text: result.mensagem,
-      });
+//       Swal.fire({
+//         icon: result.retorno == 'ok' ? 'success' : 'error',
+//         title: result.retorno == 'ok' ? 'Sucesso!' : 'Atenção!',
+//         text: result.mensagem,
+//       });
 
-      result.retorno == 'ok' ? $('#form-professores')[0].reset() : ''
+//       result.retorno == 'ok' ? $('#form-professores')[0].reset() : ''
 
 
       
-    });
-};
+//     });
+// };
 
 
 
