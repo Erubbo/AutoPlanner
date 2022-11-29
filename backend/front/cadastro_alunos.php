@@ -140,14 +140,14 @@ include '../includes/conexao.php';
                 <div class="row ">
                     <div class="form-group col-md-6">
                         <label for="cpf">CPF</label>
-                        <input type="number" class="form-control" id="cpf" name="cpf" placeholder="CPF">
+                        <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF">
                     </div>
 
 
 
                     <div class="form-group col-md-6">
                         <label for="rg">RG</label>
-                        <input type="number" class="form-control" id="rg" name="rg" placeholder="RG">
+                        <input type="text" class="form-control" id="rg" name="rg" placeholder="RG">
                     </div>
 
                     <div class="form-group col-md-6">
