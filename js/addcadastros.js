@@ -8,7 +8,7 @@ $(document).ready(function () {
   
   });
   
-  const consultaCEP = () => {
+  const consultaCep = () => {
     // captura o valor do cep via JQUERY
     let cep = $("#cep").val();
   
@@ -39,9 +39,9 @@ $(document).ready(function () {
             text: "CEP não encontrado!",
           });
         } else {
-          $("#rua").val(result.logradouro).prop("disabled", false);
+          $("#logradouro").val(result.logradouro).prop("disabled", false);
           $("#bairro").val(result.bairro).prop("disabled", false);
-          $("#cidade").val(result.localidade).prop("disabled", false);
+          $("#municipio").val(result.localidade).prop("disabled", false);
           $("#estado").val(result.uf).prop("disabled", false);
   
           // coloca o focus do usuário no campo numero

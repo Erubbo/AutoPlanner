@@ -9,7 +9,7 @@ include '../includes/conexao.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro Professores</title>
     <link rel="stylesheet" href="">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -149,7 +149,7 @@ include '../includes/conexao.php';
                                         <div class="input-group mb-3">
 
                                             <input id="cep" name="cep" type="text" class="form-control" placeholder="CEP">
-                                            <span class="input-group-text" id="basic-addon1"><a href="" onclick="consultaCep()"><i class="bi bi-search "></i></a></span>
+                                            <button class="input-group-text" type="button" id="basic-addon1" onclick="consultaCep()"><i class="bi bi-search "></i></button>
                                         </div>
 
                                     </div>
@@ -208,13 +208,13 @@ include '../includes/conexao.php';
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6 mt-2">
-                                        <label for="telefone">DDD | Telefone (19) 99999-9999</label>
-                                        <input type="number" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
+                                        <label for="telefone">DDD | Telefone </label>
+                                        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
                                     </div>
 
                                     <div class="form-group col-md-6 mt-2 ">
-                                        <label for="telefone2">DDD | Telefone 2 (19) 99999-9999</label>
-                                        <input type="number" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
+                                        <label for="telefone2">DDD | Telefone 2 </label>
+                                        <input type="text" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
                                     </div>
                                 </div>
                                 <div class="row">
