@@ -9,7 +9,7 @@ include '../includes/conexao.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro Alunos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
@@ -140,14 +140,14 @@ include '../includes/conexao.php';
                 <div class="row ">
                     <div class="form-group col-md-6">
                         <label for="cpf">CPF</label>
-                        <input type="number" class="form-control" id="cpf" name="cpf" placeholder="CPF">
+                        <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF">
                     </div>
 
 
 
                     <div class="form-group col-md-6">
                         <label for="rg">RG</label>
-                        <input type="number" class="form-control" id="rg" name="rg" placeholder="RG">
+                        <input type="text" class="form-control" id="rg" name="rg" placeholder="RG">
                     </div>
 
                     <div class="form-group col-md-6">
@@ -204,7 +204,7 @@ include '../includes/conexao.php';
                         <div class="input-group mb-3">
 
                             <input id="cep" name="cep" type="text" class="form-control" placeholder="CEP">
-                            <span class="input-group-text" id="basic-addon1"><a href="" onclick="consultaCep()"><i class="bi bi-search "></i></a></span>
+                            <button class="input-group-text" type="button" id="basic-addon1" onclick="consultaCep()"><i class="bi bi-search "></i></button>
                         </div>
                     </div>
 
@@ -219,7 +219,7 @@ include '../includes/conexao.php';
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="numero">Numero</label>
-                        <input type="number" class="form-control" id="numero" name="numero" placeholder="Nº">
+                        <input type="text" class="form-control" id="numero" name="numero" placeholder="Nº">
                     </div>
 
                     <div class="form-group col-md-6">
@@ -285,12 +285,12 @@ include '../includes/conexao.php';
                 </div>
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="telefone">DDD | Telefone (19) 99999-9999</label>
+                        <label for="telefone">DDD | Telefone</label>
                         <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
                     </div>
 
                     <div class="form-group col-md-6">
-                        <label for="telefone2">DDD | Telefone 2 (19) 99999-9999</label>
+                        <label for="telefone2">DDD | Telefone 2 </label>
                         <input type="text" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
                     </div>
                 </div>
@@ -300,12 +300,12 @@ include '../includes/conexao.php';
                         <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="senha2">Confirmar Senha</label>
+                        <label for="confirmar">Confirmar Senha</label>
                         <input type="password" class="form-control" id="confirmar" name="confirmar" placeholder="Confirme sua senha">
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary mt-3" onclick="addaluno()">Cadastrar</button>
+                <button type="button" class="btn btn-primary mt-3" onclick="addaluno()">Cadastrar</button>
 
                 <a href="backend/logout.php"><button type="submit" class="btn btn-danger mt-3" onclick="addaluno()">Sair</button></a>
                 </form>
@@ -318,16 +318,7 @@ include '../includes/conexao.php';
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 
-        <!-- JQUERY -->
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-
-        <!-- SWEET ALERT -->
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-        <!-- INPUT MASK -->
-        <script src="assets/js/jquery.inputmask.min.js"></script>
-
-
+        
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 

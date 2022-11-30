@@ -82,20 +82,19 @@ try {
 
     $senha =  sha1($senha);
 
-    $sql = "INSERT INTO tb_aluno (nome, pai, mae, nome_social, pai_af, mae_af, data_nascimento, genero, nacionalidade, cpf, rg, orgao_emissor, uf, email, telefone, telefone2, senha) VALUES ('$nome','$pai','$mae','$nome_social','$pai_af','$mae_af','$data_nascimento','$genero','$nacionalidade','$cpf','$rg','$orgao_emissor','$uf','$email','$telefone','$telefone2','$senha')";
+    // add endereço 
+    $sql = "INSERT INTO Tb_endereco (cep, logradouro, numero, complemento, bairro, municipio, estado, id_usuario) VALUES ('$cep','$logradouro','$numero ','$complemento','$bairro','$municipio','$estado','$id_usuario')";
 
     $command = $conn->prepare($sql);
 
     $command-> execute();
 
-
-
     // captura o id da tabela do comandoi executado acima 
     // necessario id para insert na tabela de endereços 
-    $id_usuario = $conn-> lastInsertId();
+    $id_endereco = $conn-> lastInsertId();
 
-    // add endereço 
-    $sql = "INSERT INTO Tb_endereco (cep, logradouro, numero, complemento, bairro, municipio, estado, id_usuario) VALUES ('$cep','$logradouro','$numero ','$complemento','$bairro','$municipio','$estado','$id_usuario')";
+    
+    $sql = "INSERT INTO tb_aluno (nome, pai, mae, nome_social, pai_af, mae_af, data_nascimento, genero, nacionalidade, cpf, rg, orgao_emissor, uf, email, telefone, telefone2, senha) VALUES ('$nome','$pai','$mae','$nome_social','$pai_af','$mae_af','$data_nascimento','$genero','$nacionalidade','$cpf','$rg','$orgao_emissor','$uf','$email','$telefone','$telefone2','$senha')";
 
     $msg = "Usuário adicionado com sucesso!";
 

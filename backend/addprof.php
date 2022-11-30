@@ -6,7 +6,7 @@
     try{
 
         // define os caracteres que iremos remover dos campos preenchidos no form (replace)
-        $carac = array('(',')','-',' ','.');
+        $limpa = array('(',')','-',' ','.');
 
         $nome            = $_POST['nome'];
         $data_nascimento = $_POST['data_nascimento'];
@@ -23,14 +23,6 @@
         $senha           = $_POST['senha'];
         $confirmar       = $_POST['confirmar'];
 
-        // endereço
-        $cep = str_replace($limpa, '', $_POST['cep']);
-        $logradouro = $_POST['logradouro'];
-        $numero = str_replace($limpa, '', $_POST['numero']);
-        $complemento = $_POST['complemento'];
-        $bairro = $_POST['bairro'];
-        $municipio = $_POST['municipio'];
-        $estado = $_POST['estado'];
         
         // executa a função que verifica se o campo está preenchido
         validaCampoVazio($nome, 'nome');
@@ -45,9 +37,6 @@
         validaCampoVazio($senha, 'senha');
         validaCampoVazio($confirmar, 'confirmar senha');
         
-        // endereço
-        validaCampoVazio($cep, 'cep');
-        validaCampoVazio($numero, 'numero');
 
     
 
