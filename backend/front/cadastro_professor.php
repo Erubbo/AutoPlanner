@@ -37,12 +37,12 @@ include '../includes/conexao.php';
                             <div class="group m-4">
                                 <div class="row mt-2">
                                     <div class="form-group col-md-6">
-                                        <label for="nome">Nome Completo</label>
+                                        <label for="nome">Nome Completo *</label>
                                         <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <label for="data_nascimento">Data de Nascimento</label>
+                                        <label for="data_nascimento">Data de Nascimento *</label>
                                         <input type="date" class="form-control" id="data_nascimento" name="data_nascimento">
                                     </div>
                                 </div>
@@ -63,7 +63,7 @@ include '../includes/conexao.php';
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <label for="nacionalidade">Nacionalidade</label>
+                                        <label for="nacionalidade">Nacionalidade *</label>
                                         <select class="form-select" aria-label="Default select example" id="nacionalidade" name="nacionalidade">
 
                                             <option value="0" selected disabled>Selecione...</option>
@@ -85,24 +85,24 @@ include '../includes/conexao.php';
                             <div class="group m-4 mt-2">
                                 <div class="row ">
                                     <div class="form-group col-md-6">
-                                        <label for="cpf">CPF</label>
+                                        <label for="cpf">CPF *</label>
                                         <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF">
                                     </div>
 
 
 
                                     <div class="form-group col-md-6">
-                                        <label for="rg">RG</label>
+                                        <label for="rg">RG *</label>
                                         <input type="text" class="form-control" id="rg" name="rg" placeholder="RG">
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <label for="orgao_emissor">Orgão Emissor</label>
+                                        <label for="orgao_emissor">Orgão Emissor *</label>
                                         <input type="text" class="form-control" id="orgao_emissor" name="orgao_emissor" placeholder="RG">
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <label for="uf">UF</label>
+                                        <label for="uf">UF *</label>
                                         <select class="form-select" aria-label="Default select example" id="uf" name="uf">
 
                                             <option value="0" selected disabled>Selecione...</option>
@@ -145,7 +145,7 @@ include '../includes/conexao.php';
 
                                     <div class="form-group col-md-6">
 
-                                        <label for="cep">CEP</label>
+                                        <label for="cep">CEP *</label>
                                         <div class="input-group mb-3">
 
                                             <input id="cep" name="cep" type="text" class="form-control" placeholder="CEP">
@@ -166,7 +166,7 @@ include '../includes/conexao.php';
 
 
                                     <div class="form-group col-md-6">
-                                        <label for="numero">Numero</label>
+                                        <label for="numero">Numero *</label>
                                         <input type="number" class="form-control" id="numero" name="numero" placeholder="Nº">
                                     </div>
 
@@ -198,7 +198,7 @@ include '../includes/conexao.php';
                             <div class="group m-4">
                                 <div class="row">
                                     <div class="form-group col-md-6 mt-2">
-                                        <label for="email">E-mail</label>
+                                        <label for="email">E-mail *</label>
                                         <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@hotmail.com">
                                     </div>
                                     <div class="form-group col-md-6 mt-2">
@@ -208,7 +208,7 @@ include '../includes/conexao.php';
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6 mt-2">
-                                        <label for="telefone">DDD | Telefone </label>
+                                        <label for="telefone">DDD | Telefone * </label>
                                         <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
                                     </div>
 
