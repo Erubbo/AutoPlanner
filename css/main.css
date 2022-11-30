@@ -628,3 +628,10 @@ input.input100 {
   background: #333333;
   color: #fff;
 }
+
+#calendar2{
+  overflow: hidden;
+}
+#calendar2::-webkit-scrollbar {
+  display: none;
+  }

@@ -30,8 +30,8 @@ const calendar1 = () => {
 
       {
         title: "Almoço",
-        start: "2022-09-07",
-        end: "2022-09-10",
+        start: "2022-11-30",
+        end: "2022-11-30",
       },
       {
         title: "Almoço",
@@ -41,13 +41,13 @@ const calendar1 = () => {
       },
       {
         title: "Conference",
-        start: "2022-11-24",
-        end: "2022-11-24",
+        start: "2022-11-30",
+        end: "2022-11-30",
       },
       {
         title: "Meeting",
-        start: "2022-11-24T10:30:00",
-        end: "2022-11-24T12:30:00",
+        start: "2022-11-30T10:30:00",
+        end: "2022-11-30T12:30:00",
       },
       {
         title: "Lunch",
@@ -60,24 +60,52 @@ const calendar1 = () => {
 };
 
 const calendar2 = () => {
-  var initialLocaleCode = 'en';
+  var initialLocaleCode = 'pt-br';
   var calendarEl = document.getElementById("calendar2");
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
-    height: 450,
+    height: 480,
     headerToolbar: {
       left: "",
       center: "title",
       right: "dayGridMonth",
     },
-    // initialDate: "2020-09-12",
     locale: initialLocaleCode,
     buttonIcons: false, // show the prev/next text
     navLinks: true, // can click day/week names to navigate views
     editable: true,
     dayMaxEvents: true, // allow "more" link when too many events
-    events: [
-     
+    events:  [
+      {
+        title: "All Day Event",
+        start: "2022-11-24",
+      },
+
+      {
+        title: "Almoço",
+        start: "2022-11-30",
+        end: "2022-11-30",
+      },
+      {
+        title: "Almoço",
+        daysOfWeek: [1, 2, 3, 4, 5],
+        startTime: "11:00:00",
+        endTime: "12:00:00",
+      },
+      {
+        title: "Conference",
+        start: "2022-11-30",
+        end: "2022-11-30",
+      },
+      {
+        title: "Meeting",
+        start: "2022-11-30T10:30:00",
+        end: "2022-11-30T12:30:00",
+      },
+      {
+        title: "Lunch",
+        start: "2022-09-12T12:00:00",
+      },
     ],
   });
 
@@ -102,8 +130,9 @@ const calendar2 = () => {
 
 const calendar3 = () => {
   var calendarEl = document.getElementById('calendar3');
-
+  var initialLocaleCode = 'pt-br';
   var calendar = new FullCalendar.Calendar(calendarEl, {
+
     height: 450,
     // stickyHeaderDates: false, // for disabling
 
@@ -113,16 +142,43 @@ const calendar3 = () => {
       right: ''
     },
 
-    // customize the button names,
-    // otherwise they'd all just say "list"
- 
 
+    locale: initialLocaleCode,
     initialView: 'listYear',
     navLinks: true, // can click day/week names to navigate views
     editable: true,
     events: [
-     
-    ]
+      {
+        title: "All Day Event",
+        start: "2022-11-24",
+      },
+
+      {
+        title: "Almoço",
+        start: "2022-11-30",
+        end: "2022-11-30",
+      },
+      {
+        title: "Almoço",
+        daysOfWeek: [1, 2, 3, 4, 5],
+        startTime: "11:00:00",
+        endTime: "12:00:00",
+      },
+      {
+        title: "Conference",
+        start: "2022-11-30",
+        end: "2022-11-30",
+      },
+      {
+        title: "Meeting",
+        start: "2022-11-30T10:30:00",
+        end: "2022-11-30T12:30:00",
+      },
+      {
+        title: "Lunch",
+        start: "2022-09-12T12:00:00",
+      },
+    ],
   });
 
   calendar.render();
