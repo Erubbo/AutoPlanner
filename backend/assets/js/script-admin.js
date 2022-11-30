@@ -8,47 +8,6 @@ $(document).ready(function () {
   listaTipo();
 });
 
-const consultaCEP = () => {
-  // captura o valor do cep via JQUERY
-  let cep = $("#cep").val();
-
-  //replace para tirar o _ e - da mascara
-  cep = cep.replaceAll("_", "").replaceAll("-", "");
-
-  //verifica se o CEP foi preenchido com todos os numeros
-  if (cep.length < 8) {
-    Swal.fire({
-      icon: "error",
-      title: "Atenção...",
-      text: "CEP inválido!",
-    });
-    $("#cep").focus();
-    return;
-  }
-
-  //   realiza requisicao para API VIA CEP
-  const result = fetch(`http://viacep.com.br/ws/${cep}/json/`)
-    .then((response) => response.json())
-    .then((result) => {
-      // retorno da requisicao
-
-      if (result.erro) {
-        Swal.fire({
-          icon: "error",
-          title: "Atenção...",
-          text: "CEP não encontrado!",
-        });
-      } else {
-        $("#rua").val(result.logradouro).prop("disabled", false);
-        $("#bairro").val(result.bairro).prop("disabled", false);
-        $("#cidade").val(result.localidade).prop("disabled", false);
-        $("#estado").val(result.uf).prop("disabled", false);
-
-        // coloca o focus do usuário no campo numero
-        $("#numero").prop("disabled", false).focus();
-      }
-    });
-};
 
 const listaTipo = () => {
   // funcao que lista os tipos para o cadastro
