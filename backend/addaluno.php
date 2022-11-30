@@ -83,7 +83,7 @@ try {
     $senha =  sha1($senha);
 
     // add endereço 
-    $sql = "INSERT INTO Tb_endereco (cep, logradouro, numero, complemento, bairro, municipio, estado, id_usuario) VALUES ('$cep','$logradouro','$numero ','$complemento','$bairro','$municipio','$estado','$id_usuario')";
+    $sql = "INSERT INTO Tb_endereco (cep, logradouro, numero, complemento, bairro, municipio, estado) VALUES ('$cep','$logradouro','$numero ','$complemento','$bairro','$municipio','$estado')";
 
     $command = $conn->prepare($sql);
 
@@ -94,7 +94,7 @@ try {
     $id_endereco = $conn-> lastInsertId();
 
     
-    $sql = "INSERT INTO tb_aluno (nome, pai, mae, nome_social, pai_af, mae_af, data_nascimento, genero, nacionalidade, cpf, rg, orgao_emissor, uf, email, telefone, telefone2, senha) VALUES ('$nome','$pai','$mae','$nome_social','$pai_af','$mae_af','$data_nascimento','$genero','$nacionalidade','$cpf','$rg','$orgao_emissor','$uf','$email','$telefone','$telefone2','$senha')";
+    $sql = "INSERT INTO tb_aluno (nome, pai, mae, nome_social, pai_af, mae_af, data_nascimento, genero, nacionalidade, cpf, rg, orgao_emissor, uf, email, telefone, telefone2, senha, id_endereco) VALUES ('$nome','$pai','$mae','$nome_social','$pai_af','$mae_af','$data_nascimento','$genero','$nacionalidade','$cpf','$rg','$orgao_emissor','$uf','$email','$telefone','$telefone2','$senha', $id_endereco)";
 
     $msg = "Usuário adicionado com sucesso!";
 
