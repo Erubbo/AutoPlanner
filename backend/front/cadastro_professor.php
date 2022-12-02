@@ -167,7 +167,7 @@ include '../includes/conexao.php';
 
                                     <div class="form-group col-md-6">
                                         <label for="numero">Numero *</label>
-                                        <input type="number" class="form-control" id="numero" name="numero" placeholder="Nº">
+                                        <input type="text" class="form-control" id="numero" name="numero" placeholder="Nº">
                                     </div>
 
                                     <div class="form-group col-md-6">
@@ -189,6 +189,40 @@ include '../includes/conexao.php';
                                         <input type="text" class="form-control" id="municipio" name="municipio" placeholder="Municipio">
                                     </div>
 
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="estado">Estado</label>
+                                    <select class="form-select" aria-label="Default select example" id="estado" name="estado">
+
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                    </select>
                                 </div>
                             </div>
 
@@ -223,8 +257,8 @@ include '../includes/conexao.php';
                                         <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
                                     </div>
                                     <div class="form-group col-md-6 mt-2">
-                                        <label for="confirmarSenha">Confirmar Senha</label>
-                                        <input type="password" class="form-control" placeholder="Confirme sua senha">
+                                        <label for="confirmar">Confirmar Senha</label>
+                                        <input type="password" class="form-control" id="confirmar" name="confirmar" placeholder="Confirme sua senha">
                                     </div>
                                 </div>
 
@@ -240,7 +274,7 @@ include '../includes/conexao.php';
 
 
 
-    
+
 
 
 
