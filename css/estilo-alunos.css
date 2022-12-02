@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------------------------------------------------- */
+.body-imagem{
+    background: url(../images/city.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    backdrop-filter: brightness(0.9) blur(2px) ; 
+    
+}
+
+/* ---------------------------------------------------------------------- */
+
