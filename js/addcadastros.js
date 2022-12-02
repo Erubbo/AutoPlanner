@@ -88,6 +88,6 @@ const addprof = () => {
               text: result.mensagem,
               icon: result.retorno == 'ok' ? 'success' : 'error'
           })
-          // result.retorno == 'ok' ? $('#form-prof')[0].reset() : ''
+           result.retorno == 'ok' ? $('#form-prof')[0].reset() : ''
       })
 };
