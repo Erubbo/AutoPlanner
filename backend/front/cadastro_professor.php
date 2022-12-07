@@ -264,7 +264,7 @@ include '../includes/conexao.php';
                                 </div>
 
                                 <button type="button" class="btn btn-primary mt-3" onclick="addprof()">Cadastrar</button>
-                                <a href="backend/logout.php"><button type="button" class="btn btn-danger mt-3">Sair</button></a>
+                                <a href="../../tela_prin.php"><button type="button" class="btn btn-danger mt-3">Sair</button></a>
 
                             </div>
                         </form>
