@@ -271,33 +271,33 @@ include '../includes/conexao.php';
                                         Segunda-feira
                                     </button>
                                 </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="">
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                    <input type="checkbox" id="08" name="08" value="08">
+                                        <input type="checkbox" id="segunda08" name="segunda[]" value="08">
                                         <label for="08"> 08:00 às 09:00</label><br>
-                                        <input type="checkbox" id="09" name="segunda" value="09">
+                                        <input type="checkbox" id="segunda09" name="segunda[]" value="09">
                                         <label for="09"> 09:00 às 10:00</label><br>
-                                        <input type="checkbox" id="10" name="segunda" value="10">
+                                        <input type="checkbox" id="segunda10" name="segunda[]" value="10">
                                         <label for="10"> 10:00 às 11:00</label><br>
-                                        <input type="checkbox" id="11" name="segunda" value="11">
+                                        <input type="checkbox" id="segunda11" name="segunda[]" value="11">
                                         <label for="11"> 11:00 às 12:00</label><br>
-                                        <input type="checkbox" id="12" name="segunda" value="12">
+                                        <input type="checkbox" id="segunda12" name="segunda[]" value="12">
                                         <label for="12"> 12:00 às 13:00</label><br>
-                                        <input type="checkbox" id="13" name="segunda" value="13">
+                                        <input type="checkbox" id="segunda13" name="segunda[]" value="13">
                                         <label for="13"> 13:00 às 14:00</label><br>
-                                        <input type="checkbox" id="14" name="segunda" value="14">
+                                        <input type="checkbox" id="segunda14" name="segunda[]" value="14">
                                         <label for="14"> 14:00 às 15:00</label><br>
-                                        <input type="checkbox" id="15" name="segunda" value="15">
+                                        <input type="checkbox" id="segunda15" name="segunda[]" value="15">
                                         <label for="15"> 15:00 às 16:00</label><br>
-                                        <input type="checkbox" id="16" name="segunda" value="16">
+                                        <input type="checkbox" id="segunda16" name="segunda[]" value="16">
                                         <label for="16"> 16:00 às 17:00</label><br>
-                                        <input type="checkbox" id="17" name="segunda" value="17">
+                                        <input type="checkbox" id="segunda17" name="segunda[]" value="17">
                                         <label for="17"> 17:00 às 18:00</label><br>
-                                        <input type="checkbox" id="18" name="segunda" value="18">
+                                        <input type="checkbox" id="segunda18" name="segunda[]" value="18">
                                         <label for="18"> 18:00 às 19:00</label><br>
-                                        <input type="checkbox" id="19" name="segunda" value="19">
+                                        <input type="checkbox" id="segunda19" name="segunda[]" value="19">
                                         <label for="19"> 19:00 às 20:00</label><br>
-                                        <input type="checkbox" id="20" name="segunda" value="20">
+                                        <input type="checkbox" id="segunda20" name="segunda[]" value="20">
                                         <label for="20"> 20:00 às 21:00</label><br>
                                     </div>
                                 </div>
@@ -308,33 +308,33 @@ include '../includes/conexao.php';
                                         Terça-feira
                                     </button>
                                 </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample" style="">
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                        <input type="checkbox" id="08" name="08" value="08">
+                                        <input type="checkbox" id="terca08" name="terca[]" value="08">
                                         <label for="08"> 08:00 às 09:00</label><br>
-                                        <input type="checkbox" id="09" name="09" value="09">
+                                        <input type="checkbox" id="terca09" name="terca[]" value="09">
                                         <label for="09"> 09:00 às 10:00</label><br>
-                                        <input type="checkbox" id="10" name="10" value="10">
+                                        <input type="checkbox" id="terca10" name="terca[]" value="10">
                                         <label for="10"> 10:00 às 11:00</label><br>
-                                        <input type="checkbox" id="11" name="11" value="11">
+                                        <input type="checkbox" id="terca11" name="terca[]" value="11">
                                         <label for="11"> 11:00 às 12:00</label><br>
-                                        <input type="checkbox" id="12" name="12" value="12">
+                                        <input type="checkbox" id="terca12" name="terca[]" value="12">
                                         <label for="12"> 12:00 às 13:00</label><br>
-                                        <input type="checkbox" id="13" name="13" value="13">
+                                        <input type="checkbox" id="terca13" name="terca[]" value="13">
                                         <label for="13"> 13:00 às 14:00</label><br>
-                                        <input type="checkbox" id="14" name="14" value="14">
+                                        <input type="checkbox" id="terca14" name="terca[]" value="14">
                                         <label for="14"> 14:00 às 15:00</label><br>
-                                        <input type="checkbox" id="15" name="15" value="15">
+                                        <input type="checkbox" id="terca15" name="terca[]" value="15">
                                         <label for="15"> 15:00 às 16:00</label><br>
-                                        <input type="checkbox" id="16" name="16" value="16">
+                                        <input type="checkbox" id="terca16" name="terca[]" value="16">
                                         <label for="16"> 16:00 às 17:00</label><br>
-                                        <input type="checkbox" id="17" name="17" value="17">
+                                        <input type="checkbox" id="terca17" name="terca[]" value="17">
                                         <label for="17"> 17:00 às 18:00</label><br>
-                                        <input type="checkbox" id="18" name="18" value="18">
+                                        <input type="checkbox" id="terca18" name="terca[]" value="18">
                                         <label for="18"> 18:00 às 19:00</label><br>
-                                        <input type="checkbox" id="19" name="19" value="19">
+                                        <input type="checkbox" id="terca19" name="terca[]" value="19">
                                         <label for="19"> 19:00 às 20:00</label><br>
-                                        <input type="checkbox" id="20" name="20" value="20">
+                                        <input type="checkbox" id="terca20" name="terca[]" value="20">
                                         <label for="20"> 20:00 às 21:00</label><br>
                                     </div>
                                 </div>
@@ -347,31 +347,31 @@ include '../includes/conexao.php';
                                 </h2>
                                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                    <input type="checkbox" id="08" name="08" value="08">
+                                        <input type="checkbox" id="quarta08" name="quarta[]" value="08">
                                         <label for="08"> 08:00 às 09:00</label><br>
-                                        <input type="checkbox" id="09" name="09" value="09">
+                                        <input type="checkbox" id="quarta09" name="quarta[]" value="09">
                                         <label for="09"> 09:00 às 10:00</label><br>
-                                        <input type="checkbox" id="10" name="10" value="10">
+                                        <input type="checkbox" id="quarta10" name="quarta[]" value="10">
                                         <label for="10"> 10:00 às 11:00</label><br>
-                                        <input type="checkbox" id="11" name="11" value="11">
+                                        <input type="checkbox" id="quarta11" name="quarta[]" value="11">
                                         <label for="11"> 11:00 às 12:00</label><br>
-                                        <input type="checkbox" id="12" name="12" value="12">
+                                        <input type="checkbox" id="quarta12" name="quarta[]" value="12">
                                         <label for="12"> 12:00 às 13:00</label><br>
-                                        <input type="checkbox" id="13" name="13" value="13">
+                                        <input type="checkbox" id="quarta13" name="quarta[]" value="13">
                                         <label for="13"> 13:00 às 14:00</label><br>
-                                        <input type="checkbox" id="14" name="14" value="14">
+                                        <input type="checkbox" id="quarta14" name="quarta[]" value="14">
                                         <label for="14"> 14:00 às 15:00</label><br>
-                                        <input type="checkbox" id="15" name="15" value="15">
+                                        <input type="checkbox" id="quarta15" name="quarta[]" value="15">
                                         <label for="15"> 15:00 às 16:00</label><br>
-                                        <input type="checkbox" id="16" name="16" value="16">
+                                        <input type="checkbox" id="quarta16" name="quarta[]" value="16">
                                         <label for="16"> 16:00 às 17:00</label><br>
-                                        <input type="checkbox" id="17" name="17" value="17">
+                                        <input type="checkbox" id="quarta17" name="quarta[]" value="17">
                                         <label for="17"> 17:00 às 18:00</label><br>
-                                        <input type="checkbox" id="18" name="18" value="18">
+                                        <input type="checkbox" id="quarta18" name="quarta[]" value="18">
                                         <label for="18"> 18:00 às 19:00</label><br>
-                                        <input type="checkbox" id="19" name="19" value="19">
+                                        <input type="checkbox" id="quarta19" name="quarta[]" value="19">
                                         <label for="19"> 19:00 às 20:00</label><br>
-                                        <input type="checkbox" id="20" name="20" value="20">
+                                        <input type="checkbox" id="quarta20" name="quarta[]" value="20">
                                         <label for="20"> 20:00 às 21:00</label><br>
                                     </div>
                                 </div>
@@ -384,31 +384,31 @@ include '../includes/conexao.php';
                                 </h2>
                                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                    <input type="checkbox" id="08" name="08" value="08">
+                                        <input type="checkbox" id="quinta08" name="quinta[]" value="08">
                                         <label for="08"> 08:00 às 09:00</label><br>
-                                        <input type="checkbox" id="09" name="09" value="09">
+                                        <input type="checkbox" id="quinta09" name="quinta[]" value="09">
                                         <label for="09"> 09:00 às 10:00</label><br>
-                                        <input type="checkbox" id="10" name="10" value="10">
+                                        <input type="checkbox" id="quinta10" name="quinta[]" value="10">
                                         <label for="10"> 10:00 às 11:00</label><br>
-                                        <input type="checkbox" id="11" name="11" value="11">
+                                        <input type="checkbox" id="quinta11" name="quinta[]" value="11">
                                         <label for="11"> 11:00 às 12:00</label><br>
-                                        <input type="checkbox" id="12" name="12" value="12">
+                                        <input type="checkbox" id="quinta12" name="quinta[]" value="12">
                                         <label for="12"> 12:00 às 13:00</label><br>
-                                        <input type="checkbox" id="13" name="13" value="13">
+                                        <input type="checkbox" id="quinta13" name="quinta[]" value="13">
                                         <label for="13"> 13:00 às 14:00</label><br>
-                                        <input type="checkbox" id="14" name="14" value="14">
+                                        <input type="checkbox" id="quinta14" name="quinta[]" value="14">
                                         <label for="14"> 14:00 às 15:00</label><br>
-                                        <input type="checkbox" id="15" name="15" value="15">
+                                        <input type="checkbox" id="quinta15" name="quinta[]" value="15">
                                         <label for="15"> 15:00 às 16:00</label><br>
-                                        <input type="checkbox" id="16" name="16" value="16">
+                                        <input type="checkbox" id="quinta16" name="quinta[]" value="16">
                                         <label for="16"> 16:00 às 17:00</label><br>
-                                        <input type="checkbox" id="17" name="17" value="17">
+                                        <input type="checkbox" id="quinta17" name="quinta[]" value="17">
                                         <label for="17"> 17:00 às 18:00</label><br>
-                                        <input type="checkbox" id="18" name="18" value="18">
+                                        <input type="checkbox" id="quinta18" name="quinta[]" value="18">
                                         <label for="18"> 18:00 às 19:00</label><br>
-                                        <input type="checkbox" id="19" name="19" value="19">
+                                        <input type="checkbox" id="quinta19" name="quinta[]" value="19">
                                         <label for="19"> 19:00 às 20:00</label><br>
-                                        <input type="checkbox" id="20" name="20" value="20">
+                                        <input type="checkbox" id="quinta20" name="quinta[]" value="20">
                                         <label for="20"> 20:00 às 21:00</label><br>
                                     </div>
                                 </div>
@@ -421,31 +421,31 @@ include '../includes/conexao.php';
                                 </h2>
                                 <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                    <input type="checkbox" id="08" name="08" value="08">
+                                        <input type="checkbox" id="sexta08" name="sexta[]" value="08">
                                         <label for="08"> 08:00 às 09:00</label><br>
-                                        <input type="checkbox" id="09" name="09" value="09">
+                                        <input type="checkbox" id="sexta09" name="sexta[]" value="09">
                                         <label for="09"> 09:00 às 10:00</label><br>
-                                        <input type="checkbox" id="10" name="10" value="10">
+                                        <input type="checkbox" id="sexta10" name="sexta[]" value="10">
                                         <label for="10"> 10:00 às 11:00</label><br>
-                                        <input type="checkbox" id="11" name="11" value="11">
+                                        <input type="checkbox" id="sexta11" name="sexta[]" value="11">
                                         <label for="11"> 11:00 às 12:00</label><br>
-                                        <input type="checkbox" id="12" name="12" value="12">
+                                        <input type="checkbox" id="sexta12" name="sexta[]" value="12">
                                         <label for="12"> 12:00 às 13:00</label><br>
-                                        <input type="checkbox" id="13" name="13" value="13">
+                                        <input type="checkbox" id="sexta13" name="sexta[]" value="13">
                                         <label for="13"> 13:00 às 14:00</label><br>
-                                        <input type="checkbox" id="14" name="14" value="14">
+                                        <input type="checkbox" id="sexta14" name="sexta[]" value="14">
                                         <label for="14"> 14:00 às 15:00</label><br>
-                                        <input type="checkbox" id="15" name="15" value="15">
+                                        <input type="checkbox" id="sexta15" name="sexta[]" value="15">
                                         <label for="15"> 15:00 às 16:00</label><br>
-                                        <input type="checkbox" id="16" name="16" value="16">
+                                        <input type="checkbox" id="sexta16" name="sexta[]" value="16">
                                         <label for="16"> 16:00 às 17:00</label><br>
-                                        <input type="checkbox" id="17" name="17" value="17">
+                                        <input type="checkbox" id="sexta17" name="sexta[]" value="17">
                                         <label for="17"> 17:00 às 18:00</label><br>
-                                        <input type="checkbox" id="18" name="18" value="18">
+                                        <input type="checkbox" id="sexta18" name="sexta[]" value="18">
                                         <label for="18"> 18:00 às 19:00</label><br>
-                                        <input type="checkbox" id="19" name="19" value="19">
+                                        <input type="checkbox" id="sexta19" name="sexta[]" value="19">
                                         <label for="19"> 19:00 às 20:00</label><br>
-                                        <input type="checkbox" id="20" name="20" value="20">
+                                        <input type="checkbox" id="sexta20" name="sexta[]" value="20">
                                         <label for="20"> 20:00 às 21:00</label><br>
                                     </div>
                                 </div>
@@ -458,17 +458,17 @@ include '../includes/conexao.php';
                                 </h2>
                                 <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                    <input type="checkbox" id="08" name="08" value="08">
+                                        <input type="checkbox" id="sabado08" name="sabado[]" value="08">
                                         <label for="08"> 08:00 às 09:00</label><br>
-                                        <input type="checkbox" id="09" name="09" value="09">
+                                        <input type="checkbox" id="sabado09" name="sabado[]" value="09">
                                         <label for="09"> 09:00 às 10:00</label><br>
-                                        <input type="checkbox" id="10" name="10" value="10">
+                                        <input type="checkbox" id="sabado10" name="sabado[]" value="10">
                                         <label for="10"> 10:00 às 11:00</label><br>
-                                        <input type="checkbox" id="11" name="11" value="11">
+                                        <input type="checkbox" id="sabado11" name="sabado[]" value="11">
                                         <label for="11"> 11:00 às 12:00</label><br>
-                                        <input type="checkbox" id="12" name="12" value="12">
+                                        <input type="checkbox" id="sabado12" name="sabado[]" value="12">
                                         <label for="12"> 12:00 às 13:00</label><br>
-                                    
+
                                     </div>
                                 </div>
                             </div>
