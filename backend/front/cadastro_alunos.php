@@ -271,7 +271,7 @@ include '../includes/conexao.php';
                                         Segunda-feira
                                     </button>
                                 </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="">
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" >
                                     <div class="accordion-body">
                                     <input type="checkbox" id="08" name="08" value="08">
                                         <label for="08"> 08:00 às 09:00</label><br>
@@ -308,7 +308,7 @@ include '../includes/conexao.php';
                                         Terça-feira
                                     </button>
                                 </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample" style="">
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <input type="checkbox" id="08" name="08" value="08">
                                         <label for="08"> 08:00 às 09:00</label><br>
