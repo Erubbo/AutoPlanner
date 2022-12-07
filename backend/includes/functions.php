@@ -55,6 +55,35 @@ function pdocatch($erro){
    echo $json;
 }
 
+// funcao que verifica se o email do usuario ja esta cadastrado
+function checkEmailUser($email){
+    
+    // comando SQL que será executado no banco
+    $sql = "SELECT email FROM tb_aluno WHERE email = '$email'";
 
+    $comando=$GLOBALS['conn']->prepare($sql);
+
+    $comando->execute();
+
+    $validaEmail = $comando->fetchAll(PDO::FETCH_ASSOC);
+
+    // retorna a variavel validaEmail
+    // quando utilizamos return = será retornado um valor pela funcao
+    // quando utilizamos echo = é exibido uma informacao na tela
+    if($validaEmail != null){
+        $retorno = array(
+            'retorno'=>'erro',
+            'mensagem'=>'E-mail já cadastrado, verifique e tente novamente!'
+        );
+
+        // cria um variavel que ira receber o array acima convertido em JSON
+        $json = json_encode($retorno, JSON_UNESCAPED_UNICODE);
+
+        // retorno em formato JSON
+        echo $json;
+        exit;
+    }
+
+}
 
 ?>

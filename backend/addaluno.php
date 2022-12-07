@@ -59,6 +59,9 @@ try {
      validaCampoVazio($cep, 'cep');
      validaCampoVazio($numero, 'numero');
 
+    // executa a funcao que verifica se o email já está cadastrado
+     checkEmailUser($email);
+
 
 
     if ($senha != $confirmar) {
