@@ -13,10 +13,11 @@ include '../includes/conexao.php';
     <link rel="stylesheet" href="">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../css/estilo-aluno-professor.css">
 
 </head>
 
-<body>
+<body class="body-imagem">
     <?php
     include('../includes/navbar.php')
     ?>
@@ -263,14 +264,18 @@ include '../includes/conexao.php';
                                 </div>
 
                                 <button type="button" class="btn btn-primary mt-3" onclick="addprof()">Cadastrar</button>
-                                <a href="backend/logout.php"><button type="submit" class="btn btn-danger mt-3">Sair</button></a>
+                                <a href="../../tela_prin.php"><button type="button" class="btn btn-danger mt-3">Sair</button></a>
 
                             </div>
-
+                        </form>
                     </div>
+
+                </div>
             </form>
         </div>
     </div>
+
+
 
 
 

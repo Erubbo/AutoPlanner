@@ -59,6 +59,9 @@ try {
      validaCampoVazio($cep, 'cep');
      validaCampoVazio($numero, 'numero');
 
+    // executa a funcao que verifica se o email já está cadastrado
+     checkEmailUser($email);
+
 
 
     if ($senha != $confirmar) {
@@ -83,7 +86,7 @@ try {
     $senha =  sha1($senha);
 
     // add endereço 
-    $sql = "INSERT INTO Tb_endereco (cep, logradouro, numero, complemento, bairro, municipio, estado) VALUES ('$cep','$logradouro','$numero ','$complemento','$bairro','$municipio','$estado')";
+    $sql = "INSERT INTO tb_endereco (cep, logradouro, numero, complemento, bairro, municipio, estado) VALUES ('$cep','$logradouro','$numero ','$complemento','$bairro','$municipio','$estado')";
 
     $command = $conn->prepare($sql);
 

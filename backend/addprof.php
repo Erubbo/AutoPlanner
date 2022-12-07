@@ -72,7 +72,7 @@ try {
 
 
     // add endereço 
-    $sql = "INSERT INTO Tb_endereco (cep,logradouro,numero,complemento,bairro,municipio,estado) VALUES ('$cep','$logradouro','$numero','$complemento','$bairro','$municipio','$estado')";
+    $sql = "INSERT INTO tb_endereco (cep,logradouro,numero,complemento,bairro,municipio,estado) VALUES ('$cep','$logradouro','$numero','$complemento','$bairro','$municipio','$estado')";
 
     $command = $conn->prepare($sql);
 
@@ -84,13 +84,12 @@ try {
 
     $sql = "INSERT INTO tb_professor (nome,data_nascimento,genero,nacionalidade,cpf,rg,orgao_emissor,uf,email,telefone,telefone2,senha,id_endereco) VALUES ('$nome','$data_nascimento','$genero','$nacionalidade','$cpf','$rg','$orgao_emissor','$uf','$email','$telefone','$telefone2','$senha',$id_endereco)";
 
-    $command = $conn->prepare($sql);
-
-    $command->execute();
+    
 
     $msg = "Usuário adicionado com sucesso!";
 
     insertUpdateDelete($sql, $msg);
+    
 } catch (PDOException $erro) {
     pdocatch($erro);
 }
