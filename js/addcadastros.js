@@ -87,8 +87,8 @@ const addprof = () => {
           Swal.fire({
               title: 'Atenção',
               text: result.mensagem,
-              icon: result.retorno == 'ok' ? 'success' : 'error'
+              icon: result.retorno == 'ok' ? 'success' : 'error',
           })
-           result.retorno == 'ok' ? $('#form-prof')[0].reset() : ''
-      })
+           result.retorno == 'ok' ? $('#form-prof')[0].reset() : '';
+      });
 };

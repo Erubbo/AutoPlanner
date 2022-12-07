@@ -84,9 +84,7 @@ try {
 
     $sql = "INSERT INTO tb_professor (nome,data_nascimento,genero,nacionalidade,cpf,rg,orgao_emissor,uf,email,telefone,telefone2,senha,id_endereco) VALUES ('$nome','$data_nascimento','$genero','$nacionalidade','$cpf','$rg','$orgao_emissor','$uf','$email','$telefone','$telefone2','$senha',$id_endereco)";
 
-    $command = $conn->prepare($sql);
-
-    $command->execute();
+   
 
     $msg = "Usuário adicionado com sucesso!";
 
