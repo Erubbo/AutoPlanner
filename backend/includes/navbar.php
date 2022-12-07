@@ -2,10 +2,10 @@
 include 'controle_session.php';
 ?>
 
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid ">
+<nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container-fluid bg-secondary bg-gradient bg-opacity-50 ">
       <a class="navbar-brand" href="#">
-      <img src="images/logo_tipo.jpg" alt="" width="250px">
+      <img src="images/logo_tipo.png" alt="" width="200px">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
