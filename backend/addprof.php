@@ -46,7 +46,10 @@ try {
     validaCampoVazio($senha, 'senha');
     validaCampoVazio($confirmar, 'confirmar senha');
 
-
+    // executa a funcao que verifica se o email já está cadastrado
+    checkEmailProf($email);
+    // executa a função que verifica se o cpf já esta cadastrado
+    checkCpfProf($cpf);
 
 
     if ($senha != $confirmar) {
@@ -67,7 +70,6 @@ try {
 
     // Criptografa a senha do usuario
     // alguns algo de cript: sha1, md5, password hash php
-
     $senha =  sha1($senha);
 
 
@@ -83,8 +85,6 @@ try {
     $id_endereco = $conn->lastInsertId();
 
     $sql = "INSERT INTO tb_professor (nome,data_nascimento,genero,nacionalidade,cpf,rg,orgao_emissor,uf,email,telefone,telefone2,senha,id_endereco) VALUES ('$nome','$data_nascimento','$genero','$nacionalidade','$cpf','$rg','$orgao_emissor','$uf','$email','$telefone','$telefone2','$senha',$id_endereco)";
-
-    
 
     $msg = "Usuário adicionado com sucesso!";
 

@@ -85,10 +85,13 @@ const addprof = () => {
       // Aqui é tratado o retorno ao front
 
           Swal.fire({
+            
               title: 'Atenção',
               text: result.mensagem,
               icon: result.retorno == 'ok' ? 'success' : 'error',
           })
+
            result.retorno == 'ok' ? $('#form-prof')[0].reset() : '';
       });
 };
+

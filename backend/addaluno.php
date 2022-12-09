@@ -3,7 +3,6 @@
 // include do arquivo de conexao
 include 'includes/functions.php';
 
-
 try {
 
     // define os caracteres que iremos remover dos campos preenchidos no form (replace)
@@ -30,7 +29,6 @@ try {
     $senha           = $_POST['senha'];
     $confirmar       = $_POST['confirmar'];
 
-
     // endereço
     $cep = str_replace($limpa,'',$_POST['cep']);
     $logradouro = $_POST['logradouro'];
@@ -39,8 +37,6 @@ try {
     $bairro = $_POST['bairro'];
     $municipio = $_POST['municipio'];
     $estado = $_POST['estado'];
-   
-
 
     // executa a função que verifica se o campo está preenchido
     validaCampoVazio($nome, 'nome');
@@ -61,7 +57,8 @@ try {
 
     // executa a funcao que verifica se o email já está cadastrado
      checkEmailUser($email);
-
+     // executa a funcao que verifica se o cpf já está cadastrado
+     checkCpfUser($cpf);
 
 
     if ($senha != $confirmar) {
