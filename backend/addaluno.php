@@ -109,7 +109,7 @@ try {
     
             $timestamp = strtotime($value) + 60 * 60;
     
-            $hora_fim = date('H:i', $timestamp);
+            $hora_fim = date('H:i:s', $timestamp);
     
     
     
@@ -126,7 +126,7 @@ try {
         foreach ($_POST['terca'] as $key => $value) {
             $timestamp = strtotime($value) + 60 * 60;
     
-            $hora_fim = date('H:i', $timestamp);
+            $hora_fim = date('H:i:s', $timestamp);
     
     
     
@@ -142,7 +142,7 @@ try {
         foreach ($_POST['quarta'] as $key => $value) {
             $timestamp = strtotime($value) + 60 * 60;
     
-            $hora_fim = date('H:i', $timestamp);
+            $hora_fim = date('H:i:s', $timestamp);
     
     
     
@@ -158,7 +158,7 @@ try {
         foreach ($_POST['quinta'] as $key => $value) {
             $timestamp = strtotime($value) + 60 * 60;
     
-            $hora_fim = date('H:i', $timestamp);
+            $hora_fim = date('H:i:s', $timestamp);
     
     
     
@@ -174,7 +174,7 @@ try {
         foreach ($_POST['sexta'] as $key => $value) {
             $timestamp = strtotime($value) + 60 * 60;
     
-            $hora_fim = date('H:i', $timestamp);
+            $hora_fim = date('H:i:s', $timestamp);
     
     
     
@@ -190,7 +190,7 @@ try {
         foreach ($_POST['sabado'] as $key => $value) {
             $timestamp = strtotime($value) + 60 * 60;
     
-            $hora_fim = date('H:i', $timestamp);
+            $hora_fim = date('H:i:s', $timestamp);
     
     
     
