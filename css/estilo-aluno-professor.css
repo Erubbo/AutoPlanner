@@ -10,7 +10,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    backdrop-filter: brightness(0.9) blur(2px) ; 
+    backdrop-filter: brightness(0.4) blur(4px) ; 
     
 }
 
