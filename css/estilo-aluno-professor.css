@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+
 /* -------------------------------------------------------------------- */
 .body-imagem{
     background: url(../images/city.jpg)no-repeat center center fixed; 
@@ -13,5 +15,8 @@
     backdrop-filter: brightness(0.4) blur(4px) ; 
     
 }
+
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) { overflow-y: visible !important; }
+
 
 /* ---------------------------------------------------------------------- */

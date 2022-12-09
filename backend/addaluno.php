@@ -3,7 +3,6 @@
 // include do arquivo de conexao
 include 'includes/functions.php';
 
-
 try {
 
     // define os caracteres que iremos remover dos campos preenchidos no form (replace)
@@ -30,7 +29,6 @@ try {
     $senha           = $_POST['senha'];
     $confirmar       = $_POST['confirmar'];
 
-
     // endereço
     $cep = str_replace($limpa,'',$_POST['cep']);
     $logradouro = $_POST['logradouro'];
@@ -39,8 +37,6 @@ try {
     $bairro = $_POST['bairro'];
     $municipio = $_POST['municipio'];
     $estado = $_POST['estado'];
-   
-
 
     // executa a função que verifica se o campo está preenchido
     validaCampoVazio($nome, 'nome');
@@ -61,7 +57,8 @@ try {
 
     // executa a funcao que verifica se o email já está cadastrado
      checkEmailUser($email);
-
+     // executa a funcao que verifica se o cpf já está cadastrado
+     checkCpfUser($cpf);
 
 
     if ($senha != $confirmar) {
@@ -102,6 +99,116 @@ try {
     $msg = "Usuário adicionado com sucesso!";
 
     insertUpdateDelete($sql, $msg);
+
+    // ================================ tabela de horarios =============================
+
+    $id_aluno = $conn ->lastInsertId();
+
+    if (isset($_POST['segunda'])) {
+        foreach ($_POST['segunda'] as $key => $value) {
+    
+            $timestamp = strtotime($value) + 60 * 60;
+    
+            $hora_fim = date('H:i:s', $timestamp);
+    
+    
+    
+            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','1','$value','$hora_fim')";
+            echo $sql;
+    
+            $commands = $conn->prepare($sql);
+    
+            $commands->execute();
+        }
+    }
+    
+    if (isset($_POST['terca'])) {
+        foreach ($_POST['terca'] as $key => $value) {
+            $timestamp = strtotime($value) + 60 * 60;
+    
+            $hora_fim = date('H:i:s', $timestamp);
+    
+    
+    
+            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','2','$value','$hora_fim')";
+            echo $sql;
+    
+            $commands = $conn->prepare($sql);
+    
+            $commands->execute();
+        }
+    }
+    if (isset($_POST['quarta'])) {
+        foreach ($_POST['quarta'] as $key => $value) {
+            $timestamp = strtotime($value) + 60 * 60;
+    
+            $hora_fim = date('H:i:s', $timestamp);
+    
+    
+    
+            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','3','$value','$hora_fim')";
+            echo $sql;
+    
+            $commands = $conn->prepare($sql);
+    
+            $commands->execute();
+        }
+    }
+    if (isset($_POST['quinta'])) {
+        foreach ($_POST['quinta'] as $key => $value) {
+            $timestamp = strtotime($value) + 60 * 60;
+    
+            $hora_fim = date('H:i:s', $timestamp);
+    
+    
+    
+            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','4','$value','$hora_fim')";
+            echo $sql;
+    
+            $commands = $conn->prepare($sql);
+    
+            $commands->execute();
+        }
+    }
+    if (isset($_POST['sexta'])) {
+        foreach ($_POST['sexta'] as $key => $value) {
+            $timestamp = strtotime($value) + 60 * 60;
+    
+            $hora_fim = date('H:i:s', $timestamp);
+    
+    
+    
+            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','5','$value','$hora_fim')";
+            echo $sql;
+    
+            $commands = $conn->prepare($sql);
+    
+            $commands->execute();
+        }
+    }
+    if (isset($_POST['sabado'])) {
+        foreach ($_POST['sabado'] as $key => $value) {
+            $timestamp = strtotime($value) + 60 * 60;
+    
+            $hora_fim = date('H:i:s', $timestamp);
+    
+    
+    
+            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','6','$value','$hora_fim')";
+            echo $sql;
+    
+            $commands = $conn->prepare($sql);
+    
+            $commands->execute();
+        }
+    }
+    
+
+
+
+
+
+
 
 
 } catch (PDOException $erro) {

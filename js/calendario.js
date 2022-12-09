@@ -23,36 +23,13 @@ const calendar1 = () => {
     selectMirror: true,
     nowIndicator: true,
     events: [
-      {
-        title: "All Day Event",
-        start: "2022-11-24",
-      },
-
-      {
-        title: "Almoço",
-        start: "2022-11-30",
-        end: "2022-11-30",
-      },
-      {
-        title: "Almoço",
-        daysOfWeek: [1, 2, 3, 4, 5],
-        startTime: "11:00:00",
-        endTime: "12:00:00",
-      },
-      {
-        title: "Conference",
-        start: "2022-11-30",
-        end: "2022-11-30",
-      },
+      
       {
         title: "Meeting",
         start: "2022-11-30T10:30:00",
         end: "2022-11-30T12:30:00",
-      },
-      {
-        title: "Lunch",
-        start: "2022-09-12T12:00:00",
-      },
+      }
+      
     ],
   });
 
