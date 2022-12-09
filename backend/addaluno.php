@@ -103,6 +103,116 @@ try {
 
     insertUpdateDelete($sql, $msg);
 
+    // ================================ tabela de horarios =============================
+
+    $id_aluno = $conn ->lastInsertId();
+
+    if (isset($_POST['segunda'])) {
+        foreach ($_POST['segunda'] as $key => $value) {
+    
+            $timestamp = strtotime($value) + 60 * 60;
+    
+            $hora_fim = date('H:i', $timestamp);
+    
+    
+    
+            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','1','$value','$hora_fim')";
+            echo $sql;
+    
+            $commands = $conn->prepare($sql);
+    
+            $commands->execute();
+        }
+    }
+    
+    if (isset($_POST['terca'])) {
+        foreach ($_POST['terca'] as $key => $value) {
+            $timestamp = strtotime($value) + 60 * 60;
+    
+            $hora_fim = date('H:i', $timestamp);
+    
+    
+    
+            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','2','$value','$hora_fim')";
+            echo $sql;
+    
+            $commands = $conn->prepare($sql);
+    
+            $commands->execute();
+        }
+    }
+    if (isset($_POST['quarta'])) {
+        foreach ($_POST['quarta'] as $key => $value) {
+            $timestamp = strtotime($value) + 60 * 60;
+    
+            $hora_fim = date('H:i', $timestamp);
+    
+    
+    
+            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','3','$value','$hora_fim')";
+            echo $sql;
+    
+            $commands = $conn->prepare($sql);
+    
+            $commands->execute();
+        }
+    }
+    if (isset($_POST['quinta'])) {
+        foreach ($_POST['quinta'] as $key => $value) {
+            $timestamp = strtotime($value) + 60 * 60;
+    
+            $hora_fim = date('H:i', $timestamp);
+    
+    
+    
+            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','4','$value','$hora_fim')";
+            echo $sql;
+    
+            $commands = $conn->prepare($sql);
+    
+            $commands->execute();
+        }
+    }
+    if (isset($_POST['sexta'])) {
+        foreach ($_POST['sexta'] as $key => $value) {
+            $timestamp = strtotime($value) + 60 * 60;
+    
+            $hora_fim = date('H:i', $timestamp);
+    
+    
+    
+            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','5','$value','$hora_fim')";
+            echo $sql;
+    
+            $commands = $conn->prepare($sql);
+    
+            $commands->execute();
+        }
+    }
+    if (isset($_POST['sabado'])) {
+        foreach ($_POST['sabado'] as $key => $value) {
+            $timestamp = strtotime($value) + 60 * 60;
+    
+            $hora_fim = date('H:i', $timestamp);
+    
+    
+    
+            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','6','$value','$hora_fim')";
+            echo $sql;
+    
+            $commands = $conn->prepare($sql);
+    
+            $commands->execute();
+        }
+    }
+    
+
+
+
+
+
+
+
 
 } catch (PDOException $erro) {
     pdocatch($erro);
