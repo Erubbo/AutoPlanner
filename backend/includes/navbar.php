@@ -31,6 +31,10 @@ include 'controle_session.php';
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Contabilidade</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../consulta.php">Consulta</a>
+          </li>
           
         </ul>
       </div>
