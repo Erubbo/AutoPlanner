@@ -27,8 +27,8 @@ include '../includes/conexao.php';
         <div class="form-group">
             <form id="form-prof">
 
-                <h5 class="text-center m-4"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Professores</h5>
-                <div class="text-bg-secondary p-3 border border-5 rounded-3">
+                <h5 class="text-center m-4 text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Professores</h5>
+                <div class="text-bg-secondary p-3 border border-3 rounded-3">
 
 
                     <div class="form-group m-4 mt-2">
@@ -52,14 +52,9 @@ include '../includes/conexao.php';
                                     <div class="form-group col-md-6">
                                         <label for="genero">Genero</label>
                                         <select class="form-select" aria-label="Default select example" id="genero" name="genero">
-
-                                            <option value="0" selected disabled>Selecione...</option>
-                                            <option value="1">Homem Cisgênero</option>
-                                            <option value="2">Mulher Cisgênero</option>
-                                            <option value="2">Homem Transgênero</option>
-                                            <option value="2">Mulher Transgênero</option>
-                                            <option value="2">Outro</option>
-                                            <option value="2">Prefiro Não Responder</option>
+                                            <option value="0" disabled selected>Selecione...</option>
+                                            <option value="1">Masculino</option>
+                                            <option value="2">Feminino</option>
                                         </select>
                                     </div>
 
