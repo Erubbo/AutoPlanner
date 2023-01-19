@@ -1,14 +1,16 @@
 <?php
 
 
-include 'funcao.php';
+// include 'includes/functions.php';
+
+include 'includes/conexao.php';
 
 try{
     // monta a query sql
-    $sql = "SELECT id,nome, pai, mae, nome_social, pai_af, mae_af, data_nascimento, genero, nacionalidade, cpf, rg, orgao_emissor, uf, email, telefone, telefone2, senha, id_endereco FROM tb_aluno";
+    $sql = "SELECT id,nome, email, telefone, telefone2, senha, id_endereco FROM tb_aluno";
 
     // prepara a execuçao
-    $comando = $con->prepare($sql);
+    $comando = $conn->prepare($sql);
 
     // executa o comando 
     $comando->execute();
@@ -36,6 +38,6 @@ try{
         echo $json;
 }
 
-$con= null;
+$conn= null;
 
 ?>

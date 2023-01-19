@@ -28,20 +28,30 @@ include 'backend/includes/conexao.php';
     <!-- ////////////////////////// Datatable para listagem de dados ////////////////////////////// -->
     <div class="border rounded mt-4 p-2">
 
+    <!-- Navbar Search-->
+    <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+      <div class="input-group">
+        <input class="form-control" type="text" placeholder="Pesquisar" aria-label="Pesquisar"
+          aria-describedby="btnNavbarSearch" />
+        <button class="btn btn-light" id="btnNavbarSearch" type="submit">Pesquisar</button>
+      </div>
+    </form>
 
+        <button class="btn btn-primary btn-sm" onclick="listar()"><i class="bi bi-arrow-clockwise"></i></button>
 
         <table class="table table-dark table-striped mt-4 dt-responsive " id="tabela">
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Nome</th>
-                    <th>email</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
                     <th>Data de Cadastro</th>
                     <th>Ativo</th>
                     <th>Alterar</th>
                 </tr>
             </thead>
-            <tbody id="tabela-dados">
+            <tbody id="listar-aluno">
 
             </tbody>
         </table>
