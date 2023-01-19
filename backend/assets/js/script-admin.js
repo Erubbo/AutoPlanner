@@ -48,7 +48,7 @@
 // //       result.retorno == 'ok' ? $('#form-professores')[0].reset() : ''
 
 
-      
+
 // //     });
 // // };
 
@@ -116,12 +116,12 @@
 //                     </tr>
 //                 </thead>
 //                 <tbody id="dados-tabela-listagem">
-                                                
+
 //                 </tbody>
 //             </table>
 //         </div>    
 //     `)
- 
+
 //     if(result.length == 0){
 //       $('#dados-tabela-listagem').append(`
 //         <tr>
@@ -143,8 +143,108 @@
 //       `)
 
 //       })//fecha o map
-      
+
 //     }//fecha o else
 //   })//fecha o result
 
 // }//fecha a funcao
+
+const listAluno = () => {
+
+    const result = fetch('../backend/listar_produtos.php', {
+        method: 'POST',
+        body: ''
+    })
+        .then((response => response.json()))
+        .then((result) => {
+            // aqui é tratado o retorno ao front
+
+            let datahora = moment().format('DD/MM/YY HH:mm')
+
+            $('#horario-atualizado').html(datahora)
+
+            // destroi a tabela que foi iniciada
+            $("#tabela").dataTable().fnDestroy()
+
+            // limpa os dados da tabela
+            $('#tabela-dados').html('')
+
+            // função que irá montar as linhas da ta'bela, o map é um tipo de laço
+            result.map(produto => {
+                $('#tabela-dados').append(`
+                <tr>
+                    <td>${produto.produto}</td>
+                    <td>${produto.marca}</td>
+                    <td>${produto.categoria}</td>
+                    <td>${moment(produto.data_cadastro).format('DD/MM/YYYY')}</td>
+                    <td>${produto.quantidade}</td>
+                    <td>${produto.fornecedor}</td>
+                    <td>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="ativo" ${produto.ativo == 1 ? 'checked' : ''} onchange="updatUserActive(${produto.id})">
+                        </div>
+                   </td>
+                    
+                    <td>
+                        <button class="btn-cadastrar" type="button" onclick="atualizarProduto(${produto.id})">alterar</button>
+                        </td>
+                       
+                        <td>
+                        <button class="btn-deletar" type="button" onclick="deleteUser(${produto.id})">deletar</button>
+                    </td>
+                </tr>
+            `)
+            })
+        })
+}
+
+
+
+const listProfessor = () => {
+
+    const result = fetch('../backend/listar_produtos.php', {
+        method: 'POST',
+        body: ''
+    })
+        .then((response => response.json()))
+        .then((result) => {
+            // aqui é tratado o retorno ao front
+
+            let datahora = moment().format('DD/MM/YY HH:mm')
+
+            $('#horario-atualizado').html(datahora)
+
+            // destroi a tabela que foi iniciada
+            $("#tabela").dataTable().fnDestroy()
+
+            // limpa os dados da tabela
+            $('#tabela-dados').html('')
+
+            // função que irá montar as linhas da ta'bela, o map é um tipo de laço
+            result.map(produto => {
+                $('#tabela-dados').append(`
+                        <tr>
+                            <td>${produto.produto}</td>
+                            <td>${produto.marca}</td>
+                            <td>${produto.categoria}</td>
+                            <td>${moment(produto.data_cadastro).format('DD/MM/YYYY')}</td>
+                            <td>${produto.quantidade}</td>
+                            <td>${produto.fornecedor}</td>
+                            <td>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="ativo" ${produto.ativo == 1 ? 'checked' : ''} onchange="updatUserActive(${produto.id})">
+                                </div>
+                           </td>
+                            
+                            <td>
+                                <button class="btn-cadastrar" type="button" onclick="atualizarProduto(${produto.id})">alterar</button>
+                                </td>
+                               
+                                <td>
+                                <button class="btn-deletar" type="button" onclick="deleteUser(${produto.id})">deletar</button>
+                            </td>
+                        </tr>
+                    `)
+            })
+        })
+}

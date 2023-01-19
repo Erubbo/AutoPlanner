@@ -113,7 +113,7 @@ try {
     
     
     
-            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','1','$value','$hora_fim')";
+            $sql = "INSERT INTO tb_disponibilidade (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','1','$value','$hora_fim')";
             echo $sql;
     
             $commands = $conn->prepare($sql);
@@ -130,7 +130,7 @@ try {
     
     
     
-            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','2','$value','$hora_fim')";
+            $sql = "INSERT INTO tb_disponibilidade (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','2','$value','$hora_fim')";
             echo $sql;
     
             $commands = $conn->prepare($sql);
@@ -146,7 +146,7 @@ try {
     
     
     
-            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','3','$value','$hora_fim')";
+            $sql = "INSERT INTO tb_disponibilidade (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','3','$value','$hora_fim')";
             echo $sql;
     
             $commands = $conn->prepare($sql);
@@ -162,7 +162,7 @@ try {
     
     
     
-            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','4','$value','$hora_fim')";
+            $sql = "INSERT INTO tb_disponibilidade (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','4','$value','$hora_fim')";
             echo $sql;
     
             $commands = $conn->prepare($sql);
@@ -178,7 +178,7 @@ try {
     
     
     
-            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','5','$value','$hora_fim')";
+            $sql = "INSERT INTO tb_disponibilidade (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','5','$value','$hora_fim')";
             echo $sql;
     
             $commands = $conn->prepare($sql);
@@ -194,7 +194,7 @@ try {
     
     
     
-            $sql = "INSERT INTO tb_teste (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','6','$value','$hora_fim')";
+            $sql = "INSERT INTO tb_disponibilidade (id_aluno,dia_semana,hora_inici,hora_fim)values('$id_aluno','6','$value','$hora_fim')";
             echo $sql;
     
             $commands = $conn->prepare($sql);
