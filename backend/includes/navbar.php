@@ -33,7 +33,7 @@ include 'controle_session.php';
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../../consulta.php">Consulta</a>
+            <a class="nav-link" aria-current="page" href="../../../AutoPlanner/consulta.php">Consulta</a>
           </li>
           
         </ul>
