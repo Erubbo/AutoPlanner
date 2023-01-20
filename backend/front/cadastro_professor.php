@@ -9,14 +9,15 @@ include '../includes/conexao.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro Professores</title>
     <link rel="stylesheet" href="">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../css/estilo-aluno-professor.css">
 
 </head>
 
-<body>
+<body class="body-imagem">
     <?php
     include('../includes/navbar.php')
     ?>
@@ -26,8 +27,8 @@ include '../includes/conexao.php';
         <div class="form-group">
             <form id="form-prof">
 
-                <h5 class="text-center m-4"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Professores</h5>
-                <div class="text-bg-secondary p-3 border border-5 rounded-3">
+                <h5 class="text-center m-4 text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Professores</h5>
+                <div class="text-bg-secondary p-3 border border-3 rounded-3">
 
 
                     <div class="form-group m-4 mt-2">
@@ -37,12 +38,12 @@ include '../includes/conexao.php';
                             <div class="group m-4">
                                 <div class="row mt-2">
                                     <div class="form-group col-md-6">
-                                        <label for="nome">Nome Completo</label>
+                                        <label for="nome">Nome Completo *</label>
                                         <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <label for="data_nascimento">Data de Nascimento</label>
+                                        <label for="data_nascimento">Data de Nascimento *</label>
                                         <input type="date" class="form-control" id="data_nascimento" name="data_nascimento">
                                     </div>
                                 </div>
@@ -51,19 +52,14 @@ include '../includes/conexao.php';
                                     <div class="form-group col-md-6">
                                         <label for="genero">Genero</label>
                                         <select class="form-select" aria-label="Default select example" id="genero" name="genero">
-
-                                            <option value="0" selected disabled>Selecione...</option>
-                                            <option value="1">Homem Cisgênero</option>
-                                            <option value="2">Mulher Cisgênero</option>
-                                            <option value="2">Homem Transgênero</option>
-                                            <option value="2">Mulher Transgênero</option>
-                                            <option value="2">Outro</option>
-                                            <option value="2">Prefiro Não Responder</option>
+                                            <option value="0" disabled selected>Selecione...</option>
+                                            <option value="1">Masculino</option>
+                                            <option value="2">Feminino</option>
                                         </select>
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <label for="nacionalidade">Nacionalidade</label>
+                                        <label for="nacionalidade">Nacionalidade *</label>
                                         <select class="form-select" aria-label="Default select example" id="nacionalidade" name="nacionalidade">
 
                                             <option value="0" selected disabled>Selecione...</option>
@@ -85,24 +81,24 @@ include '../includes/conexao.php';
                             <div class="group m-4 mt-2">
                                 <div class="row ">
                                     <div class="form-group col-md-6">
-                                        <label for="cpf">CPF</label>
-                                        <input type="number" class="form-control" id="cpf" name="cpf" placeholder="CPF">
+                                        <label for="cpf">CPF *</label>
+                                        <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF">
                                     </div>
 
 
 
                                     <div class="form-group col-md-6">
-                                        <label for="rg">RG</label>
-                                        <input type="number" class="form-control" id="rg" name="rg" placeholder="RG">
+                                        <label for="rg">RG *</label>
+                                        <input type="text" class="form-control" id="rg" name="rg" placeholder="RG">
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <label for="orgao_emissor">Orgão Emissor</label>
+                                        <label for="orgao_emissor">Orgão Emissor *</label>
                                         <input type="text" class="form-control" id="orgao_emissor" name="orgao_emissor" placeholder="RG">
                                     </div>
 
                                     <div class="form-group col-md-6">
-                                        <label for="uf">UF</label>
+                                        <label for="uf">UF *</label>
                                         <select class="form-select" aria-label="Default select example" id="uf" name="uf">
 
                                             <option value="0" selected disabled>Selecione...</option>
@@ -145,11 +141,11 @@ include '../includes/conexao.php';
 
                                     <div class="form-group col-md-6">
 
-                                        <label for="cep">CEP</label>
+                                        <label for="cep">CEP *</label>
                                         <div class="input-group mb-3">
 
                                             <input id="cep" name="cep" type="text" class="form-control" placeholder="CEP">
-                                            <span class="input-group-text" id="basic-addon1"><a href="" onclick="consultaCep()"><i class="bi bi-search "></i></a></span>
+                                            <button class="input-group-text" type="button" id="basic-addon1" onclick="consultaCep()"><i class="bi bi-search "></i></button>
                                         </div>
 
                                     </div>
@@ -166,8 +162,8 @@ include '../includes/conexao.php';
 
 
                                     <div class="form-group col-md-6">
-                                        <label for="numero">Numero</label>
-                                        <input type="number" class="form-control" id="numero" name="numero" placeholder="Nº">
+                                        <label for="numero">Numero *</label>
+                                        <input type="text" class="form-control" id="numero" name="numero" placeholder="Nº">
                                     </div>
 
                                     <div class="form-group col-md-6">
@@ -190,6 +186,40 @@ include '../includes/conexao.php';
                                     </div>
 
                                 </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="estado">Estado</label>
+                                    <select class="form-select" aria-label="Default select example" id="estado" name="estado">
+
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                    </select>
+                                </div>
                             </div>
 
                             <hr class="m-2">
@@ -198,7 +228,7 @@ include '../includes/conexao.php';
                             <div class="group m-4">
                                 <div class="row">
                                     <div class="form-group col-md-6 mt-2">
-                                        <label for="email">E-mail</label>
+                                        <label for="email">E-mail *</label>
                                         <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@hotmail.com">
                                     </div>
                                     <div class="form-group col-md-6 mt-2">
@@ -208,13 +238,13 @@ include '../includes/conexao.php';
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6 mt-2">
-                                        <label for="telefone">DDD | Telefone (19) 99999-9999</label>
-                                        <input type="number" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
+                                        <label for="telefone">DDD | Telefone * </label>
+                                        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
                                     </div>
 
                                     <div class="form-group col-md-6 mt-2 ">
-                                        <label for="telefone2">DDD | Telefone 2 (19) 99999-9999</label>
-                                        <input type="number" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
+                                        <label for="telefone2">DDD | Telefone 2 </label>
+                                        <input type="text" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -223,24 +253,28 @@ include '../includes/conexao.php';
                                         <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
                                     </div>
                                     <div class="form-group col-md-6 mt-2">
-                                        <label for="confirmarSenha">Confirmar Senha</label>
-                                        <input type="password" class="form-control" placeholder="Confirme sua senha">
+                                        <label for="confirmar">Confirmar Senha</label>
+                                        <input type="password" class="form-control" id="confirmar" name="confirmar" placeholder="Confirme sua senha">
                                     </div>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary mt-3" onclick="addprof()">Cadastrar</button>
-                                <a href="backend/logout.php"><button type="submit" class="btn btn-danger mt-3">Sair</button></a>
+                                <button type="button" class="btn btn-primary mt-3" onclick="addprof()">Cadastrar</button>
+                                <a href="../../tela_prin.php"><button type="button" class="btn btn-danger mt-3">Sair</button></a>
 
                             </div>
-
+                        </form>
                     </div>
+
+                </div>
             </form>
         </div>
     </div>
 
 
 
-    
+
+
+
 
 
 

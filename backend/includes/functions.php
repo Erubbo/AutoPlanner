@@ -26,7 +26,6 @@ function validaCampoVazio($campo,$nomedocampo){
 
 function insertUpdateDelete($sql,$mensagemretorno){
 
-   
     $comando= $GLOBALS['conn']->prepare($sql);
 
     $comando->execute();
@@ -55,6 +54,126 @@ function pdocatch($erro){
    echo $json;
 }
 
+// funcao que verifica se o email do usuario ja esta cadastrado
+function checkEmailUser($email){
+    
+    // comando SQL que será executado no banco
+    $sql = "SELECT email FROM tb_aluno WHERE email = '$email'";
 
+    $comando=$GLOBALS['conn']->prepare($sql);
+
+    $comando->execute();
+
+    $validaEmail = $comando->fetchAll(PDO::FETCH_ASSOC);
+
+    // retorna a variavel validaEmail
+    // quando utilizamos return = será retornado um valor pela funcao
+    // quando utilizamos echo = é exibido uma informacao na tela
+    if($validaEmail != null){
+        $retorno = array(
+            'retorno'=>'erro',
+            'mensagem'=>'E-mail já cadastrado, verifique e tente novamente!'
+        );
+
+        // cria um variavel que ira receber o array acima convertido em JSON
+        $json = json_encode($retorno, JSON_UNESCAPED_UNICODE);
+
+        // retorno em formato JSON
+        echo $json;
+        exit;
+    }
+
+}
+
+// funcao que verifica se o email do usuario ja esta cadastrado
+function checkEmailProf($email){
+    
+    // comando SQL que será executado no banco
+    $sql = "SELECT email FROM tb_professor WHERE email = '$email'";
+
+    $comando=$GLOBALS['conn']->prepare($sql);
+
+    $comando->execute();
+
+    $validaEmail = $comando->fetchAll(PDO::FETCH_ASSOC);
+
+    // retorna a variavel validaEmail
+    // quando utilizamos return = será retornado um valor pela funcao
+    // quando utilizamos echo = é exibido uma informacao na tela
+    if($validaEmail != null){
+        $retorno = array(
+            'retorno'=>'erro',
+            'mensagem'=>'E-mail já cadastrado, verifique e tente novamente!'
+        );
+
+        // cria um variavel que ira receber o array acima convertido em JSON
+        $json = json_encode($retorno, JSON_UNESCAPED_UNICODE);
+
+        // retorno em formato JSON
+        echo $json;
+        exit;
+    }
+
+}
+
+function checkCpfProf($cpf){
+    
+    // comando SQL que será executado no banco
+    $sql = "SELECT cpf FROM tb_professor WHERE cpf = '$cpf'";
+
+    $comando=$GLOBALS['conn']->prepare($sql);
+
+    $comando->execute();
+
+    $validaCpf = $comando->fetchAll(PDO::FETCH_ASSOC);
+
+    // retorna a variavel validaEmail
+    // quando utilizamos return = será retornado um valor pela funcao
+    // quando utilizamos echo = é exibido uma informacao na tela
+    if($validaCpf != null){
+        $retorno = array(
+            'retorno'=>'erro',
+            'mensagem'=>'CPF já cadastrado, verifique e tente novamente!'
+        );
+
+        // cria um variavel que ira receber o array acima convertido em JSON
+        $json = json_encode($retorno, JSON_UNESCAPED_UNICODE);
+
+        // retorno em formato JSON
+        echo $json;
+        exit;
+    }
+
+}
+
+function checkCpfUser($cpf){
+    
+    // comando SQL que será executado no banco
+    $sql = "SELECT cpf FROM tb_aluno WHERE cpf = '$cpf'";
+
+    $comando=$GLOBALS['conn']->prepare($sql);
+
+    $comando->execute();
+
+    $validaCpf = $comando->fetchAll(PDO::FETCH_ASSOC);
+
+    // retorna a variavel validaEmail
+    // quando utilizamos return = será retornado um valor pela funcao
+    // quando utilizamos echo = é exibido uma informacao na tela
+    if($validaCpf != null){
+        $retorno = array(
+            'retorno'=>'erro',
+            'mensagem'=>'CPF já cadastrado, verifique e tente novamente!'
+        );
+
+        // cria um variavel que ira receber o array acima convertido em JSON
+        $json = json_encode($retorno, JSON_UNESCAPED_UNICODE);
+
+        // retorno em formato JSON
+        echo $json;
+        exit;
+    }
+
+}
 
 ?>
