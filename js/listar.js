@@ -1,3 +1,11 @@
+// inicia a datatable 
+$(document).ready(function () {
+
+    // executa a função delistar alunos 
+    listar();
+    $("")
+});
+
 // função que lista os produtos cadastrados
 const listar = () => {
 
@@ -17,7 +25,7 @@ const listar = () => {
             // $('#horario-atualizado').html(datahora)
 
             // destroi a tabela que foi iniciada
-            $("#tabela").dataTable().fnDestroy()
+            // $("#tabela").dataTable().fnDestroy()
 
             // limpa os dados da tabela
             $('#listar-aluno').html('')
@@ -31,25 +39,29 @@ const listar = () => {
                     <td>${prod.nome}</td>
                     <td>${prod.email}</td>
                     <td>${prod.telefone}</td>
-                    <td>${prod.data_Cadastro}</td>
-                    <td>${prod.ativo}</td> 
-                    <td>${prod.alterar}</td>            
-                  
+                    <td>${prod.data_cadastro}</td>
+                    
                     <td>
-                    <button type="button" class="btn btn-sm- btn-${usuario.ativo == 1 ? 'success':'danger'}">${usuario.ativo == 1 ? 'sim':'não'}</button>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" ${prod.ativo==1?'checked':''}>
+                        </div>
+                    </td>
+
+                    <td>
+                        <button class="btn btn-primary" type="button" onclick="listProdutoID(${prod.id}, 'Entrada')">Entrada</button>
                     </td>
                   
             `)
             })
 
             //  css dinamico para botão 
-                   
-            $('#tabela').DataTable({
-                "language": {
 
-                    url: '//cdn.datatables.net/plug-ins/1.12.1/i18n/pt-BR.json'
-                }
-            });
+            // $('#tabela').DataTable({
+            //     "language": {
+
+            //         url: '//cdn.datatables.net/plug-ins/1.12.1/i18n/pt-BR.json'
+            //     }
+            // });
         });
 
 }

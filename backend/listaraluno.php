@@ -7,7 +7,7 @@ include 'includes/conexao.php';
 
 try{
     // monta a query sql
-    $sql = "SELECT id,nome, email, telefone, telefone2, senha, id_endereco FROM tb_aluno";
+    $sql = "SELECT id, nome, email, telefone, data_cadastro, ativo FROM tb_aluno";
 
     // prepara a execuçao
     $comando = $conn->prepare($sql);
