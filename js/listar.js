@@ -9,7 +9,7 @@ $(document).ready(function () {
 // função que lista os produtos cadastrados
 const listar = () => {
 
-    const result = fetch('backend/listaraluno.php', {
+    const result = fetch('../../backend/listaraluno.php', {
         method: 'POST',
         body: '',
         //     headers: {
