@@ -20,7 +20,7 @@ include 'backend/includes/conexao.php';
 
 <body class="body-imagem">
     <?php
-    include('../includes/navbar.php')
+    include('backend/includes/navbar.php')
     ?>
 
 
