@@ -1,5 +1,5 @@
 <?php
-include 'backend/includes/conexao.php';
+include '../includes/conexao.php';
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@ include 'backend/includes/conexao.php';
 
 <body class="body-imagem">
     <?php
-    include('backend/includes/navbar.php')
+    include('../includes/navbar.php')
     ?>
 
 
