@@ -36,20 +36,22 @@ include 'controle_session.php';
               Consultar
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item fs-6" href="../../../AutoPlanner/backend/front/listar_alunos.php">Aluno</a></li>
+              <li><a class="dropdown-item fs-6" href="../../../AutoPlanner/backend/front/consultar_alunos.php">Aluno</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item fs-6" href="../../../AutoPlanner/backend/front/listar_professor.php">Professor</a></li>
+              <li><a class="dropdown-item fs-6" href="../../../AutoPlanner/backend/front/consultar_professor.php">Professor</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item fs-6" href="../../../AutoPlanner/backend/front/consultar_aulas.php">Aulas</a></li>
             </ul>
           </li>
 
           <li class="nav-item">
             <a class="nav-link active fs-6" aria-current="page" href="#">Contabilidade</a>
-          </li>
+          </li> 
 
           <li class="nav-item">
             <a class="nav-link active fs-6" aria-current="page" href="../../../AutoPlanner/backend/front/gerar_aulas.php">Gerar Aulas</a>
-          </li>
-          
+          </li> 
+
         </ul>
       </div>
     </div>

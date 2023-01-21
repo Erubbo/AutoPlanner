@@ -9,7 +9,7 @@ include '../includes/conexao.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta</title>
+    <title>Consultar Aulas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
@@ -31,9 +31,9 @@ include '../includes/conexao.php';
     <!-- Navbar Search-->
     <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
       <div class="input-group">
-        <input class="form-control" type="text" placeholder="Pesquisar" aria-label="Pesquisar"
+        <input class="form-control" type="text" placeholder="Nome do Aluno" aria-label="Pesquisar"
           aria-describedby="btnNavbarSearch" />
-        <button class="btn btn-light" id="btnNavbarSearch" type="submit">Pesquisar</button>
+        <button class="btn btn-light" id="btnNavbarSearch" type="submit">Nome do Aluno</button>
       </div>
     </form>
 
@@ -99,13 +99,6 @@ include '../includes/conexao.php';
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
