@@ -25,13 +25,13 @@ include '../includes/conexao.php';
 
     <div class="container">
 
-        <h5 class="text-center m-4 text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Gerar Aulas</h5>
+        <h5 class="text-center m-4 text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i>Feriados</h5>
 
         <div class="text-bg-secondary p-3 border border-3 rounded-3 ">
 
             <div class="form-group m-4 mt-2">
                 <form id="form-aluno">
-                    <h6 class="m-4"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>SOBRE O ALUNO :</h6>
+                    <h6 class="m-4"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>Cadastro de Feriados :</h6>
                     <div class="group m-4 ">
 
                         <div class="row ">
@@ -44,10 +44,6 @@ include '../includes/conexao.php';
                         </div>
 
                     </div>
-
-                    <hr class="m-2">
-
-                    <h6 class="m-4"><i class="bi bi-card-heading" style="font-size: 1.5rem"></i> CNH:</h6>
 
                     <div class="group m-4 mt-2">
                         <div class="row ">
