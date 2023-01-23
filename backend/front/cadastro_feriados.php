@@ -50,7 +50,7 @@ include '../includes/conexao.php';
 
                            <div class="form-group col-md-6 ">
                                 <label for="nome">Dia do Feriado</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do Feriado">
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Dia do Feriado">
                             </div>
 
                         </div>
