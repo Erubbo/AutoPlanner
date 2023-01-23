@@ -49,6 +49,11 @@ include 'controle_session.php';
           <li class="nav-item">
             <a class="nav-link active fs-6" aria-current="page" href="../../../AutoPlanner/backend/front/gerar_aulas.php">Gerar Aulas</a>
           </li>
+
+          
+          <li class="nav-item">
+            <a class="nav-link active fs-6" aria-current="page" href="../../../AutoPlanner/backend/front/cadastro_feriados.php">Feriados</a>
+          </li>
           
         </ul>
       </div>
