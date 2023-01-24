@@ -25,7 +25,7 @@ include '../includes/conexao.php';
 
     <div class="container">
 
-        <h5 class="text-center m-4 text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i>Feriados</h5>
+        <h5 class="text-center m-4 text-light"><i class="" style="font-size: 1.5rem"></i>Feriados</h5>
 
         <div class="text-bg-secondary p-3 border border-3 rounded-3 ">
 
