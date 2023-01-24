@@ -13,7 +13,8 @@
 
 <body>
     <?php
-    include('backend/includes/navbar.php')
+    include('backend/includes/navbar.php') 
+    
     ?>
     <div class="container-fluid row">
 
@@ -26,10 +27,16 @@
                 <div id='calendar3'></div>
            
         </div>
-    
+        <a href="backend/logout.php"><button type="submit" class="btn btn-secondary mt-3" onclick="addaluno()">Sair</button></a>
     </div>
-    <a href="backend/logout.php">Sair</a>
+
+    <?php
+   
+    include('backend/includes/footer.php') 
+    ?>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src='calendar/main.js'></script>
     <script src="calendar/locales-all.js"></script>
     <script src="js/calendario.js"></script>
