@@ -2,14 +2,14 @@
 $(document).ready(function () {
 
     // executa a função delistar alunos 
-    listar();
+    listarprofessor();
     $("")
 });
 
 // função que lista os produtos cadastrados
-const listar = () => {
+const listarprofessor = () => {
 
-    const result = fetch('../../backend/listaraluno.php', {
+    const result = fetch('../listarprofessor.php', {
         method: 'POST',
         body: '',
         //     headers: {
@@ -43,7 +43,7 @@ const listar = () => {
                     
                     <td>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" ${prod.ativo==1?'checked':''}>
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" ${prod.ativo==1?'checked':''} onchange="updateProfessor(${prod.id})"> 
                         </div>
                     </td>
 
@@ -65,3 +65,25 @@ const listar = () => {
         });
 
 }
+
+const updateProfessor = (id) => {
+
+    const result = fetch(`../update_professor.php`, {
+      method: "POST",
+      body: `id=${id}`,
+      headers: {
+        'Content-type': 'application/x-www-form-urlencoded'
+      }
+    })
+    .then((response) => response.json()) // retorna uma promise
+    .then((result) => {
+        Swal.fire({
+          icon: result.retorno == 'ok' ? 'success' : 'error',
+          title: result.mensagem,
+          showConfirmButton: false,
+          timer: 2000
+        })      
+    });
+  
+  
+  }

@@ -25,35 +25,27 @@ include '../includes/conexao.php';
 
     <div class="container">
 
-        <h5 class="text-center m-4 text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Gerar Aulas</h5>
+        <h5 class="text-center m-4 text-light"><i class="bi bi-building-check" style="font-size: 1.5rem"></i> Gerar Aulas</h5>
+       
 
         <div class="text-bg-secondary p-3 border border-3 rounded-3 ">
 
             <div class="form-group m-4 mt-2">
                 <form id="form-aluno">
-                    <h6 class="m-4"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>SOBRE O ALUNO :</h6>
+
                     <div class="group m-4 ">
 
                         <div class="row ">
 
                             <div class="form-group col-md-6 ">
-                                <label for="nome">Nome Completo</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do Aluno">
+                                <h6 class=""><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>SOBRE O ALUNO :</h6>
+                                <label class="mt-4" for="nome">Nome Completo do Aluno</label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite Seu Nome">
                             </div>
 
-                        </div>
-
-                    </div>
-
-                    <hr class="m-2">
-
-                    <h6 class="m-4"><i class="bi bi-card-heading" style="font-size: 1.5rem"></i> CNH:</h6>
-
-                    <div class="group m-4 mt-2">
-                        <div class="row ">
-
                             <div class="form-group col-md-6">
-                                <label for="uf">Categorias da CNH</label>
+                                <h6 class=""><i class="bi bi-card-heading" style="font-size: 1.5rem"></i> CNH:</h6>
+                                <label class="mt-4" for="uf">Categorias da CNH</label>
                                 <select class="form-select" aria-label="Default select example" id="uf" name="uf">
                                     <option value="0" disabled selected>Selecione...</option>
                                     <option value="A">A - MOTOS E TRICICLOS</option>
@@ -65,17 +57,17 @@ include '../includes/conexao.php';
                             </div>
 
                         </div>
+
                     </div>
 
                     <hr class="m-2">
-
-                    <h6 class="m-4"><i class="bi bi-geo-alt" style="font-size: 1.5rem"></i> AULAS :</h6>
 
                     <div class="group m-4 mt-2">
                         <div class="row ">
 
                             <div class="form-group col-md-6">
-                                <label for="uf">Quantidade de Aulas</label>
+                                <h6 class="mt-2"><i class="bi bi-geo-alt" style="font-size: 1.5rem"></i> AULAS :</h6>
+                                <label class="mt-4" for="uf">Quantidade de Aulas</label>
                                 <select class="form-select" aria-label="Default select example" id="uf" name="uf">
                                     <option value="0" disabled selected>Selecione...</option>
                                     <option value="1">1</option>
@@ -90,6 +82,23 @@ include '../includes/conexao.php';
                                     <option value="10">10</option>
 
                                 </select>
+
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <h6 class="mt-2"><i class="bi bi-file-earmark-person" style="font-size: 1.5rem"></i> PROFESSOR :</h6>
+                                <label class="mt-4" for="uf">Professores</label>
+                                <select class="form-select" aria-label="Default select example" id="uf" name="uf">
+                                    <option value="0" disabled selected>Selecione...</option>
+                                    <option value="Angelo">Ângelo</option>
+                                    <option value="Eros">Eros</option>
+                                    <option value="Gabriel">Gabriel</option>
+                                    <option value="Izabel">Izabel</option>
+                                    <option value="Jeneffer">Jeneffer</option>
+                                    <option value="Mateus">Mateus</option>
+                                    <option value="Renata">Renata</option>
+
+                                </select>
                             </div>
 
                         </div>
@@ -97,35 +106,12 @@ include '../includes/conexao.php';
 
                     <hr class="m-2">
 
-                    <h6 class="m-4"><i class="bi bi-file-earmark-person" style="font-size: 1.5rem"></i> PROFESSOR :</h6>
-
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-12">
 
                         <div class="group m-4 mt-2">
                             <div class="row ">
 
-                                <div class="form-group col-md-6">
-                                    <label for="uf">Professores</label>
-                                    <select class="form-select" aria-label="Default select example" id="uf" name="uf">
-                                        <option value="0" disabled selected>Selecione...</option>
-                                        <option value="Angelo">Ângelo</option>
-                                        <option value="Eros">Eros</option>
-                                        <option value="Gabriel">Gabriel</option>
-                                        <option value="Izabel">Izabel</option>
-                                        <option value="Jeneffer">Jeneffer</option>
-                                        <option value="Mateus">Mateus</option>
-                                        <option value="Renata">Renata</option>
-                                        
-                                    </select>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="group m-4 mt-2">
-                            <div class="row ">
-
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-12 d-grid gap-2">
 
                                     <button type="button" class="btn btn-primary mt-3" onclick="addaluno()">Gerar</button>
 
