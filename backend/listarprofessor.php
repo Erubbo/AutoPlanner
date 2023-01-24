@@ -1,13 +1,12 @@
 <?php
 
-
 // include 'funcao.php';
 
 include 'includes/conexao.php';
 
 try{
     // monta a query sql
-    $sql = "SELECT id,nome,data_nascimento,genero,nacionalidade,cpf,rg,orgao_emissor,uf,email,telefone,telefone2,senha,id_endereco FROM tb_professor";
+    $sql = "SELECT id,nome,data_nascimento,genero,nacionalidade,cpf,rg,orgao_emissor,uf,email,telefone,telefone2,senha,id_endereco,ativo FROM tb_professor";
 
     // prepara a execuçao
     $comando = $conn->prepare($sql);
@@ -39,5 +38,6 @@ try{
 }
 
 $conn= null;
+
 
 ?>

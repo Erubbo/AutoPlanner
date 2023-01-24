@@ -1,5 +1,5 @@
 <?php
-include 'backend/includes/conexao.php';
+include '../includes/conexao.php';
 
 ?>
 
@@ -10,7 +10,7 @@ include 'backend/includes/conexao.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta</title>
+    <title>Consulta professor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
@@ -38,7 +38,7 @@ include 'backend/includes/conexao.php';
       </div>
     </form>
 
-        <button class="btn btn-primary btn-sm" onclick="listar()"><i class="bi bi-arrow-clockwise"></i></button>
+        <button class="btn btn-primary btn-sm" onclick="listarprofessor()"><i class="bi bi-arrow-clockwise"></i></button>
 
         <table class="table table-dark table-striped mt-4 dt-responsive " id="tabela">
             <thead>
@@ -115,7 +115,7 @@ include 'backend/includes/conexao.php';
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-    <script src="js/listar.js"></script>
+    <script src="../assets/js/listar_professor.js"></script>
 </body>
 
 </html>
