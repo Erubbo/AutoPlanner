@@ -2,14 +2,14 @@
 $(document).ready(function () {
 
     // executa a função delistar alunos 
-    listar();
+    listarprofessor();
     $("")
 });
 
 // função que lista os produtos cadastrados
-const listar = () => {
+const listarprofessor = () => {
 
-    const result = fetch('backend/listaraluno.php', {
+    const result = fetch('../listarprofessor.php', {
         method: 'POST',
         body: '',
         //     headers: {

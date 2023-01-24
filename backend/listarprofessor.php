@@ -1,6 +1,5 @@
 <?php
 
-
 // include 'funcao.php';
 
 include 'includes/conexao.php';
