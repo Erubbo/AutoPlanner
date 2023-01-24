@@ -1,5 +1,6 @@
 <?php
-include '../includes/conexao.php';
+include 'backend/includes/conexao.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +10,7 @@ include '../includes/conexao.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultar Aulas</title>
+    <title>Consulta</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
@@ -19,7 +20,7 @@ include '../includes/conexao.php';
 
 <body class="body-imagem">
     <?php
-    include('../includes/navbar.php')
+    include('backend/includes/navbar.php')
     ?>
 
 
@@ -31,15 +32,15 @@ include '../includes/conexao.php';
     <!-- Navbar Search-->
     <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
       <div class="input-group">
-        <input class="form-control" type="text" placeholder="Nome do Aluno" aria-label="Pesquisar"
+        <input class="form-control" type="text" placeholder="Pesquisar" aria-label="Pesquisar"
           aria-describedby="btnNavbarSearch" />
-        <button class="btn btn-light" id="btnNavbarSearch" type="submit">Nome do Aluno</button>
+        <button class="btn btn-light" id="btnNavbarSearch" type="submit" onclick="listar()">Pesquisar</button>
       </div>
     </form>
 
         <button class="btn btn-primary btn-sm" onclick="listar()"><i class="bi bi-arrow-clockwise"></i></button>
 
-        <table class="table table-secondary table-striped mt-4 dt-responsive " id="tabela">
+        <table class="table table-dark table-striped mt-4 dt-responsive " id="tabela">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -100,6 +101,13 @@ include '../includes/conexao.php';
         </div>
     </div>
 
+
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 
@@ -107,7 +115,7 @@ include '../includes/conexao.php';
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-    <script src="../../js/listar.js"></script>
+    <script src="js/listar.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,9 @@
 <?php
 
 
-// include 'includes/functions.php';
+include '../backend/includes/functions.php';
 
-include 'includes/conexao.php';
+// include '../backend/includes/conexao.php';
 
 try{
     // monta a query sql
