@@ -107,7 +107,7 @@ include '../includes/conexao.php';
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-    <script src="backend/assets/js/scriptConsulta.js"></script>
+    <script src="../../js/listar.js"></script>
 </body>
 
 </html>

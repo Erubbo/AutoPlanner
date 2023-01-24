@@ -9,6 +9,7 @@ try{
     $id = $_POST['id'];
   
         $sql = "UPDATE tb_aluno SET ativo = NOT ativo WHERE id = $id";
+        
     
        $msg = "Usúario alterado com sucesso!";
 
