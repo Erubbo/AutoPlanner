@@ -45,8 +45,8 @@ include '../includes/conexao.php';
 
                             <div class="form-group col-md-6">
                                 <h6 class=""><i class="bi bi-card-heading" style="font-size: 1.5rem"></i> CNH:</h6>
-                                <label class="mt-4" for="uf">Categorias da CNH</label>
-                                <select class="form-select" aria-label="Default select example" id="uf" name="uf">
+                                <label class="mt-4" for="cnh">Categorias da CNH</label>
+                                <select class="form-select" aria-label="Default select example" id="cnh" name="cnh">
                                     <option value="0" disabled selected>Selecione...</option>
                                     <option value="A">A - MOTOS E TRICICLOS</option>
                                     <option value="B">B - CARROS</option>
@@ -67,8 +67,8 @@ include '../includes/conexao.php';
 
                             <div class="form-group col-md-6">
                                 <h6 class="mt-2"><i class="bi bi-geo-alt" style="font-size: 1.5rem"></i> AULAS :</h6>
-                                <label class="mt-4" for="uf">Quantidade de Aulas</label>
-                                <select class="form-select" aria-label="Default select example" id="uf" name="uf">
+                                <label class="mt-4" for="aulas">Quantidade de Aulas</label>
+                                <select class="form-select" aria-label="Default select example" id="aulas" name="aulas">
                                     <option value="0" disabled selected>Selecione...</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -87,8 +87,8 @@ include '../includes/conexao.php';
 
                             <div class="form-group col-md-6">
                                 <h6 class="mt-2"><i class="bi bi-file-earmark-person" style="font-size: 1.5rem"></i> PROFESSOR :</h6>
-                                <label class="mt-4" for="uf">Professores</label>
-                                <select class="form-select" aria-label="Default select example" id="uf" name="uf">
+                                <label class="mt-4" for="professores">Professores</label>
+                                <select class="form-select" aria-label="Default select example" id="professores" name="professores">
                                     <option value="0" disabled selected>Selecione...</option>
                                     <option value="Angelo">Ângelo</option>
                                     <option value="Eros">Eros</option>

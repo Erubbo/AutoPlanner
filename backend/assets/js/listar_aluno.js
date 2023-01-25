@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 
 
-// função que lista os produtos cadastrados
+// função que lista os alunos cadastrados
 const listaraluno = () => {
 
     const result = fetch('../listaraluno.php', {
@@ -50,7 +50,7 @@ const listaraluno = () => {
                     </td>
 
                     <td>
-                        <button class="btn btn-primary" type="button" onclick="listProdutoID(${prod.id}, 'Entrada')">Entrada</button>
+                        <button class="btn btn-primary" type="button" onclick="listaAlunoID(${prod.id}, 'Entrada')">Editar</button>
                     </td>
                   
             `)
@@ -87,5 +87,38 @@ const updateAluno = (id) => {
         })      
     });
   
+  
+  }
+
+  //   data do modal dia 24/01/23
+  const listaAlunoID = (id) =>{
+    // lista os dados do usuário por ID, para alteração de dados
+    // aqui teria que ser implementado toda a requisicao para o backend PHP
+    // o modal terá que ser exibido dentro do result
+    // .then((result) => {o codigo abaixo ficara aqui}
+    const result = fetch(`../listaalunoid.php`, {
+      method: "POST",
+      body: `id=${id}`,
+      headers: {
+        'Content-type': 'application/x-www-form-urlencoded'
+      }
+    })
+    .then((response) => response.json()) // retorna uma promise
+    .then((result) => {
+  
+      // preenche os dados dentro do form de editar usuarios
+      $('#edita-nome').val(result[0].nome)
+      $('#edita-email').val(result[0].email)
+      $('#edita-telefone').val(result[0].telefone)
+      $('#edita-cpf').val(result[0].cpf)
+  
+      $('#edita-telefone').inputmask('(99) 99999-9999')
+      $('#edita-cpf').inputmask('999.999.999-99')
+  
+      // exibe o modal apos preencher os dados para edicao
+      const modalEditar = new bootstrap.Modal('#modal-editar-usuario')
+      modalEditar.show()      
+  
+    }); 
   
   }
