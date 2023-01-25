@@ -25,46 +25,87 @@ include '../includes/conexao.php';
 
     <div class="container">
 
-        <h5 class="text-center m-4 text-light"><i class="i bi-calendar3"" style="font-size: 1.5rem"></i> Feriados</h5>
+        <h5 class="text-center m-4 text-light">Cadastro Feriados</h5>
+
 
         <div class="text-bg-secondary p-3 border border-3 rounded-3 ">
 
             <div class="form-group m-4 mt-2">
                 <form id="form-aluno">
-                    <h6 class="m-4"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i> CADASTRO DE FERIADOS:</h6>
+
                     <div class="group m-4 ">
 
                         <div class="row ">
 
                             <div class="form-group col-md-6 ">
-                                <label for="nome">Nome do Feriado</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do Feriado">
+                                <h6 class=""><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>SOBRE O FERIADO:</h6>
+                                <label class="mt-4" for="nome">Nome do Feriado</label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome do feriado">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <h6 class=""><i class="bi bi-card-heading" style="font-size: 1.5rem"></i>Data inicial</h6>
+                                <label class="mt-4" for="uf">Categorias data inicial</label>
+                                <input type="date" class="form-feriado" aria-label="Default select example" id="feriado" name="feriado">
+                                
                             </div>
 
                         </div>
 
                     </div>
+
+                    <hr class="m-2">
 
                     <div class="group m-4 mt-2">
                         <div class="row ">
 
-                           <div class="form-group col-md-6 ">
-                                <label for="nome">Dia do Feriado</label>
-                                <input type="date" class="form-control" id="nome" name="nome" placeholder="Dia do Feriado">
+                            <div class="form-group col-md-6">
+                                <h6 class="mt-2"><i class="bi bi-geo-alt" style="font-size: 1.5rem"></i> AULAS :</h6>
+                                <label class="mt-4" for="uf">Quantidade de Aulas</label>
+                                <select class="form-select" aria-label="Default select example" id="uf" name="uf">
+                                    <option value="0" disabled selected>Selecione...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <h6 class="mt-2"><i class="bi bi-file-earmark-person" style="font-size: 1.5rem"></i> PROFESSOR :</h6>
+                                <label class="mt-4" for="uf">Professores</label>
+                                <select class="form-select" aria-label="Default select example" id="uf" name="uf">
+                                    <option value="0" disabled selected>Selecione...</option>
+                                    <option value="Angelo">Ângelo</option>
+                                    <option value="Eros">Eros</option>
+                                    <option value="Gabriel">Gabriel</option>
+                                    <option value="Izabel">Izabel</option>
+                                    <option value="Jeneffer">Jeneffer</option>
+                                    <option value="Mateus">Mateus</option>
+                                    <option value="Renata">Renata</option>
+
+                                </select>
                             </div>
 
                         </div>
-
                     </div>
 
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-12">
 
                         <div class="group m-4 mt-2">
                             <div class="row ">
 
-                                <div class="form-group col-md-6">
+                                <div class="form-group">
 
-                                    <button type="button" class="btn btn-primary mt-3" onclick="addaluno()">Cadastrar</button>
+                                    <button type="button" class="btn btn-primary mt-3" onclick="addaluno()">Gerar</button>
 
                                 </div>
 
