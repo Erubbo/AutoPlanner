@@ -72,6 +72,7 @@ include '../includes/conexao.php';
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
+
             <form id="form-usuarios-editar">
               <div class="row">
                 <div class="col-md">
@@ -110,7 +111,7 @@ include '../includes/conexao.php';
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary" onclick="updateUser()">Salvar</button>
+            <button type="button" class="btn btn-primary" onclick="updateProfessor()">Salvar</button>
           </div>
         </div>
       </div>
