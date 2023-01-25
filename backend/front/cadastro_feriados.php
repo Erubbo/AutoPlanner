@@ -25,36 +25,30 @@ include '../includes/conexao.php';
 
     <div class="container">
 
-        <h5 class="text-center m-4 text-light"><i class="i bi-calendar3"" style="font-size: 1.5rem"></i>Feriados</h5>
+        <h5 class="text-center m-4 text-light"><i class="i bi-calendar3"" style="font-size: 1.5rem"></i> Feriados</h5>
 
         <div class="text-bg-secondary p-3 border border-3 rounded-3 ">
 
             <div class="form-group m-4 mt-2">
                 <form id="form-aluno">
-                    <h6 class="m-4"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>Cadastro de Feriados :</h6>
+                    <h6 class="m-4"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i> CADASTRO DE FERIADOS:</h6>
                     <div class="group m-4 ">
 
                         <div class="row ">
 
                             <div class="form-group col-md-6 ">
-                                <label for="nome">Nome dos Feriados</label>
+                                <label for="nome">Nome do Feriado</label>
                                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do Feriado">
                             </div>
 
-                            
-                        </div>
-
-                    </div>
-
-                    <div class="group m-4 mt-2">
-                        <div class="row ">
 
                            <div class="form-group col-md-6 ">
                                 <label for="nome">Dia do Feriado</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Dia do Feriado">
+                                <input type="date" class="form-control" id="nome" name="nome" placeholder="Dia do Feriado">
                             </div>
 
                         </div>
+
                     </div>
 
                     <div class="form-group col-md-6">

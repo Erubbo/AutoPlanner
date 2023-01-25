@@ -6,10 +6,16 @@ $(document).ready(function () {
     $("")
 });
 
+
+
 // função que lista os produtos cadastrados
 const listaraluno = () => {
 
+<<<<<<< Updated upstream:backend/assets/js/listar_aluno.js
     const result = fetch('../listaraluno.php', {
+=======
+    const result = fetch('backend/listar_professor.php', {
+>>>>>>> Stashed changes:js/listar.js
         method: 'POST',
         body: '',
         //     headers: {
@@ -66,6 +72,7 @@ const listaraluno = () => {
 
 }
 
+<<<<<<< Updated upstream:backend/assets/js/listar_aluno.js
 const updateAluno = (id) => {
 
     const result = fetch(`../update_aluno.php`, {
@@ -87,3 +94,5 @@ const updateAluno = (id) => {
   
   
   }
+=======
+>>>>>>> Stashed changes:js/listar.js

@@ -25,8 +25,8 @@ include '../includes/conexao.php';
 
     <div class="container">
 
-        <h5 class="text-center m-4 text-light"><i class="bi bi-building-check" style="font-size: 1.5rem"></i> Gerar Aulas</h5>
-       
+        <h5 class="text-center m-4 text-light"> Gerar Aulas</h5>
+
 
         <div class="text-bg-secondary p-3 border border-3 rounded-3 ">
 
@@ -104,14 +104,12 @@ include '../includes/conexao.php';
                         </div>
                     </div>
 
-                    <hr class="m-2">
-
                     <div class="form-group col-md-12">
 
                         <div class="group m-4 mt-2">
                             <div class="row ">
 
-                                <div class="form-group col-md-12 d-grid gap-2">
+                                <div class="form-group">
 
                                     <button type="button" class="btn btn-primary mt-3" onclick="addaluno()">Gerar</button>
 
