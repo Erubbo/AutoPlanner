@@ -41,6 +41,12 @@ include '../includes/conexao.php';
                                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do Feriado">
                             </div>
 
+                        </div>
+
+                    </div>
+
+                    <div class="group m-4 mt-2">
+                        <div class="row ">
 
                            <div class="form-group col-md-6 ">
                                 <label for="nome">Dia do Feriado</label>
