@@ -9,7 +9,7 @@ include 'includes/conexao.php';
 try{
     $id= $_POST['id'];
     // monta a query sql
-    $sql = "SELECT id, nome, email, telefone, data_cadastro, ativo FROM tb_aluno where id=$id";
+    $sql = "SELECT id,nome,pai, mae, nome_social, pai_af, mae_af,data_nascimento,genero,nacionalidade,cpf,rg,orgao_emissor,uf,email,telefone,telefone2,senha,ativo FROM tb_aluno INNER JOIN tb_endereco on tb_endereco.id =tb_aluno.id_endereco";
 
     // prepara a execuçao
     $comando = $conn->prepare($sql);
