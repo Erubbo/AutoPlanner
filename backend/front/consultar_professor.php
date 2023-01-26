@@ -1,6 +1,8 @@
 <?php
 include '../includes/conexao.php';
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -241,7 +243,7 @@ include '../includes/conexao.php';
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary" onclick="updateUser()">Salvar</button>
+          <button type="button" class="btn btn-primary" onclick="updateProfessor()">Salvar</button>
         </div>
       </div>
     </div>
