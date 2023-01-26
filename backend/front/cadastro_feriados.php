@@ -25,7 +25,7 @@ include '../includes/conexao.php';
 
     <div class="container">
 
-        <h5 class="text-center m-4 text-light bi bi-calendar3">Cadastro Feriados</h5>
+        <h5 class="text-center m-4 text-light bi bi-calendar3"> Cadastro Feriados</h5>
 
 
         <div class="text-bg-secondary p-3 border border-3 rounded-3 ">
@@ -37,27 +37,28 @@ include '../includes/conexao.php';
 
                         <div class="row ">
 
-                            <div class="form-group col-md-6 ">
+                            <div class="form-group col-md-4 ">
                                 <h6 class=""><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>SOBRE O FERIADO:</h6>
-                                <label class="mt-4" for="nome">Nome do Feriado</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome do feriado">
+                                <label class="mt-3" for="nome">Nome do Feriado</label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="">
                             </div>
 
-                            <div class="form-group col-md-6">
-                                <h6 class=""><i class="bi bi-card-heading" style="font-size: 1.5rem"></i>Data dos feriados</h6>
-                                <label class="mt-4">Data inicial</label>
-                                <input type="date" class="form-feriado" id="feriado" name="feriado">
+                            <div class="form-group col-md-4 mt-5">
+                                <h6 class="">Data Inicial</h6>
+                                <input type="date" class="form-control" id="nome" name="nome" placeholder="">
                             </div>
 
-                            <div class="form-group col-md-6">
-                                <button type="button" class="btn btn-primary mt-3" onclick="addferiado()">Cadastrar</button>
+
+
+                            <div class="form-group col-md-4 mt-5">
+                            <h6 class="">Data Final</h6>
+                            <input type="date" class="form-control" id="nome" name="nome" placeholder="">
                             </div>
 
-                            <div class="form-group col-md-6">
-                                <label class="mt-4">Data final</label>
-                                <input type="date" class="form-feriado" id="uf" name="uf">
-                            </div>
+                        </div>
 
+                        <div class="form-group col-md-6">
+                            <button type="button" class="btn btn-primary mt-3" onclick="addferiado()">Cadastrar</button>
                         </div>
 
                     </div>

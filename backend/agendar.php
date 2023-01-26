@@ -1,21 +1,44 @@
 <?php
 
-include 'includes/functions.php';
+date_default_timezone_set('America/Sao_Paulo');
+include 'includes/conexao.php';
+
 
 try{
-    $nome = $_POST['nome'];
-    $cnh = $_POST['cnh'];
+    $id_aluno = $_POST['id_aluno'];
+    $id_carta = $_POST['id_carta'];
     $aulas = $_POST['aulas'];
-    $professores = $_POST['professores'];
+    $id_professor = $_POST['id_professor'];
 
 
-    $sql = "INSERT INTO tb_calendario (id_aluno,id_carta,id_professor) VALUES ('$nome','$cnh', '$professores', '$data', '$hora_inicio', '$hora_final')";
 
-    $command = $conn->prepare($sql);
+    $dia_hoje = date('w');
 
-    $command->execute();
 
-    insertUpdateDelete($sql, $msg);
+
+    // monta a query sql
+    $sql = "SELECT dia_semana FROM tb_disponibilidade where id_aluno = $id_aluno AND dia_semana > '$dia_hoje' ORDER BY hora_inicio LIMIT 1";
+    // prepara a execuçao
+    $comando = $conn->prepare($sql);
+    // executa o comando 
+    $comando->execute();
+    // Variavel que ira guardar o resultado da execução do comando 
+    $dados = $comando->fetch(PDO::FETCH_ASSOC);
+    $proximo_dia_dispo=$dados['dia_semana'];
+
+
+// ========================================= LAÇO
+    $sql = "SELECT * FROM tb_disponibilidade where id_aluno = $id_aluno AND dia_semana ='$proximo_dia_dispo' ORDER BY hora_inicio";
+    // prepara a execuçao
+    $comando = $conn->prepare($sql);
+    // executa o comando 
+    $comando->execute();
+    // Variavel que ira guardar o resultado da execução do comando 
+    $dados_disponibilidade = $comando->fetchAll(PDO::FETCH_ASSOC);
+
+    echo"<pre>";
+   var_dump($dados_disponibilidade);
+
 
 }catch(PDOException $erro){
     pdocatch($erro);
