@@ -13,7 +13,7 @@ include '../includes/conexao.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../css/horarios.css">
-    <link rel="stylesheet" href="../../css/estilo-aluno-professor.css">
+    <link rel="stylesheet" href="../../css/estilo-alunos.css">
 
 
 </head>
@@ -25,7 +25,7 @@ include '../includes/conexao.php';
 
     <div class="container">
 
-        <h5 class="text-center m-4 text-light"> Gerar Aulas</h5>
+        <h5 class="text-center m-4 text-dark"><i class="bi bi-bar-chart-line" style="font-size: 1.5rem"></i> Gerar Aulas</h5>
 
 
         <div class="text-bg-secondary p-3 border border-3 rounded-3 ">
@@ -40,7 +40,7 @@ include '../includes/conexao.php';
                             <div class="form-group col-md-6 ">
                                 <h6 class=""><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>SOBRE O ALUNO :</h6>
                                 <label class="mt-4" for="nome">Nome Completo do Aluno</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite Seu Nome">
+                                <input type="text" class="form-control" id="nome" name="nome">
                             </div>
 
                             <div class="form-group col-md-6">
@@ -124,6 +124,9 @@ include '../includes/conexao.php';
         </div>
     </div>
 
+    <?php
+    include('../includes/footer.php')
+    ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 

@@ -5,7 +5,8 @@
 
 /* -------------------------------------------------------------------- */
 .body-imagem{
-    background-color: rgb(236, 234, 234); 
+    /* background-color: rgb(243, 240, 240);  */
+    background: url(../images/fundo-cinza.jpg)no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

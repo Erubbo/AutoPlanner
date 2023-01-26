@@ -17,18 +17,18 @@
     include('backend/includes/navbar.php')
 
     ?>
-    <div class="container-fluid row ">
+    <div class="container-fluid row m-auto p-auto">
 
-        <div id='calendar1' class="col-8 fundo"></div>
+        <div id='calendar1' class="col-8 fundo p-2"></div>
         <div class="col-4">
 
-            <div id='calendar2' class="fundo"></div>
+            <div id='calendar2' class="fundo p-2"></div>
 
 
             <div id='calendar3'></div>
 
         </div>
-        <a href="backend/logout.php"><button type="submit" class="btn btn-secondary mt-3" onclick="addaluno()">Sair</button></a>
+        
     </div>
 
     <?php
