@@ -51,7 +51,7 @@ include '../includes/conexao.php';
           <th>Alterar</th>
         </tr>
       </thead>
-      <tbody id="listar-aluno">
+      <tbody id="listar-professor">
 
       </tbody>
     </table>

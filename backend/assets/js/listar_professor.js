@@ -28,11 +28,11 @@ const listarprofessor = () => {
             // $("#tabela").dataTable().fnDestroy()
 
             // limpa os dados da tabela
-            $('#listar-aluno').html('')
+            $('#listar-professor').html('')
 
             // função que irá montar as linhas da tabela, o map é um tipo de laço
             result.map(prod => {
-                $('#listar-aluno').append(`
+                $('#listar-professor').append(`
                 <tr>
                     
                     <td>${prod.id}</td>
@@ -43,7 +43,7 @@ const listarprofessor = () => {
                     
                     <td>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" ${prod.ativo==1?'checked':''} onchange="updateProfessor(${prod.id})"> 
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" ${prod.ativo==1?'checked':''} onchange="updateProfessorAtivo(${prod.id})"> 
                         </div>
                     </td>
 
@@ -70,7 +70,7 @@ const listarprofessor = () => {
 
 }
 
-const updateProfessor = (id) => {
+const updateProfessorAtivo = (id) => {
 
     const result = fetch(`../update_professor.php`, {
       method: "POST",

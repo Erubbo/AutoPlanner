@@ -1,15 +1,16 @@
 <?php
 
 // Listaprofessor criado para fazer o modal funcionar dia 24/01/23
+// Select tb alunos e endereço, puxando dados, 26-01
 
 // include 'funcao.php';
 
 include 'includes/conexao.php';
 
-try{
-    $id= $_POST['id'];
-    // monta a query sql
-    $sql = "SELECT id,nome,data_nascimento,genero,nacionalidade,cpf,rg,orgao_emissor,uf,email,telefone,telefone2,senha,id_endereco,ativo FROM tb_professor where id=$id";
+    try{
+        $id= $_POST['id'];
+        // monta a query sql
+        $sql = "SELECT p.id as id_professor, p.nome, p.data_nascimento, p.genero, p.nacionalidade, p.cpf, p.rg, p.orgao_emissor, p.uf, p.email, p.telefone, p.telefone2, p.senha, p.ativo, p.id, e.cep, e.logradouro, e.numero, e.complemento, e.bairro, e.municipio, e.estado, e.ativo FROM tb_professor p INNER JOIN tb_endereco e on e.id = p.id_endereco";
 
     // prepara a execuçao
     $comando = $conn->prepare($sql);
