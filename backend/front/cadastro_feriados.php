@@ -9,7 +9,7 @@ include '../includes/conexao.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerar Aulas</title>
+    <title>Cadastro de feriados</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../css/horarios.css">
@@ -25,55 +25,46 @@ include '../includes/conexao.php';
 
     <div class="container">
 
-        <h5 class="text-center m-4 text-dark"><i class="i bi-calendar3"" style="font-size: 1.5rem"></i> Feriados</h5>
+        <h5 class="text-center m-4 text-light bi bi-calendar3">Cadastro Feriados</h5>
+
 
         <div class="text-bg-secondary p-3 border border-3 rounded-3 ">
 
             <div class="form-group m-4 mt-2">
-                <form id="form-aluno">
-                    <h6 class="m-4"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i> CADASTRO DE FERIADOS:</h6>
+                <form id="form-feriado">
+
                     <div class="group m-4 ">
 
                         <div class="row ">
 
                             <div class="form-group col-md-6 ">
-                                <label for="nome">Nome do Feriado</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do Feriado">
+                                <h6 class=""><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>SOBRE O FERIADO:</h6>
+                                <label class="mt-4" for="nome">Nome do Feriado</label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome do feriado">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <h6 class=""><i class="bi bi-card-heading" style="font-size: 1.5rem"></i>Data dos feriados</h6>
+                                <label class="mt-4">Data inicial</label>
+                                <input type="date" class="form-feriado" id="feriado" name="feriado">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <button type="button" class="btn btn-primary mt-3" onclick="addferiado()">Cadastrar</button>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label class="mt-4">Data final</label>
+                                <input type="date" class="form-feriado" id="uf" name="uf">
                             </div>
 
                         </div>
 
                     </div>
 
-                    <div class="group m-4 mt-2">
-                        <div class="row ">
-
-                           <div class="form-group col-md-6 ">
-                                <label for="nome">Dia do Feriado</label>
-                                <input type="date" class="form-control" id="nome" name="nome" placeholder="Dia do Feriado">
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="form-group col-md-6">
-
-                        <div class="group m-4 mt-2">
-                            <div class="row ">
-
-                                <div class="form-group col-md-6">
-
-                                    <button type="button" class="btn btn-primary mt-3" onclick="addaluno()">Cadastrar</button>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </form>
             </div>
+
+            </form>
         </div>
     </div>
 
