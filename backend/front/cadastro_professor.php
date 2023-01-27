@@ -191,6 +191,7 @@ include '../includes/conexao.php';
                                     <label for="estado">Estado</label>
                                     <select class="form-select" aria-label="Default select example" id="estado" name="estado">
 
+                                        <option value="0">Selecione...</option>
                                         <option value="AC">Acre</option>
                                         <option value="AL">Alagoas</option>
                                         <option value="AP">Amapá</option>

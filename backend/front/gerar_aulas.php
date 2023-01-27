@@ -23,7 +23,7 @@ include '../includes/conexao.php';
     include('../includes/navbar.php')
     ?>
 
-    <div class="container">
+    <div class="container altura-minima">
 
         <h5 class="text-center m-4 text-dark"><i class="bi bi-bar-chart-line" style="font-size: 1.5rem"></i> Gerar Aulas</h5>
 
@@ -122,11 +122,12 @@ include '../includes/conexao.php';
                 </form>
             </div>
         </div>
-    </div>
-
-    <?php
+        <?php
     include('../includes/footer.php')
     ?>
+    </div>
+
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 

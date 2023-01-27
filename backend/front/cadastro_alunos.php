@@ -27,7 +27,7 @@ include '../includes/conexao.php';
 
         <h5 class="text-center m-4 text-dark"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Alunos</h5>
 
-        <div class="text-bg-secondary p-3 border border-3 rounded-3">
+        <div class="p-3 border border-3 rounded-3 altura-minima" style="background-color:black;">
 
             <div class="form-group m-4 mt-2">
                 <form id="form-aluno">
@@ -534,19 +534,11 @@ include '../includes/conexao.php';
         </div>
     </div>
 
-
-
-
-
-
     <?php
     include('../includes/footer.php')
     ?>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
-
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
