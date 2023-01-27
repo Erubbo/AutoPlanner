@@ -71,9 +71,12 @@ include '../includes/conexao.php';
           <h1 class="modal-title fs-5" id="exampleModalLabel">Alterar dados do usuário</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+
         <div class="modal-body">
           <form id="form-usuarios-editar">
             <div class="row">
+            <input class="form-control" type="text" name="edita_id_professor" id="edita_id_professor" />
+            <input class="form-control" type="text" name="edita_id_endereco" id="edita_id_endereco" />
               <div class="col-md">
                 <label class="form-label" for="edita-nome">Nome</label>
                 <input class="form-control" type="text" name="edita-nome" id="edita-nome" />
@@ -261,6 +264,8 @@ include '../includes/conexao.php';
 
 
   <script src="../assets/js/listar_professor.js"></script>
+
+  <script src="../assets/js/alterar_professor.js"></script>
 </body>
 
 </html>

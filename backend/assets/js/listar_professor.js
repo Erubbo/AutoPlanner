@@ -94,7 +94,9 @@ const updateProfessorAtivo = (id) => {
   
   }
 
-//   data do modal dia 24/01/23
+
+
+
 // inclusão de informações edita 25/01/23 - Renata
   const listaProfessorID = (id) =>{
     // lista os dados do usuário por ID, para alteração de dados
@@ -112,6 +114,8 @@ const updateProfessorAtivo = (id) => {
     .then((result) => {
   
       // preenche os dados dentro do form de editar usuarios
+      $('#edita_id_professor').val(result[0].id_professor)
+      $('#edita_id_endereco').val(result[0].id)
       $('#edita-nome').val(result[0].nome)
       $('#edita-email').val(result[0].email)
       $('#edita-telefone').val(result[0].telefone)

@@ -3,15 +3,13 @@
 const updateProfessor = () =>{
     // Valida se o nome foi preenchido - usando JQUERY
 
-    let nome = $('#nome').val()
-
     // Valida se o nome foi preenchido usando JS Vanilla
 
     // captura todo o formulario e cria um formData
     let form = new FormData($('#form-usuarios-editar')[0])
 
     //COLOCAR NO BLOCO DE NOTAS, SEMPRE VAI USAR - envio e recebimento de dados - sempre padrão const result até o then result, sempre vai ser igual.
-    const result = fetch('../../update_professor.php',{
+    const result = fetch('../update_professor.php',{
         method: 'POST',
         body: form
     })
