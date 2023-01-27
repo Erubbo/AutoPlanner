@@ -72,7 +72,7 @@ const listarprofessor = () => {
 
 const updateProfessorAtivo = (id) => {
 
-    const result = fetch(`../update_professor.php`, {
+    const result = fetch(`../update_ativo_professor.php`, {
       method: "POST",
       body: `id=${id}`,
       headers: {
@@ -120,8 +120,6 @@ const updateProfessorAtivo = (id) => {
       $('#edita-rg').val(result[0].rg)
       $('#edita-orgao_emissor').val(result[0].orgao_emissor)
       $('#edita-uf').val(result[0].uf)
-      $('#edita-senha').val(result[0].senha)
-      $('#edita-confirmar').val(result[0].confirmar)
       $('#edita-data_nascimento').val(result[0].data_nascimento)
       $('#edita-genero').val(result[0].genero)
       $('#edita-cep').val(result[0].cep)
