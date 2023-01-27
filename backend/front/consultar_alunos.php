@@ -181,14 +181,6 @@ include '../includes/conexao.php';
                   <label class="form-label" for="edita-telefone2">Telefone 2</label>
                   <input class="form-control" type="text" name="edita-telefone2" id="edita-telefone2" />
                 </div>
-
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md">
-                <label class="form-label" for="edita-telefone">Telefone</label>
-                <input class="form-control" type="text" name="edita-telefone" id="edita-telefone" />
               </div>
               
               <div class="row">
@@ -222,6 +214,7 @@ include '../includes/conexao.php';
                   <input class="form-control" type="text" name="edita-municipio" id="edita-municipio" />
                 </div>
               </div>
+            </div>
 
               <div class="row">
                 <div class="col-md">
@@ -277,10 +270,6 @@ include '../includes/conexao.php';
   <?php
   include('../includes/footer.php')
   ?>
-
-  <!-- importação do JQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-
 
   <!-- importação do JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>

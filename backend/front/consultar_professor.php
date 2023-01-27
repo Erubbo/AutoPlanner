@@ -147,19 +147,8 @@ include '../includes/conexao.php';
                   <label class="form-label" for="edita-telefone2">Telefone 2</label>
                   <input class="form-control" type="text" name="edita-telefone2" id="edita-telefone2" />
                 </div>
-
               </div>
 
-              <div class="row">
-                <div class="col-md">
-                  <label class="form-label" for="edita-senha">Senha</label>
-                  <input class="form-control" type="password" name="edita-senha" id="edita-senha" />
-                </div>
-                <div class="col-md">
-                  <label class="form-label" for="edita-confirmar">Confirmar Senha</label>
-                  <input class="form-control" type="password" name="edita-confirmar" id="edita-confirmar" />
-                </div>
-              </div>
               <div class="row">
                 <div class="col-md">
                   <label class="form-label" for="edita-data_nascimento">Data de Nascimento</label>
