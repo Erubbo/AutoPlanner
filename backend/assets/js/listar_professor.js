@@ -28,11 +28,11 @@ const listarprofessor = () => {
             // $("#tabela").dataTable().fnDestroy()
 
             // limpa os dados da tabela
-            $('#listar-aluno').html('')
+            $('#listar-professor').html('')
 
             // função que irá montar as linhas da tabela, o map é um tipo de laço
             result.map(prod => {
-                $('#listar-aluno').append(`
+                $('#listar-professor').append(`
                 <tr>
                     
                     <td>${prod.id}</td>
@@ -43,7 +43,7 @@ const listarprofessor = () => {
                     
                     <td>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" ${prod.ativo==1?'checked':''} onchange="updateProfessor(${prod.id})"> 
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" ${prod.ativo==1?'checked':''} onchange="updateProfessorAtivo(${prod.id})"> 
                         </div>
                     </td>
 
@@ -70,9 +70,9 @@ const listarprofessor = () => {
 
 }
 
-const updateProfessor = (id) => {
+const updateProfessorAtivo = (id) => {
 
-    const result = fetch(`../update_professor.php`, {
+    const result = fetch(`../update_ativo_professor.php`, {
       method: "POST",
       body: `id=${id}`,
       headers: {
@@ -120,8 +120,6 @@ const updateProfessor = (id) => {
       $('#edita-rg').val(result[0].rg)
       $('#edita-orgao_emissor').val(result[0].orgao_emissor)
       $('#edita-uf').val(result[0].uf)
-      $('#edita-senha').val(result[0].senha)
-      $('#edita-confirmar').val(result[0].confirmar)
       $('#edita-data_nascimento').val(result[0].data_nascimento)
       $('#edita-genero').val(result[0].genero)
       $('#edita-cep').val(result[0].cep)

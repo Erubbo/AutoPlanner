@@ -1,6 +1,8 @@
 <?php
 include '../includes/conexao.php';
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -50,7 +52,7 @@ include '../includes/conexao.php';
           <th>Alterar</th>
         </tr>
       </thead>
-      <tbody id="listar-aluno">
+      <tbody id="listar-professor">
 
       </tbody>
     </table>
@@ -142,19 +144,8 @@ include '../includes/conexao.php';
                   <label class="form-label" for="edita-telefone2">Telefone 2</label>
                   <input class="form-control" type="text" name="edita-telefone2" id="edita-telefone2" />
                 </div>
-
               </div>
 
-              <div class="row">
-                <div class="col-md">
-                  <label class="form-label" for="edita-senha">Senha</label>
-                  <input class="form-control" type="password" name="edita-senha" id="edita-senha" />
-                </div>
-                <div class="col-md">
-                  <label class="form-label" for="edita-confirmar">Confirmar Senha</label>
-                  <input class="form-control" type="password" name="edita-confirmar" id="edita-confirmar" />
-                </div>
-              </div>
               <div class="row">
                 <div class="col-md">
                   <label class="form-label" for="edita-data_nascimento">Data de Nascimento</label>
@@ -240,7 +231,7 @@ include '../includes/conexao.php';
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary" onclick="updateUser()">Salvar</button>
+          <button type="button" class="btn btn-primary" onclick="updateProfessor()">Salvar</button>
         </div>
       </div>
     </div>
