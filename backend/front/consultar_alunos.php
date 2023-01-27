@@ -22,13 +22,14 @@ include '../includes/conexao.php';
   include('../includes/navbar.php')
   ?>
 
+  <h5 class="text-center text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Consultar Alunos</h5>
+
   <!-- ////////////////////////// Datatable para listagem de dados ////////////////////////////// -->
-  <div class="border rounded mt-4 p-2">
-  <h5 class="text-center text-dark"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Consultar Alunos</h5>
+  <div class="border rounded mt-4 p-2 bg-secondary">
 
     <!-- Navbar Search-->
     <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-      
+
       <div class="input-group">
         <input class="form-control" type="text" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="btnNavbarSearch" />
         <button class="btn btn-light" id="btnNavbarSearch" type="submit">Pesquisar</button>
@@ -112,7 +113,7 @@ include '../includes/conexao.php';
     </div>
   </div>
 
-  </div>
+
 
   <?php
   include('../includes/footer.php')

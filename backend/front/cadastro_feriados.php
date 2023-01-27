@@ -24,7 +24,7 @@ include '../includes/conexao.php';
     include('../includes/navbar.php')
     ?>
 
-    <div class="container">
+    <div class="container altura-minima">
 
         <h5 class="text-center m-4 text-dark bi bi-calendar3"> Cadastro Feriados</h5>
 
