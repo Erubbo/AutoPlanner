@@ -63,10 +63,10 @@ include 'controle_session.php';
     </div>
   </div>
 
-  <form class="d-flex" role="buscar">
+  <!-- <form class="d-flex" role="buscar">
     <input class="input-group input-group-sm mb-3 form-control mt-3" type="search" placeholder="Buscar" aria-label="buscar">
     <a href="backend/"> <button class="btn btn-outline-dark mt-3 me-2" type="submit"><i class="bi bi-search"></i></button></a>
-  </form>
+  </form> -->
 
   <div class="dropdown">
     <a class="btn dropdown-toggle m-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

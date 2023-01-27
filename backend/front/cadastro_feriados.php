@@ -19,13 +19,14 @@ include '../includes/conexao.php';
 </head>
 
 <body class="body-imagem">
+
     <?php
     include('../includes/navbar.php')
     ?>
 
     <div class="container">
 
-        <h5 class="text-center m-4 text-light bi bi-calendar3"> Cadastro Feriados</h5>
+        <h5 class="text-center m-4 text-dark bi bi-calendar3"> Cadastro Feriados</h5>
 
 
         <div class="text-bg-secondary p-3 border border-3 rounded-3 ">
@@ -38,21 +39,21 @@ include '../includes/conexao.php';
                         <div class="row ">
 
                             <div class="form-group col-md-4 ">
-                                <h6 class=""><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>SOBRE O FERIADO:</h6>
+                                <h6 class="mb-1"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>SOBRE O FERIADO:</h6>
                                 <label class="mt-3" for="nome">Nome do Feriado</label>
                                 <input type="text" class="form-control" id="nome" name="nome" placeholder="">
                             </div>
 
                             <div class="form-group col-md-4 mt-5">
-                                <h6 class="">Data Inicial</h6>
+                                <label class="">Data Inicial</label>
                                 <input type="date" class="form-control" id="nome" name="nome" placeholder="">
                             </div>
 
 
 
                             <div class="form-group col-md-4 mt-5">
-                            <h6 class="">Data Final</h6>
-                            <input type="date" class="form-control" id="nome" name="nome" placeholder="">
+                                <label class="">Data Final</label>
+                                <input type="date" class="form-control" id="nome" name="nome" placeholder="">
                             </div>
 
                         </div>
@@ -88,5 +89,6 @@ include '../includes/conexao.php';
     <script src="../../js/addcadastros.js"></script>
     <script src="../../js/horarios.js"></script>
 </body>
+
 
 </html>

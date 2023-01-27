@@ -23,11 +23,10 @@ include '../includes/conexao.php';
   include('../includes/navbar.php')
   ?>
 
-
-
-
   <!-- ////////////////////////// Datatable para listagem de dados ////////////////////////////// -->
   <div class="border rounded mt-4 p-2">
+
+  <h5 class="text-center text-dark"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Consultar Professores</h5>
 
     <!-- Navbar Search-->
     <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
@@ -39,7 +38,7 @@ include '../includes/conexao.php';
 
     <button class="btn btn-primary btn-sm" onclick="listarprofessor()"><i class="bi bi-arrow-clockwise"></i></button>
 
-    <table class="table table-dark table-striped mt-4 dt-responsive " id="tabela">
+    <table class="table table-secondary  table-striped mt-4 dt-responsive " id="tabela">
       <thead>
         <tr>
           <th>ID</th>
