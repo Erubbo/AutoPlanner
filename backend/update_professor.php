@@ -1,35 +1,18 @@
+
 <?php
 
-// include do arquivo de conexão
 include 'includes/functions.php';
-
-
-try {
-
-    $id = $_POST['id'];
-
-    $sql = "UPDATE tb_professor SET ativo = NOT ativo WHERE id = $id";
-
-
-    $msg = "Usúario alterado com sucesso!";
-
-    insertUpdateDelete($sql, $msg);
-} catch (PDOException $erro) {
-
-    pdocatch($erro);
-}
-
-// fechar a conexão
-$conn = null;
-
 
 // adicionado 25/01/2023
 
 try {
 
+    // var_dump($_POST);
+    // exit;
     // define os caracteres que iremos remover dos campos preenchidos no form (replace)
     $limpa = array('(',')','-',' ','.');
 
+    $id_professor    =$_POST['edita_id_professor'];
     $nome            = $_POST['edita-nome'];
     $data_nascimento = $_POST['edita-data_nascimento'];
     $genero          = $_POST['edita-genero'];
@@ -42,10 +25,9 @@ try {
     $confirma_email  = $_POST['edita-confirma_email'];
     $telefone        = str_replace($limpa,'',$_POST['edita-telefone']);
     $telefone2       = str_replace($limpa,'',$_POST['edita-telefone2']);
-    $senha           = $_POST['edita-senha'];
-    $confirmar       = $_POST['edita-confirmar'];
 
     //endereço
+    $id_endereco     =$_POST['edita_id_endereco'];
     $cep             = str_replace($limpa,'',$_POST['edita-cep']);
     $logradouro      = $_POST['edita-logradouro'];
     $numero          = str_replace($limpa,'',$_POST['edita-numero']);
@@ -74,39 +56,39 @@ try {
     checkCpfProf($cpf);
 
 
-    if ($senha != $confirmar) {
-        // criar um array para armazenar a mensagem de erro
-        $retorno = array(
-            'retorno' => 'erro',
-            'mensagem' => 'Senhas não conferem, verifique e tente novamente'
-        );
+    // if ($senha != $confirmar) {
+    //     // criar um array para armazenar a mensagem de erro
+    //     $retorno = array(
+    //         'retorno' => 'erro',
+    //         'mensagem' => 'Senhas não conferem, verifique e tente novamente'
+    //     );
 
-        // cria um variavel que ira receber o array acima convertido em JSON
-        $json = json_encode($retorno, JSON_UNESCAPED_UNICODE);
+    //     // cria um variavel que ira receber o array acima convertido em JSON
+    //     $json = json_encode($retorno, JSON_UNESCAPED_UNICODE);
 
-        // retorno em formato JSON
-        echo $json;
-        // encerra o script
-        exit;
-    }
+    //     // retorno em formato JSON
+    //     echo $json;
+    //     // encerra o script
+    //     exit;
+    // }
 
     // Criptografa a senha do usuario
     // alguns algo de cript: sha1, md5, password hash php
-    $senha =  sha1($senha);
+    // $senha =  sha1($senha);
 
 
     // add endereço 
-    $sql = "UPDATE tb_endereco (cep,logradouro,numero,complemento,bairro,municipio,estado)";
+    $sql = "UPDATE tb_endereco SET cep=$cep,logradouro=$logradouro,numero=$numero,complemento=$complemento,bairro=$bairro,municipio=$municipio,estado=$estado WHERE id = $id_endereco  ";
 
-    // $command = $conn->prepare($sql);
+    $command = $conn->prepare($sql);
 
-    // $command->execute();
+    $command->execute();
 
     // captura o id da tabela do comandoi executado acima 
     // necessario id para insert na tabela de endereços 
     // $id_endereco = $conn->listarprofessor();
 
-    $sql = "UPDATE tb_professor (nome,data_nascimento,genero,nacionalidade,cpf,rg,orgao_emissor,uf,email,telefone,telefone2,senha,id_endereco)";
+    $sql = "UPDATE tb_professor SET nome=$nome,data_nascimento=$data_nascimento,$genero=$genero,nacionalidade=$nacionalidade,cpf=$cpf,rg=$rg,orgao_emissor=$orgao_emissor,uf=$uf,email=$email,confirma_email=$confirma_email,telefone=$telefone,telefone2=$telefone2 WHERE id = $id_professor";
 
     $msg = "Usuário alterar com sucesso!";
 
@@ -118,3 +100,5 @@ try {
 
 // Fechar a conexao
 $conn = null;
+
+?>

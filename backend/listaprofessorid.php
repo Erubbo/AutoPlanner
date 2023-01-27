@@ -10,7 +10,7 @@ include 'includes/conexao.php';
     try{
         $id= $_POST['id'];
         // monta a query sql
-        $sql = "SELECT p.id as id_professor, p.nome, p.data_nascimento, p.genero, p.nacionalidade, p.cpf, p.rg, p.orgao_emissor, p.uf, p.email, p.telefone, p.telefone2, p.senha, p.ativo, p.id, e.cep, e.logradouro, e.numero, e.complemento, e.bairro, e.municipio, e.estado, e.ativo FROM tb_professor p INNER JOIN tb_endereco e on e.id = p.id_endereco";
+        $sql = "SELECT p.id as id_professor, p.nome, p.data_nascimento, p.genero, p.nacionalidade, p.cpf, p.rg, p.orgao_emissor, p.uf, p.email, p.telefone, p.telefone2, p.senha, p.ativo, p.id, e.cep, e.logradouro, e.numero, e.complemento, e.bairro, e.municipio, e.estado, e.ativo FROM tb_professor p INNER JOIN tb_endereco e on e.id = p.id_endereco where p.id=$id";
 
     // prepara a execuçao
     $comando = $conn->prepare($sql);
