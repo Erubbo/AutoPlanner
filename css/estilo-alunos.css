@@ -3,15 +3,27 @@
     padding: 0;
 }
 
+.altura-minima{
+  min-height: 100vh;
+}
+
 /* -------------------------------------------------------------------- */
 .body-imagem{
-    background: url(../images/city.jpg) no-repeat center center fixed; 
+    /* background-color: rgb(243, 240, 240);  */
+    background: url(../images/bg-01.jpg)no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    backdrop-filter: brightness(0.9) blur(2px) ; 
+    backdrop-filter: brightness(0.7) blur(2px) ; 
     
+    
+}
+
+.fundo{
+  background-color: white;
+  color: black;
+  border-radius: 6px;
 }
 
 /* ---------------------------------------------------------------------- */

@@ -13,11 +13,7 @@ include 'controle_session.php';
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active fs-6 fw-bold" aria-current="page" href="../../../AutoPlanner/tela_prin.php">Home</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link fs-6 fw-bold" href="#">Agenda</a>
+          <a class="nav-link active fs-6 fw-bold" aria-current="page" href="../../../AutoPlanner/tela_prin.php">Agenda</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -51,10 +47,6 @@ include 'controle_session.php';
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active fs-6 fw-bold" aria-current="page" href="#">Contabilidade</a>
-        </li>
-
-        <li class="nav-item">
           <a class="nav-link active fs-6 fw-bold" aria-current="page" href="../../../AutoPlanner/backend/front/gerar_aulas.php">Gerar Aulas</a>
         </li>
 
@@ -62,14 +54,19 @@ include 'controle_session.php';
           <a class="nav-link active fs-6 fw-bold" aria-current="page" href="../../../AutoPlanner/backend/front/cadastro_feriados.php">Feriados</a>
         </li>
 
+        <!-- Contabilidade 25/01/2023  -->
+        <li class="nav-item">
+          <a class="nav-link active fs-6 fw-bold" aria-current="page" href="#"></a>
+        </li>
+
       </ul>
     </div>
   </div>
 
-  <form class="d-flex" role="buscar">
+  <!-- <form class="d-flex" role="buscar">
     <input class="input-group input-group-sm mb-3 form-control mt-3" type="search" placeholder="Buscar" aria-label="buscar">
     <a href="backend/"> <button class="btn btn-outline-dark mt-3 me-2" type="submit"><i class="bi bi-search"></i></button></a>
-  </form>
+  </form> -->
 
   <div class="dropdown">
     <a class="btn dropdown-toggle m-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -77,6 +74,7 @@ include 'controle_session.php';
     </a>
 
     <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item text-center p-0" href="backend/">Editar Perfil</a></li>
       <li><a class="dropdown-item text-center p-0" href="backend/logout.php">Sair</a></li>
     </ul>
   </div>

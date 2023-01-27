@@ -12,7 +12,7 @@ include '../includes/conexao.php';
   <title>Consulta aluno</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
+  <link rel="stylesheet" href="../../css/estilo-alunos.css">
 
 
 </head>
@@ -24,9 +24,11 @@ include '../includes/conexao.php';
 
   <!-- ////////////////////////// Datatable para listagem de dados ////////////////////////////// -->
   <div class="border rounded mt-4 p-2">
+  <h5 class="text-center text-dark"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Consultar Alunos</h5>
 
     <!-- Navbar Search-->
     <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+      
       <div class="input-group">
         <input class="form-control" type="text" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="btnNavbarSearch" />
         <button class="btn btn-light" id="btnNavbarSearch" type="submit">Pesquisar</button>
@@ -35,7 +37,7 @@ include '../includes/conexao.php';
 
     <button class="btn btn-primary btn-sm" onclick="listaraluno()"><i class="bi bi-arrow-clockwise"></i></button>
 
-    <table class="table table-dark table-striped mt-4 dt-responsive " id="tabela">
+    <table class="table table-secondary  table-striped mt-4 dt-responsive " id="tabela">
       <thead>
         <tr>
           <th>ID</th>
@@ -56,7 +58,6 @@ include '../includes/conexao.php';
   <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
 
   <!-- Modal dia 25/01/2023 -->
-  <!-- inclusão de campos 25/01/23 renata -->
   <!-- Modal de Edição de Usuário -->
   <div class="modal fade" id="modal-editar-usuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -212,6 +213,7 @@ include '../includes/conexao.php';
                   <input class="form-control" type="text" name="edita-municipio" id="edita-municipio" />
                 </div>
               </div>
+            </div>
 
               <div class="row">
                 <div class="col-md">
@@ -262,10 +264,11 @@ include '../includes/conexao.php';
     </div>
   </div>
 
+  </div>
 
-
-
-
+  <?php
+  include('../includes/footer.php')
+  ?>
 
   <!-- importação do JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
