@@ -13,7 +13,7 @@ include '../includes/conexao.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../css/horarios.css">
-    <link rel="stylesheet" href="../../css/estilo-aluno-professor.css">
+    <link rel="stylesheet" href="../../css/estilo-alunos.css">
 
 
 </head>
@@ -27,9 +27,9 @@ include '../includes/conexao.php';
 
         <h5 class="text-center m-4 text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Alunos</h5>
 
-        <div class="text-bg-secondary p-3 border border-3 rounded-3">
+        <div class="p-3 border border-3 rounded-3 altura-minima bg-secondary">
 
-            <div class="form-group m-4 mt-2">
+            <div class="form-group m-4 mt-2 text-light">
                 <form id="form-aluno">
                     <h6 class="m-4"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>DADOS PESSOAIS :</h6>
                     <div class="group m-4">
@@ -37,36 +37,36 @@ include '../includes/conexao.php';
                         <div class="row ">
                             <div class="form-group col-md-6">
                                 <label for="nome">Nome Completo *</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
+                                <input type="text" class="form-control" id="nome" name="nome">
                             </div>
 
                             <div class="form-group col-md-6">
                                 <label for="nome_social">Nome Social</label>
-                                <input type="text" class="form-control" id="nome_social" name="nome_social" placeholder="Nome Social">
+                                <input type="text" class="form-control" id="nome_social" name="nome_social">
                             </div>
                         </div>
 
                         <div class="row mt-2">
                             <div class="form-group col-md-6">
                                 <label for="pai">Nome do Pai</label>
-                                <input type="text" class="form-control" id="pai" name="pai" placeholder="Nome do Pai">
+                                <input type="text" class="form-control" id="pai" name="pai">
                             </div>
 
                             <div class="form-group col-md-6 ">
                                 <label for="mae">Nome da Mãe</label>
-                                <input type="text" class="form-control" id="mae" name="mae" placeholder="Nome da Mãe">
+                                <input type="text" class="form-control" id="mae" name="mae">
                             </div>
                         </div>
 
                         <div class="row mt-2">
                             <div class="form-group col-md-6">
                                 <label for="pai_af">Pais Afetivos 1</label>
-                                <input type="text" class="form-control" id="pai_af" name="pai_af" placeholder="Nome do Pai">
+                                <input type="text" class="form-control" id="pai_af" name="pai_af">
                             </div>
 
                             <div class="form-group col-md-6">
                                 <label for="mae_af">Pais Afetivos 2</label>
-                                <input type="text" class="form-control" id="mae_af" name="mae_af" placeholder="Nome da Mãe">
+                                <input type="text" class="form-control" id="mae_af" name="mae_af">
                             </div>
                         </div>
 
@@ -79,13 +79,13 @@ include '../includes/conexao.php';
                             <div class="form-group col-md-6">
                                 <label for="genero">Genero</label>
                                 <select class="form-select" aria-label="Default select example" id="genero" name="genero">
-                                <option value="0" selected disabled>Selecione...</option>
-                                            <option value="1">Homem Cisgênero</option>
-                                            <option value="2">Mulher Cisgênero</option>
-                                            <option value="2">Homem Transgênero</option>
-                                            <option value="2">Mulher Transgênero</option>
-                                            <option value="2">Outro</option>
-                                            <option value="2">Prefiro Não Responder</option>
+                                    <option value="0" selected disabled>Selecione...</option>
+                                    <option value="1">Homem Cisgênero</option>
+                                    <option value="2">Mulher Cisgênero</option>
+                                    <option value="3">Homem Transgênero</option>
+                                    <option value="4">Mulher Transgênero</option>
+                                    <option value="5">Outro</option>
+                                    <option value="6">Prefiro Não Responder</option>
                                 </select>
                             </div>
 
@@ -99,8 +99,8 @@ include '../includes/conexao.php';
                                     <option value="0" disabled selected>Selecione...</option>
                                     <option value="1">Brasileiro</option>
                                     <option value="2">Brasileiro Naturalizado</option>
-                                    <option value="1">Estrangeiro</option>
-                                    <option value="1">Brasileiro Nascido no Exterior</option>
+                                    <option value="3">Estrangeiro</option>
+                                    <option value="4">Brasileiro Nascido no Exterior</option>
                                 </select>
                             </div>
 
@@ -117,19 +117,19 @@ include '../includes/conexao.php';
                         <div class="row ">
                             <div class="form-group col-md-6">
                                 <label for="cpf">CPF *</label>
-                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF">
+                                <input type="text" class="form-control" id="cpf" name="cpf">
                             </div>
 
 
 
                             <div class="form-group col-md-6">
                                 <label for="rg">RG *</label>
-                                <input type="text" class="form-control" id="rg" name="rg" placeholder="RG">
+                                <input type="text" class="form-control" id="rg" name="rg">
                             </div>
 
                             <div class="form-group col-md-6">
                                 <label for="orgao_emissor">Orgão Emissor *</label>
-                                <input type="text" class="form-control" id="orgao_emissor" name="orgao_emissor" placeholder="RG">
+                                <input type="text" class="form-control" id="orgao_emissor" name="orgao_emissor">
                             </div>
 
                             <div class="form-group col-md-6">
@@ -166,9 +166,6 @@ include '../includes/conexao.php';
                                 </select>
                             </div>
 
-
-
-
                         </div>
                     </div>
                     <hr class="m-2">
@@ -180,14 +177,14 @@ include '../includes/conexao.php';
                                 <label for="cep">CEP *</label>
                                 <div class="input-group mb-3">
 
-                                    <input id="cep" name="cep" type="text" class="form-control" placeholder="CEP">
+                                    <input id="cep" name="cep" type="text" class="form-control">
                                     <button class="input-group-text" type="button" id="basic-addon1" onclick="consultaCep()"><i class="bi bi-search "></i></button>
                                 </div>
                             </div>
 
                             <div class="form-group col-md-6">
                                 <label for="logradouro">Logradouro</label>
-                                <input type="text" class="form-control" id="logradouro" name="logradouro" placeholder="Logradouro">
+                                <input type="text" class="form-control" id="logradouro" name="logradouro">
                             </div>
 
                         </div>
@@ -196,12 +193,12 @@ include '../includes/conexao.php';
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label for="numero">Numero *</label>
-                                <input type="text" class="form-control" id="numero" name="numero" placeholder="Nº">
+                                <input type="text" class="form-control" id="numero" name="numero">
                             </div>
 
                             <div class="form-group col-md-6">
                                 <label for="complemento">Complemento</label>
-                                <input type="text" class="form-control" id="complemento" name="complemento" placeholder="Complemento">
+                                <input type="text" class="form-control" id="complemento" name="complemento">
                             </div>
                         </div>
 
@@ -210,12 +207,12 @@ include '../includes/conexao.php';
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label for="bairro">Bairro</label>
-                                <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro">
+                                <input type="text" class="form-control" id="bairro" name="bairro">
                             </div>
 
                             <div class="form-group col-md-6">
                                 <label for="municipio">Municipio</label>
-                                <input type="text" class="form-control" id="municipio" name="municipio" placeholder="Municipio">
+                                <input type="text" class="form-control" id="municipio" name="municipio">
                             </div>
                         </div>
 
@@ -495,32 +492,32 @@ include '../includes/conexao.php';
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label for="email">E-mail *</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@hotmail.com">
+                                <input type="email" class="form-control" id="email" name="email">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="confirma_email">Confirmar E-mail</label>
-                                <input type="email" class="form-control" id="confirma_email" name="confirma_email" placeholder="exemplo@hotmail.com">
+                                <input type="email" class="form-control" id="confirma_email" name="confirma_email">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label for="telefone">DDD | Telefone *</label>
-                                <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
+                                <input type="text" class="form-control" id="telefone" name="telefone">
                             </div>
 
                             <div class="form-group col-md-6">
                                 <label for="telefone2">DDD | Telefone 2 </label>
-                                <input type="text" class="form-control" id="telefone2" name="telefone2" placeholder="Telefone 2">
+                                <input type="text" class="form-control" id="telefone2" name="telefone2">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label for="senha">Senha </label>
-                                <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
+                                <input type="password" class="form-control" id="senha" name="senha">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="confirmar">Confirmar Senha </label>
-                                <input type="password" class="form-control" id="confirmar" name="confirmar" placeholder="Confirme sua senha">
+                                <input type="password" class="form-control" id="confirmar" name="confirmar">
                             </div>
                         </div>
 
@@ -530,21 +527,18 @@ include '../includes/conexao.php';
                     </div>
 
                 </form>
+
             </div>
+  
         </div>
+
     </div>
 
-
-
-
-
-
-
-
+    <?php
+    include('../includes/footer.php')
+    ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
-
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>

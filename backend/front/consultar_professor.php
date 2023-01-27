@@ -1,6 +1,8 @@
 <?php
 include '../includes/conexao.php';
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +15,7 @@ include '../includes/conexao.php';
   <title>Consulta professor</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
+  <link rel="stylesheet" href="../../css/estilo-alunos.css">
 
 
 </head>
@@ -23,11 +25,10 @@ include '../includes/conexao.php';
   include('../includes/navbar.php')
   ?>
 
-
-
+  <h5 class="text-center text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Consultar Professores</h5>
 
   <!-- ////////////////////////// Datatable para listagem de dados ////////////////////////////// -->
-  <div class="border rounded mt-4 p-2">
+  <div class="border rounded mt-4 p-2  bg-secondary">
 
     <!-- Navbar Search-->
     <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
@@ -39,7 +40,7 @@ include '../includes/conexao.php';
 
     <button class="btn btn-primary btn-sm" onclick="listarprofessor()"><i class="bi bi-arrow-clockwise"></i></button>
 
-    <table class="table table-dark table-striped mt-4 dt-responsive " id="tabela">
+    <table class="table table-secondary  table-striped mt-4 dt-responsive " id="tabela">
       <thead>
         <tr>
           <th>ID</th>
@@ -51,7 +52,7 @@ include '../includes/conexao.php';
           <th>Alterar</th>
         </tr>
       </thead>
-      <tbody id="listar-aluno">
+      <tbody id="listar-professor">
 
       </tbody>
     </table>
@@ -143,19 +144,8 @@ include '../includes/conexao.php';
                   <label class="form-label" for="edita-telefone2">Telefone 2</label>
                   <input class="form-control" type="text" name="edita-telefone2" id="edita-telefone2" />
                 </div>
-
               </div>
 
-              <div class="row">
-                <div class="col-md">
-                  <label class="form-label" for="edita-senha">Senha</label>
-                  <input class="form-control" type="password" name="edita-senha" id="edita-senha" />
-                </div>
-                <div class="col-md">
-                  <label class="form-label" for="edita-confirmar">Confirmar Senha</label>
-                  <input class="form-control" type="password" name="edita-confirmar" id="edita-confirmar" />
-                </div>
-              </div>
               <div class="row">
                 <div class="col-md">
                   <label class="form-label" for="edita-data_nascimento">Data de Nascimento</label>
@@ -241,7 +231,7 @@ include '../includes/conexao.php';
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary" onclick="updateUser()">Salvar</button>
+          <button type="button" class="btn btn-primary" onclick="updateProfessor()">Salvar</button>
         </div>
       </div>
     </div>
@@ -249,7 +239,9 @@ include '../includes/conexao.php';
 
   </div>
 
-
+  <?php
+  include('../includes/footer.php')
+  ?>
 
 
 
