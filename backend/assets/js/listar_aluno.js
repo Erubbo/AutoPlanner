@@ -45,7 +45,7 @@ const listaraluno = () => {
                     
                     <td>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" ${prod.ativo==1?'checked':''} onchange="updateAluno(${prod.id})"> 
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" ${prod.ativo==1?'checked':''} onchange="updateAlunoAtivo(${prod.id})"> 
                         </div>
                     </td>
 
@@ -68,7 +68,7 @@ const listaraluno = () => {
 
 }
 
-const updateAluno = (id) => {
+const updateAlunoAtivo = (id) => {
 
     const result = fetch(`../update_aluno.php`, {
       method: "POST",

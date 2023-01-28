@@ -68,8 +68,10 @@ include '../includes/conexao.php';
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form id="form-usuarios-editar">
+          <form id="form-aluno-editar">
             <div class="row">
+            <input class="form-control" type="text" name="edita_id_aluno" id="edita_id_aluno" />
+            <input class="form-control" type="text" name="edita_id_endereco" id="edita_id_endereco" />
               <div class="col-md">
                 <label class="form-label" for="edita-nome">Nome</label>
                 <input class="form-control" type="text" name="edita-nome" id="edita-nome" />
@@ -259,7 +261,7 @@ include '../includes/conexao.php';
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary" onclick="updateUser()">Salvar</button>
+          <button type="button" class="btn btn-primary" onclick="updateAluno()">Salvar</button>
         </div>
       </div>
     </div>
@@ -287,6 +289,7 @@ include '../includes/conexao.php';
 
 
   <script src="../assets/js/listar_aluno.js"></script>
+  <script src="../assets/js/alterar_aluno.js"></script>
 </body>
 
 </html>
