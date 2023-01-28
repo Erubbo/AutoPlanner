@@ -1,40 +1,63 @@
 document.addEventListener("DOMContentLoaded", function () {
   calendar1();
   calendar2();
-  calendar3();
 });
 
 const calendar1 = () => {
-  var calendarEl = document.getElementById("calendar1");
 
-  var calendar = new FullCalendar.Calendar(calendarEl, {
-    locale: "pt-br",
+    var calendarEl = document.getElementById('calendar1');
 
-    initialView: "timeGridWeek",
-    headerToolbar: {
-      left: "prev,next today",
-      center: "title",
-      right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
-    },
-    height: "auto",
-    navLinks: true,
-    editable: true,
-    selectable: true,
-    selectMirror: true,
-    nowIndicator: true,
-    events: [
-      
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      locale: "pt-br",
+      initialView: 'timeGridWeek',
+      headerToolbar: {
+        left: '',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+      },
+      navLinks: true, // can click day/week names to navigate views
+      selectable: true,
+      selectMirror: true,
+      select: function(arg) {
+        var title = prompt('Event Title:');
+        if (title) {
+          calendar.addEvent({
+            title: title,
+            start: arg.start,
+            end: arg.end,
+            allDay: arg.allDay
+          })
+        }
+        calendar.unselect()
+      },
+      eventClick: function(arg) {
+        if (confirm('Are you sure you want to delete this event?')) {
+          arg.event.remove()
+        }
+      },
+      editable: true,
+      dayMaxEvents: true, // allow "more" link when too many events
+      events: [
+        {
+          title: 'All Day Event',
+          start: '2020-09-01'
+        },
+        {
+          title: 'Long Event',
+          start: '2020-09-07',
+          end: '2020-09-10'
+        },
       {
-        title: "Meeting",
-        start: "2022-11-30T10:30:00",
-        end: "2022-11-30T12:30:00",
-      }
-      
-    ],
-  });
+          title: 'Click for Google',
+          url: 'http://google.com/',
+          start: '2020-09-28'
+        }
+      ]
+    });
 
-  calendar.render();
-};
+    calendar.render();
+  };
+
 
 const calendar2 = () => {
   var initialLocaleCode = 'pt-br';
