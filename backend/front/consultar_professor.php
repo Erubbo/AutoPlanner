@@ -34,10 +34,10 @@ include '../includes/conexao.php';
   include('../includes/navbar.php')
   ?>
 
-  <!-- ////////////////////////// Datatable para listagem de dados ////////////////////////////// -->
-  <div class="border rounded mt-4 p-2">
+  <h5 class="text-center text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Consultar Professores</h5>
 
-  <h5 class="text-center text-dark"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Consultar Professores</h5>
+  <!-- ////////////////////////// Datatable para listagem de dados ////////////////////////////// -->
+  <div class="border rounded mt-4 p-2  bg-secondary">
 
     <!-- Navbar Search-->
     <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
@@ -80,9 +80,12 @@ include '../includes/conexao.php';
           <h1 class="modal-title fs-5" id="exampleModalLabel">Alterar dados do usuário</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+
         <div class="modal-body">
           <form id="form-usuarios-editar">
             <div class="row">
+            <input class="form-control" type="text" name="edita_id_professor" id="edita_id_professor" />
+            <input class="form-control" type="text" name="edita_id_endereco" id="edita_id_endereco" />
               <div class="col-md">
                 <label class="form-label" for="edita-nome">Nome</label>
                 <input class="form-control" type="text" name="edita-nome" id="edita-nome" />
@@ -249,7 +252,7 @@ include '../includes/conexao.php';
   </div>
 
   <?php
-    include('../includes/footer.php')
+  include('../includes/footer.php')
   ?>
 
 
@@ -281,6 +284,8 @@ include '../includes/conexao.php';
 
 
   <script src="../assets/js/listar_professor.js"></script>
+
+  <script src="../assets/js/alterar_professor.js"></script>
 </body>
 
 </html>

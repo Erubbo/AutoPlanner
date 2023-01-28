@@ -12,6 +12,7 @@ try {
 
 
     $msg = "Usúario alterado com sucesso!";
+    
 
     insertUpdateDelete($sql, $msg);
 } catch (PDOException $erro) {
@@ -21,4 +22,3 @@ try {
 
 // fechar a conexão
 $conn = null;
-

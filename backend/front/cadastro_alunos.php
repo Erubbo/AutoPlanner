@@ -25,11 +25,11 @@ include '../includes/conexao.php';
 
     <div class="container">
 
-        <h5 class="text-center m-4 text-dark"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Alunos</h5>
+        <h5 class="text-center m-4 text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Alunos</h5>
 
-        <div class="p-3 border border-3 rounded-3 altura-minima" style="background-color:black;">
+        <div class="p-3 border border-3 rounded-3 altura-minima bg-secondary">
 
-            <div class="form-group m-4 mt-2">
+            <div class="form-group m-4 mt-2 text-light">
                 <form id="form-aluno">
                     <h6 class="m-4"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>DADOS PESSOAIS :</h6>
                     <div class="group m-4">
@@ -82,10 +82,10 @@ include '../includes/conexao.php';
                                     <option value="0" selected disabled>Selecione...</option>
                                     <option value="1">Homem Cisgênero</option>
                                     <option value="2">Mulher Cisgênero</option>
-                                    <option value="2">Homem Transgênero</option>
-                                    <option value="2">Mulher Transgênero</option>
-                                    <option value="2">Outro</option>
-                                    <option value="2">Prefiro Não Responder</option>
+                                    <option value="3">Homem Transgênero</option>
+                                    <option value="4">Mulher Transgênero</option>
+                                    <option value="5">Outro</option>
+                                    <option value="6">Prefiro Não Responder</option>
                                 </select>
                             </div>
 
@@ -99,8 +99,8 @@ include '../includes/conexao.php';
                                     <option value="0" disabled selected>Selecione...</option>
                                     <option value="1">Brasileiro</option>
                                     <option value="2">Brasileiro Naturalizado</option>
-                                    <option value="1">Estrangeiro</option>
-                                    <option value="1">Brasileiro Nascido no Exterior</option>
+                                    <option value="3">Estrangeiro</option>
+                                    <option value="4">Brasileiro Nascido no Exterior</option>
                                 </select>
                             </div>
 
@@ -165,9 +165,6 @@ include '../includes/conexao.php';
                                     <option value="TO">TO</option>
                                 </select>
                             </div>
-
-
-
 
                         </div>
                     </div>
@@ -530,8 +527,11 @@ include '../includes/conexao.php';
                     </div>
 
                 </form>
+
             </div>
+  
         </div>
+
     </div>
 
     <?php

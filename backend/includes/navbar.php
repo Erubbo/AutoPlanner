@@ -2,7 +2,7 @@
 include 'controle_session.php';
 ?>
 
-<nav class="navbar navbar-expand-lg text-bg-light text-dark shadow-sm p-0 mb-5 bg-white" style="z-index:100">
+<nav class="navbar navbar-expand-lg text-bg-light text-dark shadow-sm p-0 mb-5 bg-white "  id="scrollspyHeading1" style="z-index:100">
   <div class="container-fluid position-relative">
     <a class="navbar-brand" href="../../../AutoPlanner/tela_prin.php">
       <img src="images/logo_tipo.png" alt="" width="140px">
