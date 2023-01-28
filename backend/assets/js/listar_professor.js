@@ -59,6 +59,7 @@ const listarprofessor = () => {
             // ---------------------------------------
 
             //  css dinamico para botão 
+           
 
             $('#tabela').DataTable({
                 "language": {
