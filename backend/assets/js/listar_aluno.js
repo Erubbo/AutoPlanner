@@ -6,8 +6,6 @@ $(document).ready(function () {
     $("")
 });
 
-
-
 // função que lista os alunos cadastrados
 const listaraluno = () => {
 
@@ -58,12 +56,12 @@ const listaraluno = () => {
 
             //  css dinamico para botão 
 
-            // $('#tabela').DataTable({
-            //     "language": {
+            $('#tabela').DataTable({
+                "language": {
 
-            //         url: '//cdn.datatables.net/plug-ins/1.12.1/i18n/pt-BR.json'
-            //     }
-            // });
+                    url: '//cdn.datatables.net/plug-ins/1.12.1/i18n/pt-BR.json'
+                }
+            });
         });
 
 }
