@@ -47,8 +47,6 @@ try {
     $sql = "INSERT INTO tb_feriados (nome,data,data_fim) VALUES ('$nome','$data','$data_fim')";
 
     $msg = "Feriado adicionado com sucesso!";
-
-    insertUpdateDelete($sql, $msg);
     
 } catch (PDOException $erro) {
     pdocatch($erro);
