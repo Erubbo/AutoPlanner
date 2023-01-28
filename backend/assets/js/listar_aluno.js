@@ -6,8 +6,6 @@ $(document).ready(function () {
     $("")
 });
 
-
-
 // função que lista os alunos cadastrados
 const listaraluno = () => {
 

@@ -13,7 +13,7 @@ include '../includes/conexao.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../css/horarios.css">
-    <link rel="stylesheet" href="../../css/estilo-alunos.css">
+    <link rel="stylesheet" href="../../css/estilo-altura-fundo.css">
 
 
 </head>
@@ -25,7 +25,7 @@ include '../includes/conexao.php';
 
     <div class="container">
 
-        <h5 class="text-center m-4 text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Alunos</h5>
+        <h5 class="text-center m-4 text-light"><i class="bi bi-mortarboard" style="font-size: 1.5rem"></i> Cadastro Alunos</h5>
 
         <div class="p-3 border border-3 rounded-3 altura-minima bg-secondary">
 
@@ -264,6 +264,7 @@ include '../includes/conexao.php';
                                     <option value="1">Dinheiro</option>
                                     <option value="2">Cartão</option>
                                     <option value="3">Boleto</option>
+                                    
                                 </select>
                             </div>
 

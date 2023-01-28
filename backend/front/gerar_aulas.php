@@ -13,7 +13,7 @@ include '../includes/conexao.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../css/horarios.css">
-    <link rel="stylesheet" href="../../css/estilo-alunos.css">
+    <link rel="stylesheet" href="../../css/estilo-altura-fundo.css">
 
 
 </head>
@@ -26,7 +26,6 @@ include '../includes/conexao.php';
     <div class="container altura-minima">
 
         <h5 class="text-center m-4 text-light"><i class="bi bi-bar-chart-line" style="font-size: 1.5rem"></i> Gerar Aulas</h5>
-
 
         <div class="text-bg-secondary p-3 border border-3 rounded-3 ">
 

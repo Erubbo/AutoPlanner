@@ -14,7 +14,7 @@ include '../includes/conexao.php';
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <!-- Importação CSS - Datatable -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
-  <link rel="stylesheet" href="../../css/estilo-alunos.css">
+  <link rel="stylesheet" href="../../css/estilo-altura-fundo.css">
 
 
 </head>
@@ -24,10 +24,10 @@ include '../includes/conexao.php';
   include('../includes/navbar.php')
   ?>
 
-  <h5 class="text-center text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Consultar Alunos</h5>
+  <h5 class="text-center text-light"><i class="bi bi-mortarboard" style="font-size: 1.5rem"></i> Consultar Alunos</h5>
 
   <!-- ////////////////////////// Datatable para listagem de dados ////////////////////////////// -->
-  <div class="border rounded mt-4 p-2 bg-secondary">
+  <div class="border rounded mt-4 p-2 bg-secondary altura-minima">
 
   <!-- retirado pesquisa pois já tem no datatable - renata - 27-01 -->  
   <!-- Navbar Search-->

@@ -13,7 +13,7 @@ include '../includes/conexao.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../css/horarios.css">
-    <link rel="stylesheet" href="../../css/estilo-alunos.css">
+    <link rel="stylesheet" href="../../css/estilo-altura-fundo.css">
 
 
 </head>
@@ -26,7 +26,7 @@ include '../includes/conexao.php';
 
     <div class="container altura-minima">
 
-        <h5 class="text-center m-4 text-dark bi bi-calendar3"> Cadastro Feriados</h5>
+        <h5 class="text-center m-4 text-light bi bi-calendar-date"> Cadastro Feriados</h5>
 
 
         <div class="text-bg-secondary p-3 border border-3 rounded-3 ">
@@ -40,20 +40,20 @@ include '../includes/conexao.php';
 
                             <div class="form-group col-md-4 ">
                                 <h6 class="mb-1"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>SOBRE O FERIADO:</h6>
-                                <label class="mt-3" for="nome">Nome do Feriado</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="">
+                                <label class="mt-3" for="nome_f">Nome do Feriado</label>
+                                <input type="text" class="form-control" id="nome_f" name="nome_f" placeholder="">
                             </div>
 
                             <div class="form-group col-md-4 mt-5">
                                 <label class="">Data Inicial</label>
-                                <input type="date" class="form-control" id="nome" name="nome" placeholder="">
+                                <input type="date" class="form-control" id="data_i" name="data_i" placeholder="">
                             </div>
 
 
 
                             <div class="form-group col-md-4 mt-5">
                                 <label class="">Data Final</label>
-                                <input type="date" class="form-control" id="nome" name="nome" placeholder="">
+                                <input type="date" class="form-control" id="data_f" name="data_f" placeholder="">
                             </div>
 
                         </div>
@@ -63,10 +63,10 @@ include '../includes/conexao.php';
                         </div>
 
                     </div>
+                </form>
 
             </div>
 
-            </form>
         </div>
     </div>
 
