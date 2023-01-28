@@ -6,9 +6,9 @@ include 'includes/conexao.php';
 
 try{
     $id_aluno = $_POST['id_aluno'];
-    $id_carta = $_POST['id_carta'];
-    $aulas = $_POST['aulas'];
-    $id_professor = $_POST['id_professor'];
+    // $id_carta = $_POST['id_carta'];
+    // $aulas = $_POST['aulas'];
+    // $id_professor = $_POST['id_professor'];
 
     $dia_hoje_semana = date('w');
     
@@ -21,7 +21,7 @@ try{
        '6' => 'saturday '
    );
    // variavel para escrever o dia por extenso
-   $oi = $semana[$dia_hoje_semana];
+   $dsemana = $semana[$dia_hoje_semana];
 
    
    
@@ -29,13 +29,13 @@ try{
        
 
     
-    $proximo_dia_agendamento = $dia_hoje_mes->modify('next '.$oi);
+    $proximo_dia_agendamento = $dia_hoje_mes->modify('next '.$dsemana);
     
     echo $proximo_dia_agendamento->format('Y-m-d');
 
 
     // monta a query sql
-    $sql = "SELECT * FROM tb_disponibilidade where id_aluno = $id_aluno ORDER BY dia_semana,hora_inicio";
+    $sql = "SELECT * FROM tb_disponibilidade where id_aluno = 4 ORDER BY dia_semana,hora_inicio";
     // prepara a execuçao
     $comando = $conn->prepare($sql);
     // executa o comando 
@@ -45,6 +45,7 @@ try{
 
     echo"<pre>";
     var_dump($dados);
+    exit;
 
 // // ========================================= LAÇO
 //     $sql = "SELECT * FROM tb_disponibilidade where id_aluno = $id_aluno AND dia_semana ='$proximo_dia_dispo' ORDER BY hora_inicio";
