@@ -93,5 +93,26 @@ const addprof = () => {
 
            result.retorno == 'ok' ? $('#form-prof')[0].reset() : '';
       });
+
+      const addferiados = () => {
+        let dados = new FormData($("#form-group")[0]);
+      
+        const result = fetch("../addferiados.php", {
+          method: "POST",
+          body: dados,
+        })
+          .then((response) => response.json())
+          .then((result) => {
+            // Aqui é tratado o retorno ao front
+      
+                Swal.fire({
+                  
+                    title: 'Atenção',
+                    text: result.mensagem,
+                    icon: result.retorno == 'ok' ? 'success' : 'error',
+                })
+      
+                 result.retorno == 'ok' ? $('#form-group')[0].reset() : '';
+            });
 };
 
