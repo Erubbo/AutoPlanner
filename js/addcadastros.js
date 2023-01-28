@@ -84,35 +84,35 @@ const addprof = () => {
     .then((result) => {
       // Aqui é tratado o retorno ao front
 
-          Swal.fire({
-            
-              title: 'Atenção',
-              text: result.mensagem,
-              icon: result.retorno == 'ok' ? 'success' : 'error',
-          })
+      Swal.fire({
 
-           result.retorno == 'ok' ? $('#form-prof')[0].reset() : '';
-      });
+        title: 'Atenção',
+        text: result.mensagem,
+        icon: result.retorno == 'ok' ? 'success' : 'error',
+      })
 
-      const addferiados = () => {
-        let dados = new FormData($("#form-group")[0]);
-      
-        const result = fetch("../addferiados.php", {
-          method: "POST",
-          body: dados,
+      result.retorno == 'ok' ? $('#form-prof')[0].reset() : '';
+    });
+
+  const addferiados = () => {
+    let dados = new FormData($("#form-group")[0]);
+
+    const result = fetch("../addferiados.php", {
+      method: "POST",
+      body: dados,
+    })
+      .then((response) => response.json())
+      .then((result) => {
+        // Aqui é tratado o retorno ao front
+
+        Swal.fire({
+
+          title: 'Atenção',
+          text: result.mensagem,
+          icon: result.retorno == 'ok' ? 'success' : 'error',
         })
-          .then((response) => response.json())
-          .then((result) => {
-            // Aqui é tratado o retorno ao front
-      
-                Swal.fire({
-                  
-                    title: 'Atenção',
-                    text: result.mensagem,
-                    icon: result.retorno == 'ok' ? 'success' : 'error',
-                })
-      
-                 result.retorno == 'ok' ? $('#form-group')[0].reset() : '';
-            });
-};
 
+        result.retorno == 'ok' ? $('#form-group')[0].reset() : '';
+      });
+  };
+}
