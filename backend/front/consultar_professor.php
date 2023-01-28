@@ -15,7 +15,7 @@ include '../includes/conexao.php';
   <!-- Importação CSS - Datatable -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
   
-  <link rel="stylesheet" href="../../css/estilo-alunos.css">
+  <link rel="stylesheet" href="../../css/estilo-altura-fundo.css">
 
 
 </head>
