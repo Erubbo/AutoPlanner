@@ -201,5 +201,30 @@ function updateProfessor($sql,$mensagemretorno){
 
 }
 
+// função add dia 27/01/2023
+
+function updateAluno($sql,$mensagemretorno){
+
+            
+    $comando = $GLOBALS['conexao']->prepare($sql);
+
+    $comando->execute();
+
+    // cria um array para armazenar a mensagem de erro
+    $retorno = array(
+                    'retorno'=>'ok',
+                    'mensagem'=> $mensagemretorno
+                );
+
+    // cria uma variavel que ira receber o array acima convertido em JSON
+    $json = json_encode($retorno, JSON_UNESCAPED_UNICODE);
+
+    // retorno em formato JSON
+    echo $json;
+
+
+
+}
+
 
 ?>
