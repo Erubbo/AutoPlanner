@@ -61,7 +61,7 @@ try {
 
     $sql = "UPDATE tb_professor SET nome='$nome',data_nascimento='$data_nascimento',genero='$genero',cpf='$cpf',rg='$rg',orgao_emissor='$orgao_emissor',uf='$uf',email='$email',telefone='$telefone',telefone2='$telefone2' WHERE id = '$id_professor'";
 
-    $msg = "Usuário alterar com sucesso!";
+    $msg = "Usuário alterado com sucesso!";
 
     insertUpdateDelete($sql, $msg);
     

@@ -70,7 +70,7 @@ const listaraluno = () => {
 
 const updateAlunoAtivo = (id) => {
 
-    const result = fetch(`../update_aluno.php`, {
+    const result = fetch(`../update_ativo_aluno.php`, {
       method: "POST",
       body: `id=${id}`,
       headers: {

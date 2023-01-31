@@ -71,7 +71,7 @@ try {
     
     $sql = "UPDATE tb_aluno SET nome='$nome',pai='$pai',mae='$mae',nome_social='$nome_social',pai_af='$pai_af',mae_af='$mae_af',data_nascimento='$data_nascimento',genero='$genero',nacionalidade='$nacionalidade',cpf='$cpf',rg='$rg',orgao_emissor='$orgao_emissor',uf='$uf',email='$email',telefone='$telefone',telefone2='$telefone2' WHERE id = '$id_aluno' "; 
 
-    $msg = "Usuário adicionado com sucesso!";
+    $msg = "Usuário alterado com sucesso!";
 
     insertUpdateDelete($sql, $msg);
 
