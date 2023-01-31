@@ -12,6 +12,8 @@ include '../includes/conexao.php';
     <title>Consultar Aulas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Importação CSS - Datatable -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="../../css/estilo-alunos.css">
 
 
@@ -25,10 +27,10 @@ include '../includes/conexao.php';
 
     <h5 class="text-center text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Consultar Aulas</h5>
 
-    <!-- ////////////////////////// Datatable para listagem de dados ////////////////////////////// -->
+    <!-- ////////////////////////// Datatable para listagem de dados //////////////////////////////
     <div class="border rounded mt-4 p-2 bg-secondary altura-minima">
 
-        <!-- Navbar Search-->
+        Navbar Search
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             <div class="input-group">
                 <input class="form-control" type="text" placeholder="Nome do Aluno" aria-label="Pesquisar" aria-describedby="btnNavbarSearch" />
@@ -36,7 +38,7 @@ include '../includes/conexao.php';
             </div>
         </form>
 
-        <button class="btn btn-primary btn-sm" onclick="listar()"><i class="bi bi-arrow-clockwise"></i></button>
+        <button class="btn btn-primary btn-sm" onclick="listar()"><i class="bi bi-arrow-clockwise"></i></button> -->
 
         <table class="table table-secondary table-striped mt-4 dt-responsive " id="tabela">
             <thead>
@@ -103,13 +105,19 @@ include '../includes/conexao.php';
     include('../includes/footer.php')
     ?>
 
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
+    <!-- Importação JS - Datatable -->
+  <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
 
+    <!-- Importação do SweetAlert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
 
     <script src="../../js/listar.js"></script>
 </body>
