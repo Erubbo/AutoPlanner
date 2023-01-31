@@ -15,6 +15,9 @@ include '../includes/conexao.php';
   <title>Consulta professor</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Importação CSS - Datatable -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
+  
   <link rel="stylesheet" href="../../css/estilo-alunos.css">
 
 
@@ -30,15 +33,16 @@ include '../includes/conexao.php';
   <!-- ////////////////////////// Datatable para listagem de dados ////////////////////////////// -->
   <div class="border rounded mt-4 p-2  bg-secondary">
 
-    <!-- Navbar Search-->
-    <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-      <div class="input-group">
-        <input class="form-control" type="text" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="btnNavbarSearch" />
-        <button class="btn btn-light" id="btnNavbarSearch" type="submit" onclick="listar()">Pesquisar</button>
-      </div>
-    </form>
+    <!-- retirado pesquisa pois já tem no datatable - renata - 27-01 -->
+  <!-- Navbar Search-->
+    <!-- <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+      <div class="input-group"> -->
+        <!-- <input class="form-control" type="text" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="btnNavbarSearch" />
+        <button class="btn btn-light" id="btnNavbarSearch" type="submit" onclick="listar()">Pesquisar</button> -->
+      <!-- </div>
+    </form> -->
 
-    <button class="btn btn-primary btn-sm" onclick="listarprofessor()"><i class="bi bi-arrow-clockwise"></i></button>
+    <!-- <button class="btn btn-primary btn-sm" onclick="listarprofessor()"><i class="bi bi-arrow-clockwise"></i></button> -->
 
     <table class="table table-secondary  table-striped mt-4 dt-responsive " id="tabela">
       <thead>
@@ -253,6 +257,10 @@ include '../includes/conexao.php';
   <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+  <!-- Importação JS - Datatable -->
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
 
   <!-- Importação do InputMask -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js" integrity="sha512-jTgBq4+dMYh73dquskmUFEgMY5mptcbqSw2rmhOZZSJjZbD2wMt0H5nhqWtleVkyBEjmzid5nyERPSNBafG4GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
