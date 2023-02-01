@@ -65,6 +65,9 @@ try {
 
     insertUpdateDelete($sql, $msg);
     
+    echo $sql;
+    exit;
+
 } catch (PDOException $erro) {
     pdocatch($erro);
 }
