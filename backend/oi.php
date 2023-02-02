@@ -19,8 +19,8 @@ $dia_hoje_semana = date('w');
      $dia_hoje_mes = new DateTime();
         
 
-  x
-     $proximo_dia_agendamento = $dia_hoje_mes->modify('next '.$oi);
+  
+   //   $proximo_dia_agendamento = $dia_hoje_mes->modify('next '.$oi);
      
      echo $proximo_dia_agendamento->format('Y-m-d');
      
