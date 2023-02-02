@@ -107,6 +107,8 @@ const updateAlunoAtivo = (id) => {
     .then((result) => {
   
       // preenche os dados dentro do form de editar usuarios
+      $('#edita_id_aluno').val(result[0].id_aluno)
+      $('#edita_id_endereco').val(result[0].id)
       $('#edita-nome').val(result[0].nome)
       $('#edita-nome_social').val(result[0].nome_social)
       $('#edita-pai').val(result[0].pai)

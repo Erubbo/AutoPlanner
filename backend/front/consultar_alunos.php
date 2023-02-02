@@ -300,6 +300,8 @@ include '../includes/conexao.php';
 
 
   <script src="../assets/js/listar_aluno.js"></script>
+
+  
   <script src="../assets/js/alterar_aluno.js"></script>
 </body>
 

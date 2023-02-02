@@ -9,7 +9,7 @@ try {
     $limpa = array('(',')','-',' ','.');
 
     // aluno 
-    $id_aluno        =$_POST['edita_id_aluno'];
+    $id_aluno        = $_POST['edita_id_aluno'];
     $nome            = $_POST['edita-nome'];
     $pai             = $_POST['edita-pai'];
     $mae             = $_POST['edita-mae'];
@@ -28,7 +28,7 @@ try {
     
 
     // endereço
-    $id_endereco     =$_POST['edita_id_endereco'];
+    $id_endereco     = $_POST['edita_id_endereco'];
     $cep = str_replace($limpa,'',$_POST['edita-cep']);
     $logradouro = $_POST['edita-logradouro'];
     $numero = str_replace($limpa,'',$_POST['edita-numero']);
@@ -55,7 +55,7 @@ try {
 
    
     // add endereço 
-    $sql = "UPDATE tb_endereco SET cep='$cep',logradouro='$logradouro',numero='$numero',complemento='$complemento',bairro='$bairro',municipio='$municipio',estado='$estado'  WHERE id='$id_endereco' ";
+    $sql = "UPDATE tb_endereco SET cep='$cep',logradouro='$logradouro',numero='$numero',complemento='$complemento',bairro='$bairro',municipio='$municipio',estado='$estado'  WHERE id='$id_endereco'";
 
     $command = $conn->prepare($sql);
 
@@ -66,14 +66,14 @@ try {
     // $id_endereco = $conn-> lastInsertId();
 
     
-    $sql = "UPDATE tb_aluno SET nome='$nome',pai='$pai',mae='$mae',nome_social='$nome_social',pai_af='$pai_af',mae_af='$mae_af',data_nascimento='$data_nascimento',genero='$genero',cpf='$cpf',rg='$rg',orgao_emissor='$orgao_emissor',uf='$uf',email='$email',telefone='$telefone',telefone2='$telefone2'  WHERE id='$id_aluno' "; 
+    $sql = "UPDATE tb_aluno SET nome='$nome',pai='$pai',mae='$mae',nome_social='$nome_social',pai_af='$pai_af',mae_af='$mae_af',data_nascimento='$data_nascimento',genero='$genero',cpf='$cpf',rg='$rg',orgao_emissor='$orgao_emissor',uf='$uf',email='$email',telefone='$telefone',telefone2='$telefone2'  WHERE id='$id_aluno'"; 
 
     $msg = "Usuário alterado com sucesso!";
 
     insertUpdateDelete($sql, $msg);
 
-    echo $sql;
-    exit;
+    // echo $sql;
+    // exit;
 
 } catch (PDOException $erro) {
     pdocatch($erro);
