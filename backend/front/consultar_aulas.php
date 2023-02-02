@@ -27,10 +27,10 @@ include '../includes/conexao.php';
 
     <h5 class="text-center text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Consultar Aulas</h5>
 
-    <!-- ////////////////////////// Datatable para listagem de dados //////////////////////////////
-    <div class="border rounded mt-4 p-2 bg-secondary altura-minima">
+    <!-- ////////////////////////// Datatable para listagem de dados ////////////////////////////// -->
+    <div class="border rounded mt-4 p-2 bg-secondary">
 
-        Navbar Search
+        <!-- Navbar Search
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             <div class="input-group">
                 <input class="form-control" type="text" placeholder="Nome do Aluno" aria-label="Pesquisar" aria-describedby="btnNavbarSearch" />
@@ -43,16 +43,14 @@ include '../includes/conexao.php';
         <table class="table table-secondary table-striped mt-4 dt-responsive " id="tabela">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Email</th>
-                    <th>Telefone</th>
-                    <th>Data de Cadastro</th>
-                    <th>Ativo</th>
-                    <th>Alterar</th>
+                    <th>ID Aluno</th>
+                    <th>Aluno</th>
+                    <th>Total Aulas</th>
+                    <th>Id Carta</th>
+                    
                 </tr>
             </thead>
-            <tbody id="listar-aluno">
+            <tbody id="listar-aulas">
 
             </tbody>
         </table>
@@ -61,7 +59,7 @@ include '../includes/conexao.php';
     <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
 
     <!-- Modal de edição de usuario -->
-    <div class="modal fade" id="modal-editar-usuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="modal-editar-usuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -69,9 +67,9 @@ include '../includes/conexao.php';
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h3>Dados do usuário</h3>
+                    <h3>Dados do usuário</h3> -->
                     <!-- ////////////////////////////////////////////////////////////////////////////// -->
-                    <form id="form-produto-editar">
+                    <!-- <form id="form-produto-editar">
                         <div class="row">
 
                             <div class="col">
@@ -90,7 +88,6 @@ include '../includes/conexao.php';
                         </div>
 
                     </form>
-                    <!-- ///////////////////////////////////////////// -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -99,7 +96,7 @@ include '../includes/conexao.php';
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <?php
     include('../includes/footer.php')
@@ -119,7 +116,7 @@ include '../includes/conexao.php';
 
     
 
-    <script src="../../js/listar.js"></script>
+    <script src="../assets/js/listar_aulas.js"></script>
 </body>
 
 </html>

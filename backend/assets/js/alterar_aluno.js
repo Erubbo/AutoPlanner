@@ -25,12 +25,14 @@ const updateAluno = () =>{
             icon: result.retorno == 'ok' ? 'success' : 'error'
           })
 
+        //   $("#tabela").dataTable().fnDestroy()
+
         //   limpa os campos caso o retorno tenha sucesso
         // utilização do if ternario, para redução de escrita de código
-        result.retorno == 'ok' ? $('#form-usuarios-editar')[0].reset() : ''
+        result.retorno == 'ok' ? $('#form-aluno-editar')[0].reset() : ''
 
         // recarregar a tabela apos inserir o usuario
-        result.retorno == 'ok' ? listar() : ''
+        result.retorno == 'ok' ? listaraluno() : ''
 
     })
 
