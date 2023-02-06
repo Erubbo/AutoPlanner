@@ -13,7 +13,7 @@ include '../includes/conexao.php';
     <link rel="stylesheet" href="">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../../css/estilo-alunos.css">
+    <link rel="stylesheet" href="../../css/estilo-altura-fundo.css">
 
 </head>
 
@@ -22,12 +22,12 @@ include '../includes/conexao.php';
     include('../includes/navbar.php')
     ?>
 
-    <div class="container">
+    <div class="container altura-minima">
 
         <div class="form-group">
             <form id="form-prof">
 
-                <h5 class="text-center m-4 text-light"><i class="bi bi-person-circle" style="font-size: 1.5rem"></i> Cadastro Professores</h5>
+                <h5 class="text-center m-4 text-light"><i class="bi bi-person-workspace" style="font-size: 1.5rem"></i> Cadastro Professores</h5>
                 <div class="text-bg-secondary p-3 border border-3 rounded-3">
 
 
@@ -158,8 +158,6 @@ include '../includes/conexao.php';
                                 </div>
 
                                 <div class="row">
-
-
 
                                     <div class="form-group col-md-6">
                                         <label for="numero">Numero *</label>

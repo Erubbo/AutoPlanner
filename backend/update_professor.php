@@ -12,7 +12,7 @@ try {
     // define os caracteres que iremos remover dos campos preenchidos no form (replace)
     $limpa = array('(',')','-',' ','.');
 
-    $id_professor    =$_POST['edita_id_professor'];
+    $id_professor    = $_POST['edita_id_professor'];
     $nome            = $_POST['edita-nome'];
     $data_nascimento = $_POST['edita-data_nascimento'];
     $genero          = $_POST['edita-genero'];
@@ -27,7 +27,7 @@ try {
     $telefone2       = str_replace($limpa,'',$_POST['edita-telefone2']);
 
     //endereço
-    $id_endereco     =$_POST['edita_id_endereco'];
+    $id_endereco     = $_POST['edita_id_endereco'];
     $cep             = str_replace($limpa,'',$_POST['edita-cep']);
     $logradouro      = $_POST['edita-logradouro'];
     $numero          = str_replace($limpa,'',$_POST['edita-numero']);
@@ -65,6 +65,9 @@ try {
 
     insertUpdateDelete($sql, $msg);
     
+    echo $sql;
+    exit;
+
 } catch (PDOException $erro) {
     pdocatch($erro);
 }

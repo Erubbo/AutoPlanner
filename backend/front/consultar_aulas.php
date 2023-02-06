@@ -14,7 +14,7 @@ include '../includes/conexao.php';
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- Importação CSS - Datatable -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="../../css/estilo-alunos.css">
+  <link rel="stylesheet" href="../../css/estilo-altura-fundo.css">
 
 
 
@@ -33,7 +33,7 @@ include '../includes/conexao.php';
         <!-- Navbar Search
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             <div class="input-group">
-                <input class="form-control" type="text" placeholder="Nome do Aluno" aria-label="Pesquisar" aria-describedby="btnNavbarSearch" />
+                <input class="form-control" type="text" placeholder="" aria-label="Pesquisar" aria-describedby="btnNavbarSearch" />
                 <button class="btn btn-light" id="btnNavbarSearch" type="submit">Nome do Aluno</button>
             </div>
         </form>
@@ -43,11 +43,11 @@ include '../includes/conexao.php';
         <table class="table table-secondary table-striped mt-4 dt-responsive " id="tabela">
             <thead>
                 <tr>
-                    <th>ID Aluno</th>
-                    <th>Aluno</th>
-                    <th>Total Aulas</th>
-                    <th>Id Carta</th>
-                    
+                    <th>id</th>
+                    <th>Nome</th>
+                    <th>Quantidade de aulas registradas</th>
+                    <th>Aulas Feitas</th>
+                    <th>Aulas Faltantes</th>
                 </tr>
             </thead>
             <tbody id="listar-aulas">

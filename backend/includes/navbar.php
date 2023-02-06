@@ -46,9 +46,9 @@ include 'controle_session.php';
           </ul>
         </li>
 
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link active fs-6 fw-bold" aria-current="page" href="../../../AutoPlanner/backend/front/gerar_aulas.php">Gerar Aulas</a>
-        </li>
+        </li> -->
 
         <li class="nav-item">
           <a class="nav-link active fs-6 fw-bold" aria-current="page" href="../../../AutoPlanner/backend/front/cadastro_feriados.php">Feriados</a>
@@ -70,12 +70,12 @@ include 'controle_session.php';
 
   <div class="dropdown">
     <a class="btn dropdown-toggle m-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9r3ogaSmpwNYSaEKRifVaHjwmYsKSW7fC6Q&usqp=CAU" class="rounded-circle" height="26" alt="" loading="lazy" />
+      <img src="" class="rounded-circle" height="26" alt="" loading="lazy" />
     </a>
 
     <ul class="dropdown-menu dropdown-menu-end">
     <li><a class="dropdown-item text-center p-0" href="backend/">Editar Perfil</a></li>
-      <li><a class="dropdown-item text-center p-0" href="backend/logout.php">Sair</a></li>
+      <li><a class="dropdown-item text-center p-0" href="../../backend/logout.php">Sair</a></li>
     </ul>
   </div>
 
