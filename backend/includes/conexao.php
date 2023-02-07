@@ -1,9 +1,9 @@
 <?php
 
 try{
-    define('SERVERNAME',"10.97.47.71");
-    define('USERNAME',"autoplanner");
-    define('PASSWORD',"12345");
+    define('SERVERNAME',"localhost");
+    define('USERNAME',"root");
+    define('PASSWORD','');
     define('DADABASE',"auto_planner");
     
 

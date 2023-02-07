@@ -12,6 +12,7 @@ include '../includes/conexao.php';
     <title>Cadastro de feriados</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="../../css/horarios.css">
     <link rel="stylesheet" href="../../css/estilo-altura-fundo.css">
 
@@ -40,26 +41,26 @@ include '../includes/conexao.php';
 
                             <div class="form-group col-md-4 ">
                                 <h6 class="mb-1"><i class="bi bi-file-richtext" style="font-size: 1.5rem"></i>SOBRE O FERIADO:</h6>
-                                <label class="mt-3" for="nome_f">Nome do Feriado</label>
-                                <input type="text" class="form-control" id="nome_f" name="nome_f" placeholder="">
+                                <label class="mt-3" for="nome">Nome do Feriado</label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="">
                             </div>
 
                             <div class="form-group col-md-4 mt-5">
-                                <label class="">Data Inicial</label>
-                                <input type="date" class="form-control" id="data_i" name="data_i" placeholder="">
+                                <label class="" for="data">Data Inicial</label>
+                                <input type="date" class="form-control" id="data" name="data" placeholder="">
                             </div>
 
 
 
                             <div class="form-group col-md-4 mt-5">
-                                <label class="">Data Final</label>
-                                <input type="date" class="form-control" id="data_f" name="data_f" placeholder="">
+                                <label class="" for="data_fim">Data Final</label>
+                                <input type="date" class="form-control" id="data_fim" name="data_fim" placeholder="">
                             </div>
 
                         </div>
 
                         <div class="form-group col-md-6">
-                            <button type="button" class="btn btn-primary mt-3" onclick="addferiado()" >Cadastrar</button>
+                            <button type="button" class="btn btn-primary mt-3" onclick="addferiado()">Cadastrar</button>
                         </div>
 
                     </div>
@@ -68,6 +69,8 @@ include '../includes/conexao.php';
             </div>
 
         </div>
+
+    </div>
     </div>
 
     <?php
@@ -78,6 +81,10 @@ include '../includes/conexao.php';
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Importação JS - Datatable -->
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
 
     <!-- SWEET ALERT -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
