@@ -59,7 +59,7 @@ include '../includes/conexao.php';
                         </div>
 
                         <div class="form-group col-md-6">
-                            <button type="button" class="btn btn-primary mt-3" onclick="addferiado()">Cadastrar</button>
+                            <button type="button" class="btn btn-primary mt-3" onclick="addferiado()" >Cadastrar</button>
                         </div>
 
                     </div>
@@ -86,8 +86,7 @@ include '../includes/conexao.php';
     <script src="../assets/js/jquery.inputmask.min.js"></script>
 
 
-    <script src="../../js/addcadastros.js"></script>
-    <script src="../../js/horarios.js"></script>
+    <script src="../assets/js/addferiado.js"></script>
 </body>
 
 
