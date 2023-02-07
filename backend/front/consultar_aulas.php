@@ -43,10 +43,10 @@ include '../includes/conexao.php';
         <table class="table table-secondary table-striped mt-4 dt-responsive " id="tabela">
             <thead>
                 <tr>
-                    <th>id</th>
+                    
                     <th>Nome</th>
                     <th>Quantidade de aulas registradas</th>
-                    <th>Aulas Feitas</th>
+                    <th>Tipo CNH</th>
                     <th>Aulas Faltantes</th>
                 </tr>
             </thead>

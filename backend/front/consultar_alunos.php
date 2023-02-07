@@ -18,6 +18,7 @@ include '../includes/conexao.php';
   <!-- Importação CSS - Datatable -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
   <link rel="stylesheet" href="../../css/estilo-altura-fundo.css">
+  
 
 
 </head>
@@ -30,7 +31,7 @@ include '../includes/conexao.php';
   <h5 class="text-center text-light"><i class="bi bi-mortarboard" style="font-size: 1.5rem"></i> Consultar Alunos</h5>
 
   <!-- ////////////////////////// Datatable para listagem de dados ////////////////////////////// -->
-  <div class="border rounded mt-4 p-2 bg-secondary altura-minima">
+  <div class="border rounded mt-4 p-2 bg-secondary">
 
   <!-- retirado pesquisa pois já tem no datatable - renata - 27-01 -->  
   <!-- Navbar Search-->
@@ -66,7 +67,7 @@ include '../includes/conexao.php';
   <!-- Modal dia 25/01/2023 -->
   <!-- Modal de Edição de Usuário -->
   <div class="modal fade" id="modal-editar-usuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Alterar dados do usuário</h1>

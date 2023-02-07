@@ -67,6 +67,7 @@ const addaluno = () => {
       Swal.fire({
         title: "Atenção",
         text: result.mensagem,
+        scrollbarPadding: true,
         icon: result.retorno == "ok" ? "success" : "error",
       });
       result.retorno == "ok" ? $("#form-aluno")[0].reset() : "";
@@ -88,6 +89,7 @@ const addprof = () => {
             
               title: 'Atenção',
               text: result.mensagem,
+              scrollbarPadding: true,
               icon: result.retorno == 'ok' ? 'success' : 'error',
           })
 

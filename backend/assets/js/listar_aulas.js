@@ -37,10 +37,14 @@ const listaraulas = () => {
                 $('#listar-aulas').append(`
                 <tr>
                     
-                    <td>${prod.id_aluno}</td>
                     <td>${prod.nome}</td>
-                    <td>${prod.total_aula}</td>
-                    <td>${prod.id_carta}</td>
+                    <td>${prod.total}</td>
+                    <td>${prod.tipo}</td>
+                    <td>${prod.faltando}</td>
+
+
+                    
+                    
                   
             `)
             })

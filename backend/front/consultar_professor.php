@@ -28,7 +28,7 @@ include '../includes/conexao.php';
   <h5 class="text-center text-light"><i class="bi bi-person-workspace" style="font-size: 1.5rem"></i> Consultar Professores</h5>
 
   <!-- ////////////////////////// Datatable para listagem de dados ////////////////////////////// -->
-  <div class="border rounded mt-4 p-2  bg-secondary altura-minima">
+  <div class="border rounded mt-4 p-2  bg-secondary ">
 
     <!-- retirado pesquisa pois já tem no datatable - renata - 27-01 -->
   <!-- Navbar Search-->
