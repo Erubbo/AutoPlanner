@@ -1,7 +1,7 @@
 
 <?php 
 
-include 'includes/conexao.php';
+include 'conexao.php';
 
 // funcao que valida o preenchimento de uma variavel
 function validaCampoVazio($campo,$nomedocampo){
