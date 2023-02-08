@@ -66,6 +66,22 @@ include '../includes/conexao.php';
                     </div>
                 </form>
 
+                <table class="table table-secondary  table-striped mt-4 dt-responsive " id="tabela">
+                    <thead>
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Data Inicial</th>
+                            <th>Data Final</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="listarferiados">
+
+                    </tbody>
+                </table>
+
             </div>
 
         </div>
@@ -92,6 +108,7 @@ include '../includes/conexao.php';
     <!-- INPUT MASK -->
     <script src="../assets/js/jquery.inputmask.min.js"></script>
 
+    <script src="../assets/js/listarferiados.js"></script>
 
     <script src="../assets/js/addferiado.js"></script>
 </body>

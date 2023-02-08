@@ -4,7 +4,7 @@ const addferiado = () => {
   
     let form = new FormData($("#form-feriado")[0]);
   
-    const result = fetch("../includes/addferiado.php", {
+    const result = fetch("../addferiado.php", {
       method: "POST",
       body: form,
     })

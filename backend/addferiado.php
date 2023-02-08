@@ -1,7 +1,7 @@
 <?php
 
-include 'conexao.php';
-include 'functions.php';
+include 'includes/conexao.php';
+include 'includes/functions.php';
 
 try {
 
