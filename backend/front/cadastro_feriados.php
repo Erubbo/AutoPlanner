@@ -32,7 +32,7 @@ include '../includes/conexao.php';
 
         <div class="text-bg-secondary p-3 border border-3 rounded-3 ">
 
-            <div class="form-group m-4 mt-2">
+            <div class="form-group m-4 mt-2 table-responsive">
                 <form id="form-feriado">
 
                     <div class="group m-4 ">
@@ -70,7 +70,6 @@ include '../includes/conexao.php';
                     <thead>
                         <tr>
 
-                            <th>ID</th>
                             <th>Nome</th>
                             <th>Data Inicial</th>
                             <th>Data Final</th>
@@ -87,7 +86,7 @@ include '../includes/conexao.php';
         </div>
 
     </div>
-    </div>
+
 
     <?php
     include('../includes/footer.php')

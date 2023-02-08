@@ -33,13 +33,10 @@ const listarferiados = () => {
         $("#listarferiados").append(`
         <tr>
                     
-        <td>${prod.id}</td>
         <td>${prod.nome}</td>
         <td>${prod.data}</td>
         <td>${prod.data_fim}</td>
-        
-      
-                  
+                 
             `);
       });
 

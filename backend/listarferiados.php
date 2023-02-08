@@ -7,7 +7,7 @@ include '../backend/includes/functions.php';
 
 try{
     // monta a query sql
-    $sql = "SELECT id, nome FROM tb_disponibilidade";
+    $sql = "SELECT nome, `data`, data_fim FROM tb_disponibilidade";
 
     // prepara a execuçao
     $comando = $conn->prepare($sql);
