@@ -66,6 +66,16 @@ include '../includes/conexao.php';
                     </div>
                 </form>
 
+                <hr>
+
+                <h6 class="text-center m-4 mb-0 text-light bi bi-calendar-date"> Lista de Feriados</h6>
+
+                
+                <div class="text-end mt-2 mb-2">
+                    <span>Atualizar Tabela</span>
+                    <button class="btn btn-primary" onclick="listarferiados()"><i class="bi bi-arrow-clockwise"></i></button>
+                </div>
+
                 <table class="table table-secondary  table-striped mt-4 dt-responsive " id="tabela">
                     <thead>
                         <tr>

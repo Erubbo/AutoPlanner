@@ -23,7 +23,8 @@ const listarferiados = () => {
       // $('#horario-atualizado').html(datahora)
 
       // destroi a tabela que foi iniciada
-      // $("#tabela").dataTable().fnDestroy()
+      
+      
 
       // limpa os dados da tabela
       $("#listarferiados").html("");
@@ -39,6 +40,8 @@ const listarferiados = () => {
                  
             `);
       });
+
+      $("#tabela").DataTable().fnDestroy()
 
       //  css dinamico para botão
 

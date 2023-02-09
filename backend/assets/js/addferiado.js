@@ -21,6 +21,7 @@ const addferiado = () => {
         // usa o if ternario para redução de escrita
   
         result.retorno == "ok" ? $("#form-feriado")[0].reset() : "";
+        
       });
   };
   

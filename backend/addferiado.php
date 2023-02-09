@@ -22,6 +22,8 @@ try {
 
     insertUpdateDelete($sql, $msg);
     
+    
+
 } catch (PDOException $erro) {
     pdocatch($erro);
 }
